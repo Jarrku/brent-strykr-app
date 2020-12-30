@@ -1,7 +1,7 @@
 {
-  "title": "Brent DW - Strykr",
+  "title": "Strykr",
   "titleTemplate": "%s | Brent DW",
-  "description": "Fitness Coach Brent DW",
+  "description": "Brent DW - Strykr",
   "favicon": "/favicon.ico",
   "additionalMetaTags": [
     { "property": "author", "content": "Brent De Wolf" },
@@ -10,11 +10,16 @@
       "content": ""
     }
   ],
+  "twitter": {
+    "cardType": "summary",
+    "handle": "jhooks",
+    "site": "jhooks"
+  },
   "openGraph": {
     "type": "website",
-    "site_name": "Brent DW - Strykr",
+    "site_name": "Joel's Site",
     "profile": {
-      "firstName": "Brent"
+      "firstName": "Joel"
     },
     "images": [
       {

@@ -1,0 +1,9206 @@
+[
+  { "name": "Aal", "baseAmount": 100, "metric": "gram", "kcal": 213, "protein": 16, "carbohydrates": 0, "fat": 16.8 },
+  {
+    "name": "Aalbessen, rode bessen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 51,
+    "protein": 1.1,
+    "carbohydrates": 7.9,
+    "fat": 0.1
+  },
+  {
+    "name": "Aardappel, zoet, bataat",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 96,
+    "protein": 1.3,
+    "carbohydrates": 21,
+    "fat": 0.1
+  },
+  {
+    "name": "Aardappel, zoet, bataat, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 85,
+    "protein": 1.3,
+    "carbohydrates": 19.1,
+    "fat": 0.2
+  },
+  {
+    "name": "Aardappelen, gebakken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 126,
+    "protein": 2,
+    "carbohydrates": 16,
+    "fat": 5.5
+  },
+  {
+    "name": "Aardappelen, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 82,
+    "protein": 2,
+    "carbohydrates": 17,
+    "fat": 0.1
+  },
+  {
+    "name": "Aardappelen, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 85,
+    "protein": 2,
+    "carbohydrates": 17.6,
+    "fat": 0.1
+  },
+  {
+    "name": "Aardappelkroketjes",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 223,
+    "protein": 3.2,
+    "carbohydrates": 27,
+    "fat": 11
+  },
+  {
+    "name": "Aardappelpuree (instant, bereid)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 99,
+    "protein": 3.5,
+    "carbohydrates": 12,
+    "fat": 4.2
+  },
+  {
+    "name": "Aardappelschijfjes, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 141,
+    "protein": 2,
+    "carbohydrates": 20.5,
+    "fat": 5
+  },
+  {
+    "name": "Aardappelzetmeel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 329,
+    "protein": 0.1,
+    "carbohydrates": 81,
+    "fat": 0
+  },
+  {
+    "name": "Aardbei, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 36,
+    "protein": 0.8,
+    "carbohydrates": 6.5,
+    "fat": 0.4
+  },
+  {
+    "name": "Aardpeer (topinamboer)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 81,
+    "protein": 2.5,
+    "carbohydrates": 17.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Abrikoos, blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 74,
+    "protein": 0.5,
+    "carbohydrates": 17,
+    "fat": 0.1
+  },
+  {
+    "name": "Abrikoos,vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 60,
+    "protein": 1.4,
+    "carbohydrates": 11.5,
+    "fat": 0.4
+  },
+  {
+    "name": "Abrikozen, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 274,
+    "protein": 5,
+    "carbohydrates": 58.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Achterham",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 129,
+    "protein": 18.2,
+    "carbohydrates": 1.7,
+    "fat": 5.5
+  },
+  {
+    "name": "Achterham, gegrild",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 116,
+    "protein": 19.2,
+    "carbohydrates": 0.6,
+    "fat": 4.1
+  },
+  {
+    "name": "Adukibonen, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 131,
+    "protein": 7.2,
+    "carbohydrates": 24.8,
+    "fat": 0.1
+  },
+  {
+    "name": "Advocaat, 14 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 240,
+    "protein": 3.8,
+    "carbohydrates": 24.5,
+    "fat": 3.2
+  },
+  {
+    "name": "Agar-agar, droog poeder",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 365,
+    "protein": 6,
+    "carbohydrates": 80,
+    "fat": 0
+  },
+  {
+    "name": "Agar-agar, vers (zeewier)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 37,
+    "protein": 0.5,
+    "carbohydrates": 6.8,
+    "fat": 0
+  },
+  {
+    "name": "Ahornsiroop",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 365,
+    "protein": 0,
+    "carbohydrates": 90,
+    "fat": 0
+  },
+  {
+    "name": "Alaska pollak",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 75,
+    "protein": 16.7,
+    "carbohydrates": 0,
+    "fat": 0.8
+  },
+  {
+    "name": "Alfalfa",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 43,
+    "protein": 4.1,
+    "carbohydrates": 3.9,
+    "fat": 0.7
+  },
+  {
+    "name": "Amandelbroodje",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 490,
+    "protein": 7.6,
+    "carbohydrates": 50.7,
+    "fat": 28.1
+  },
+  {
+    "name": "Amandelen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 609,
+    "protein": 19.5,
+    "carbohydrates": 10.4,
+    "fat": 52
+  },
+  {
+    "name": "Amandelmeel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 632,
+    "protein": 21.5,
+    "carbohydrates": 15.5,
+    "fat": 51.5
+  },
+  {
+    "name": "Amandelmelk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 53,
+    "protein": 3,
+    "carbohydrates": 3.5,
+    "fat": 2.8
+  },
+  {
+    "name": "Amandelolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 882,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99.8
+  },
+  {
+    "name": "Amandelspijs",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 458,
+    "protein": 10,
+    "carbohydrates": 47.5,
+    "fat": 24.5
+  },
+  { "name": "Amsoi", "baseAmount": 100, "metric": "gram", "kcal": 31, "protein": 2, "carbohydrates": 5.3, "fat": 0 },
+  {
+    "name": "Ananas, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 61,
+    "protein": 0.5,
+    "carbohydrates": 13.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Ananassap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 50,
+    "protein": 0.8,
+    "carbohydrates": 11.5,
+    "fat": 0
+  },
+  {
+    "name": "Andijvie, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 16,
+    "protein": 1.5,
+    "carbohydrates": 1,
+    "fat": 0
+  },
+  {
+    "name": "Anijszaad",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 425,
+    "protein": 10,
+    "carbohydrates": 55,
+    "fat": 15
+  },
+  {
+    "name": "Ansjovis, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 102,
+    "protein": 20.1,
+    "carbohydrates": 0,
+    "fat": 2.3
+  },
+  { "name": "Appel", "baseAmount": 100, "metric": "gram", "kcal": 54, "protein": 0.4, "carbohydrates": 12, "fat": 0 },
+  {
+    "name": "Appelflap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 388,
+    "protein": 5.5,
+    "carbohydrates": 40,
+    "fat": 22
+  },
+  {
+    "name": "Appelmoes",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 81,
+    "protein": 0.2,
+    "carbohydrates": 19.2,
+    "fat": 0.1
+  },
+  {
+    "name": "Appelsap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 42,
+    "protein": 0.1,
+    "carbohydrates": 10.5,
+    "fat": 0
+  },
+  {
+    "name": "Appelstroop, rinse",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 274,
+    "protein": 3.2,
+    "carbohydrates": 63,
+    "fat": 0
+  },
+  {
+    "name": "Appeltaart",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 248,
+    "protein": 4.2,
+    "carbohydrates": 35,
+    "fat": 9.8
+  },
+  {
+    "name": "Appelwijn, cider 5 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 10,
+    "protein": 0,
+    "carbohydrates": 2.5,
+    "fat": 0
+  },
+  {
+    "name": "Arachideolie, pindaolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 879,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99.5
+  },
+  {
+    "name": "Artisjok",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 52,
+    "protein": 2.4,
+    "carbohydrates": 9.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Artisjok, harten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 46,
+    "protein": 2.7,
+    "carbohydrates": 7.6,
+    "fat": 0.3
+  },
+  {
+    "name": "Asperges, blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 22,
+    "protein": 1.9,
+    "carbohydrates": 3.2,
+    "fat": 0.1
+  },
+  {
+    "name": "Asperges, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 17,
+    "protein": 1.9,
+    "carbohydrates": 1.3,
+    "fat": 0.2
+  },
+  {
+    "name": "Aubergine",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 25,
+    "protein": 1.2,
+    "carbohydrates": 3.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Augurken, zoetzuur",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 14,
+    "protein": 1.1,
+    "carbohydrates": 2,
+    "fat": 0
+  },
+  {
+    "name": "Avocado",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 188,
+    "protein": 2.6,
+    "carbohydrates": 1.5,
+    "fat": 18.1
+  },
+  { "name": "Azijn", "baseAmount": 100, "metric": "gram", "kcal": 1, "protein": 0, "carbohydrates": 0.5, "fat": 0 },
+  { "name": "Baars", "baseAmount": 100, "metric": "gram", "kcal": 82, "protein": 18.5, "carbohydrates": 0, "fat": 0.8 },
+  { "name": "Bacon", "baseAmount": 100, "metric": "gram", "kcal": 373, "protein": 18, "carbohydrates": 0, "fat": 34 },
+  { "name": "Bagel", "baseAmount": 100, "metric": "gram", "kcal": 313, "protein": 10, "carbohydrates": 55, "fat": 5.1 },
+  {
+    "name": "Bak- en braadlap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 110,
+    "protein": 22.6,
+    "carbohydrates": 0,
+    "fat": 2.1
+  },
+  {
+    "name": "Bakbanaan",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 137,
+    "protein": 1,
+    "carbohydrates": 31.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Baklava, Turks gebak",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 464,
+    "protein": 4,
+    "carbohydrates": 55.6,
+    "fat": 25
+  },
+  {
+    "name": "Balsamico-azijn",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 77,
+    "protein": 0.2,
+    "carbohydrates": 19,
+    "fat": 0
+  },
+  {
+    "name": "Bamboescheuten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 28,
+    "protein": 2.5,
+    "carbohydrates": 3.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Bami goreng",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 142,
+    "protein": 6.5,
+    "carbohydrates": 17.7,
+    "fat": 4.7
+  },
+  {
+    "name": "Bamibal, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 301,
+    "protein": 7.5,
+    "carbohydrates": 32.5,
+    "fat": 16
+  },
+  {
+    "name": "Banaan",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 86,
+    "protein": 1.2,
+    "carbohydrates": 18.8,
+    "fat": 0.2
+  },
+  {
+    "name": "Basilicum, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 308,
+    "protein": 14.4,
+    "carbohydrates": 44.5,
+    "fat": 4
+  },
+  {
+    "name": "Basilicum, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 47,
+    "protein": 3,
+    "carbohydrates": 5,
+    "fat": 0.8
+  },
+  {
+    "name": "Basmatirijst, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 354,
+    "protein": 7,
+    "carbohydrates": 78.5,
+    "fat": 0.6
+  },
+  {
+    "name": "Basterdsuiker",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 387,
+    "protein": 0,
+    "carbohydrates": 95.5,
+    "fat": 0
+  },
+  {
+    "name": "Beenham, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 162,
+    "protein": 17.7,
+    "carbohydrates": 1.4,
+    "fat": 9.6
+  },
+  {
+    "name": "Berenburg, 38 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 187,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Berliner",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 322,
+    "protein": 13.3,
+    "carbohydrates": 1.7,
+    "fat": 29.6
+  },
+  {
+    "name": "Berlinerbol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 301,
+    "protein": 6,
+    "carbohydrates": 46,
+    "fat": 10
+  },
+  {
+    "name": "Beschuit",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 392,
+    "protein": 12.3,
+    "carbohydrates": 70.8,
+    "fat": 5.5
+  },
+  {
+    "name": "Beschuit, volkoren",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 389,
+    "protein": 16,
+    "carbohydrates": 62,
+    "fat": 6.6
+  },
+  {
+    "name": "Bessenjenever, 22 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 182,
+    "protein": 0,
+    "carbohydrates": 17.5,
+    "fat": 0
+  },
+  {
+    "name": "Bessensap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 38,
+    "protein": 0,
+    "carbohydrates": 9.4,
+    "fat": 0
+  },
+  {
+    "name": "Biefstuk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 127,
+    "protein": 23.8,
+    "carbohydrates": 0,
+    "fat": 3.5
+  },
+  {
+    "name": "Biefstuk van de haas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 116,
+    "protein": 23.7,
+    "carbohydrates": 0,
+    "fat": 2.3
+  },
+  {
+    "name": "Bier, alcoholvrij",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 15,
+    "protein": 0.3,
+    "carbohydrates": 3.5,
+    "fat": 0
+  },
+  {
+    "name": "Bier, pilsener 5 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 42,
+    "protein": 0.5,
+    "carbohydrates": 3,
+    "fat": 0
+  },
+  {
+    "name": "Bier, wit 5 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 45,
+    "protein": 0.5,
+    "carbohydrates": 3.8,
+    "fat": 0
+  },
+  {
+    "name": "Bier, zwaar, > 7 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 52,
+    "protein": 0.7,
+    "carbohydrates": 3.8,
+    "fat": 0
+  },
+  {
+    "name": "Bieslook, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 58,
+    "protein": 3.6,
+    "carbohydrates": 8.5,
+    "fat": 0.7
+  },
+  { "name": "Biest", "baseAmount": 100, "metric": "gram", "kcal": 78, "protein": 4.2, "carbohydrates": 4, "fat": 5 },
+  {
+    "name": "Bietensap, rood",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 38,
+    "protein": 1.1,
+    "carbohydrates": 8.2,
+    "fat": 0
+  },
+  {
+    "name": "Biscuit, hartig, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 521,
+    "protein": 8,
+    "carbohydrates": 65,
+    "fat": 25
+  },
+  {
+    "name": "Bitterbal, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 311,
+    "protein": 10.5,
+    "carbohydrates": 25,
+    "fat": 19
+  },
+  {
+    "name": "Bitterbal, vegetarisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 204,
+    "protein": 20.8,
+    "carbohydrates": 9.7,
+    "fat": 8.8
+  },
+  {
+    "name": "Bladerdeeg, algemeen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 380,
+    "protein": 5.5,
+    "carbohydrates": 37.5,
+    "fat": 23
+  },
+  {
+    "name": "Bladerdeeg, roomboter",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 375,
+    "protein": 5.3,
+    "carbohydrates": 35.6,
+    "fat": 24
+  },
+  {
+    "name": "Blauwe bes, bosbes",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 75,
+    "protein": 0.6,
+    "carbohydrates": 14.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Blinde vink",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 161,
+    "protein": 22.7,
+    "carbohydrates": 0,
+    "fat": 7.9
+  },
+  {
+    "name": "Bloedworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 374,
+    "protein": 15.2,
+    "carbohydrates": 3,
+    "fat": 34
+  },
+  {
+    "name": "Bloemkool, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 20,
+    "protein": 1.9,
+    "carbohydrates": 2.2,
+    "fat": 0
+  },
+  {
+    "name": "Bloemkool, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 24,
+    "protein": 2,
+    "carbohydrates": 3,
+    "fat": 0
+  },
+  {
+    "name": "Boekweit",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 358,
+    "protein": 10.4,
+    "carbohydrates": 72.6,
+    "fat": 1.7
+  },
+  {
+    "name": "Boekweitmeel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 362,
+    "protein": 10.8,
+    "carbohydrates": 69.9,
+    "fat": 2.7
+  },
+  {
+    "name": "Boerenbrood",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 307,
+    "protein": 11.3,
+    "carbohydrates": 56.3,
+    "fat": 3.1
+  },
+  {
+    "name": "Boerenkool, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 38,
+    "protein": 2.9,
+    "carbohydrates": 4.8,
+    "fat": 0.8
+  },
+  {
+    "name": "Boerenkool, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 51,
+    "protein": 4.3,
+    "carbohydrates": 5.5,
+    "fat": 0.9
+  },
+  {
+    "name": "Boerenkoolstamppot, industrieel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 155,
+    "protein": 5.3,
+    "carbohydrates": 11.6,
+    "fat": 9.8
+  },
+  {
+    "name": "Bokking, gebakken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 234,
+    "protein": 23,
+    "carbohydrates": 0,
+    "fat": 16
+  },
+  {
+    "name": "Bokking, gerookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 270,
+    "protein": 22.5,
+    "carbohydrates": 0,
+    "fat": 20.2
+  },
+  {
+    "name": "Bokking, gestoomd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 227,
+    "protein": 20.9,
+    "carbohydrates": 0,
+    "fat": 16.2
+  },
+  {
+    "name": "Bonbon, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 461,
+    "protein": 3.5,
+    "carbohydrates": 70,
+    "fat": 18
+  },
+  {
+    "name": "Borrelnootjes, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 540,
+    "protein": 15,
+    "carbohydrates": 46,
+    "fat": 32
+  },
+  {
+    "name": "Borstplaat, room",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 349,
+    "protein": 0.7,
+    "carbohydrates": 80,
+    "fat": 2.9
+  },
+  {
+    "name": "Bossche bol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 292,
+    "protein": 5.3,
+    "carbohydrates": 38.1,
+    "fat": 12.6
+  },
+  {
+    "name": "Bot, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 102,
+    "protein": 21,
+    "carbohydrates": 0,
+    "fat": 2
+  },
+  {
+    "name": "Boter, halfvol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 343,
+    "protein": 2.8,
+    "carbohydrates": 1.2,
+    "fat": 37
+  },
+  {
+    "name": "Boter, ongezouten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 735,
+    "protein": 0.7,
+    "carbohydrates": 0.7,
+    "fat": 82.5
+  },
+  {
+    "name": "Boterhamworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 308,
+    "protein": 12.1,
+    "carbohydrates": 2.9,
+    "fat": 28
+  },
+  {
+    "name": "Boterkoek, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 516,
+    "protein": 4.5,
+    "carbohydrates": 55,
+    "fat": 31
+  },
+  {
+    "name": "Botervis",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 287,
+    "protein": 18.5,
+    "carbohydrates": 0,
+    "fat": 24
+  },
+  {
+    "name": "Bouillon, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 6,
+    "protein": 0.5,
+    "carbohydrates": 0.1,
+    "fat": 0.5
+  },
+  {
+    "name": "Bouillonpoeder / blokjes, onbereid, vlees",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 237,
+    "protein": 16,
+    "carbohydrates": 16,
+    "fat": 12
+  },
+  {
+    "name": "Bouillonpoeder, onbereid, kruiden",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 180,
+    "protein": 18,
+    "carbohydrates": 15,
+    "fat": 5
+  },
+  {
+    "name": "Boursin, kaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 410,
+    "protein": 8.4,
+    "carbohydrates": 1.5,
+    "fat": 41.8
+  },
+  {
+    "name": "Braadworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 313,
+    "protein": 22.4,
+    "carbohydrates": 1.5,
+    "fat": 24.5
+  },
+  { "name": "Bramen", "baseAmount": 100, "metric": "gram", "kcal": 58, "protein": 1.2, "carbohydrates": 8.5, "fat": 1 },
+  {
+    "name": "Brandewijn, 45 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 218,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Brasem",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 115,
+    "protein": 16.5,
+    "carbohydrates": 0,
+    "fat": 5.5
+  },
+  {
+    "name": "Brie 50+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 338,
+    "protein": 22.5,
+    "carbohydrates": 0,
+    "fat": 28
+  },
+  {
+    "name": "Brinta, naturel (Brinta)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 347,
+    "protein": 11,
+    "carbohydrates": 65,
+    "fat": 2.1
+  },
+  {
+    "name": "Broccoli",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 29,
+    "protein": 3.3,
+    "carbohydrates": 2,
+    "fat": 0.2
+  },
+  {
+    "name": "Broccoli, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 29,
+    "protein": 3.2,
+    "carbohydrates": 2,
+    "fat": 0.1
+  },
+  {
+    "name": "Bronwater, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 0,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Brood, bruin",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 256,
+    "protein": 7,
+    "carbohydrates": 45.6,
+    "fat": 3.7
+  },
+  {
+    "name": "Brood, geroosterd, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 370,
+    "protein": 13.5,
+    "carbohydrates": 68,
+    "fat": 4
+  },
+  {
+    "name": "Brood, meergranen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 262,
+    "protein": 9.5,
+    "carbohydrates": 45,
+    "fat": 3.4
+  },
+  {
+    "name": "Brood, rogge, donker",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 198,
+    "protein": 5.5,
+    "carbohydrates": 36,
+    "fat": 1.5
+  },
+  {
+    "name": "Brood, rogge, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 242,
+    "protein": 6.2,
+    "carbohydrates": 44.5,
+    "fat": 3
+  },
+  {
+    "name": "Brood, rozijnen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 273,
+    "protein": 6.8,
+    "carbohydrates": 49,
+    "fat": 4.6
+  },
+  {
+    "name": "Brood, tarwe",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 266,
+    "protein": 8.2,
+    "carbohydrates": 48.8,
+    "fat": 3
+  },
+  {
+    "name": "Brood, tarwe/rogge",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 220,
+    "protein": 6.7,
+    "carbohydrates": 41.5,
+    "fat": 1.6
+  },
+  {
+    "name": "Brood, volkoren",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 246,
+    "protein": 8.4,
+    "carbohydrates": 43.5,
+    "fat": 2.6
+  },
+  {
+    "name": "Brood, wit, melk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 255,
+    "protein": 9.2,
+    "carbohydrates": 45,
+    "fat": 3.5
+  },
+  {
+    "name": "Brood, wit, water",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 236,
+    "protein": 8.3,
+    "carbohydrates": 44.5,
+    "fat": 2
+  },
+  {
+    "name": "Brood, zuurdesem",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 206,
+    "protein": 7.5,
+    "carbohydrates": 35.4,
+    "fat": 2
+  },
+  {
+    "name": "Broodje, kadetje gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 282,
+    "protein": 8.5,
+    "carbohydrates": 50,
+    "fat": 4.5
+  },
+  {
+    "name": "Brownie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 484,
+    "protein": 5.2,
+    "carbohydrates": 57.5,
+    "fat": 25.8
+  },
+  {
+    "name": "Bruine bonen, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 110,
+    "protein": 7.6,
+    "carbohydrates": 18.1,
+    "fat": 0.7
+  },
+  {
+    "name": "Buikspek, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 531,
+    "protein": 9,
+    "carbohydrates": 0,
+    "fat": 55
+  },
+  {
+    "name": "Bulgur, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 375,
+    "protein": 9.5,
+    "carbohydrates": 80,
+    "fat": 1
+  },
+  {
+    "name": "Cacaopoeder",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 411,
+    "protein": 19.8,
+    "carbohydrates": 10.8,
+    "fat": 24.5
+  },
+  { "name": "Cake", "baseAmount": 100, "metric": "gram", "kcal": 444, "protein": 7.5, "carbohydrates": 47, "fat": 25 },
+  {
+    "name": "Cake, roomboter",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 443,
+    "protein": 6.5,
+    "carbohydrates": 50,
+    "fat": 24.1
+  },
+  {
+    "name": "Camembert 30+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 215,
+    "protein": 23.5,
+    "carbohydrates": 0,
+    "fat": 13.5
+  },
+  {
+    "name": "Camembert 45+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 282,
+    "protein": 21,
+    "carbohydrates": 0,
+    "fat": 22.3
+  },
+  {
+    "name": "Campari, bitter 25 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 203,
+    "protein": 0,
+    "carbohydrates": 20,
+    "fat": 0
+  },
+  {
+    "name": "Cantharellen, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 19,
+    "protein": 2.1,
+    "carbohydrates": 1.1,
+    "fat": 0
+  },
+  {
+    "name": "Caramelpudding",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 147,
+    "protein": 3.5,
+    "carbohydrates": 23,
+    "fat": 4.5
+  },
+  {
+    "name": "Cashewnoten, gebrand, gezouten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 614,
+    "protein": 15.6,
+    "carbohydrates": 32,
+    "fat": 46.5
+  },
+  {
+    "name": "Cashewnoten, gebrand, ongezouten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 608,
+    "protein": 15.5,
+    "carbohydrates": 32.8,
+    "fat": 46.5
+  },
+  {
+    "name": "Cashewnoten, vers, ongezouten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 591,
+    "protein": 18.5,
+    "carbohydrates": 22.5,
+    "fat": 46.5
+  },
+  {
+    "name": "Cassave",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 141,
+    "protein": 1,
+    "carbohydrates": 32,
+    "fat": 0.2
+  },
+  {
+    "name": "Cassavemeel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 350,
+    "protein": 2.8,
+    "carbohydrates": 82,
+    "fat": 0.3
+  },
+  {
+    "name": "Casselerrib",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 142,
+    "protein": 20.5,
+    "carbohydrates": 1,
+    "fat": 6.3
+  },
+  {
+    "name": "Cayennepeper",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 371,
+    "protein": 11.5,
+    "carbohydrates": 30.5,
+    "fat": 17
+  },
+  {
+    "name": "Cervelaatworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 382,
+    "protein": 18.3,
+    "carbohydrates": 0.5,
+    "fat": 34.7
+  },
+  {
+    "name": "Champagne",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 76,
+    "protein": 0.3,
+    "carbohydrates": 1.3,
+    "fat": 0
+  },
+  {
+    "name": "Champignons, blik/glas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 31,
+    "protein": 2.3,
+    "carbohydrates": 2.5,
+    "fat": 0.5
+  },
+  {
+    "name": "Champignons, gebakken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 61,
+    "protein": 3.5,
+    "carbohydrates": 0.9,
+    "fat": 4
+  },
+  {
+    "name": "Champignons, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 16,
+    "protein": 2.7,
+    "carbohydrates": 0.3,
+    "fat": 0
+  },
+  {
+    "name": "Cheddar kaas 50+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 389,
+    "protein": 25.4,
+    "carbohydrates": 0.5,
+    "fat": 32.2
+  },
+  {
+    "name": "Cheese puffs",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 565,
+    "protein": 6.4,
+    "carbohydrates": 55,
+    "fat": 35.7
+  },
+  {
+    "name": "Cheeseburger",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 283,
+    "protein": 14,
+    "carbohydrates": 26.5,
+    "fat": 13.5
+  },
+  {
+    "name": "Cheesecake",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 308,
+    "protein": 5.4,
+    "carbohydrates": 28.6,
+    "fat": 19.2
+  },
+  {
+    "name": "Chiazaad, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 472,
+    "protein": 19.8,
+    "carbohydrates": 12,
+    "fat": 30.7
+  },
+  {
+    "name": "Chilipeper, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 366,
+    "protein": 12.5,
+    "carbohydrates": 33,
+    "fat": 16
+  },
+  {
+    "name": "Chilipeper, pimento, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 31,
+    "protein": 0.9,
+    "carbohydrates": 5.8,
+    "fat": 0.5
+  },
+  {
+    "name": "Chilipoeder",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 380,
+    "protein": 12,
+    "carbohydrates": 32,
+    "fat": 17.5
+  },
+  {
+    "name": "Chinese kool, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 19,
+    "protein": 1,
+    "carbohydrates": 2.5,
+    "fat": 0
+  },
+  {
+    "name": "Chinese kool, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 20,
+    "protein": 1.2,
+    "carbohydrates": 1.8,
+    "fat": 0.3
+  },
+  {
+    "name": "Chinese okra, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 45,
+    "protein": 2.2,
+    "carbohydrates": 7.2,
+    "fat": 0.2
+  },
+  {
+    "name": "Chipolatapudding",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 228,
+    "protein": 5.2,
+    "carbohydrates": 24,
+    "fat": 12.5
+  },
+  {
+    "name": "Chips, gem. naturel, paprika e.d.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 554,
+    "protein": 5.5,
+    "carbohydrates": 52.8,
+    "fat": 34.5
+  },
+  {
+    "name": "Chips, light gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 479,
+    "protein": 6.5,
+    "carbohydrates": 61,
+    "fat": 22
+  },
+  {
+    "name": "Chocolade met noten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 577,
+    "protein": 9.5,
+    "carbohydrates": 44,
+    "fat": 40
+  },
+  {
+    "name": "Chocolade, melk (32 % cacao)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 541,
+    "protein": 9.2,
+    "carbohydrates": 55,
+    "fat": 31.5
+  },
+  {
+    "name": "Chocolade, puur (54 % cacao)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 513,
+    "protein": 5.3,
+    "carbohydrates": 49,
+    "fat": 33
+  },
+  {
+    "name": "Chocolade, puur extra (70-85% cacao)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 584,
+    "protein": 7.8,
+    "carbohydrates": 35.2,
+    "fat": 43.2
+  },
+  {
+    "name": "Chocolade, wit",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 560,
+    "protein": 7.6,
+    "carbohydrates": 58,
+    "fat": 33.3
+  },
+  {
+    "name": "Chocoladehagelslag (melk)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 458,
+    "protein": 6.5,
+    "carbohydrates": 70,
+    "fat": 16
+  },
+  {
+    "name": "Chocoladehagelslag (puur)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 457,
+    "protein": 4.5,
+    "carbohydrates": 70,
+    "fat": 16
+  },
+  {
+    "name": "Chocolademelk, halfvolle",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 79,
+    "protein": 3.2,
+    "carbohydrates": 12.9,
+    "fat": 1.6
+  },
+  {
+    "name": "Chocolademelk, magere",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 68,
+    "protein": 3.5,
+    "carbohydrates": 12,
+    "fat": 0.6
+  },
+  {
+    "name": "Chocolademelk, volle",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 100,
+    "protein": 3.6,
+    "carbohydrates": 12.9,
+    "fat": 3.8
+  },
+  {
+    "name": "Chocolademousse",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 206,
+    "protein": 4.5,
+    "carbohydrates": 20,
+    "fat": 12
+  },
+  {
+    "name": "Chocolademousse, light",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 119,
+    "protein": 4,
+    "carbohydrates": 14.5,
+    "fat": 5
+  },
+  {
+    "name": "Chocoladepasta, hazelnoot",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 567,
+    "protein": 4.5,
+    "carbohydrates": 55,
+    "fat": 36
+  },
+  {
+    "name": "Chocoladepasta, melk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 563,
+    "protein": 4,
+    "carbohydrates": 57.8,
+    "fat": 35
+  },
+  {
+    "name": "Chocoladepasta, puur",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 570,
+    "protein": 4.5,
+    "carbohydrates": 52.6,
+    "fat": 37
+  },
+  {
+    "name": "Chocoladevla",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 105,
+    "protein": 3.2,
+    "carbohydrates": 16,
+    "fat": 3
+  },
+  {
+    "name": "Chocoladevlokken (gem. melk/puur)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 447,
+    "protein": 6.1,
+    "carbohydrates": 70,
+    "fat": 15.8
+  },
+  {
+    "name": "Chorizoworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 360,
+    "protein": 23,
+    "carbohydrates": 0.6,
+    "fat": 30
+  },
+  {
+    "name": "Ciabatta",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 238,
+    "protein": 8.5,
+    "carbohydrates": 45,
+    "fat": 1.5
+  },
+  { "name": "Cider", "baseAmount": 100, "metric": "gram", "kcal": 10, "protein": 0, "carbohydrates": 2.5, "fat": 0 },
+  {
+    "name": "Citroen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 36,
+    "protein": 0.5,
+    "carbohydrates": 6.5,
+    "fat": 0.4
+  },
+  {
+    "name": "Citroensap, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 32,
+    "protein": 0,
+    "carbohydrates": 8,
+    "fat": 0
+  },
+  {
+    "name": "Cognac, 40 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 220,
+    "protein": 0,
+    "carbohydrates": 1,
+    "fat": 0
+  },
+  { "name": "Cola", "baseAmount": 100, "metric": "gram", "kcal": 44, "protein": 0, "carbohydrates": 11, "fat": 0 },
+  {
+    "name": "Cola light",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 1,
+    "protein": 0,
+    "carbohydrates": 0.3,
+    "fat": 0
+  },
+  {
+    "name": "Cordon bleu, vegetarisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 249,
+    "protein": 17.5,
+    "carbohydrates": 9,
+    "fat": 15
+  },
+  {
+    "name": "Corned beef",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 225,
+    "protein": 12.8,
+    "carbohydrates": 3.5,
+    "fat": 18
+  },
+  {
+    "name": "Cornflakes",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 376,
+    "protein": 7.9,
+    "carbohydrates": 81.5,
+    "fat": 0.8
+  },
+  {
+    "name": "Cottage cheese",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 100,
+    "protein": 12.8,
+    "carbohydrates": 2.9,
+    "fat": 4.2
+  },
+  {
+    "name": "Courgette, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 27,
+    "protein": 1.8,
+    "carbohydrates": 4.5,
+    "fat": 0
+  },
+  {
+    "name": "Couscous, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 183,
+    "protein": 7.5,
+    "carbohydrates": 23.5,
+    "fat": 6.5
+  },
+  {
+    "name": "Couscous, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 368,
+    "protein": 12.5,
+    "carbohydrates": 74,
+    "fat": 1
+  },
+  {
+    "name": "Cracker, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 276,
+    "protein": 4.5,
+    "carbohydrates": 43.5,
+    "fat": 8.5
+  },
+  {
+    "name": "Cracker, light",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 358,
+    "protein": 12,
+    "carbohydrates": 63.5,
+    "fat": 2.5
+  },
+  {
+    "name": "Cracker, volkoren",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 445,
+    "protein": 11.5,
+    "carbohydrates": 65,
+    "fat": 13.5
+  },
+  {
+    "name": "Cranberries, gedroogd, gezoet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 353,
+    "protein": 1.2,
+    "carbohydrates": 83.5,
+    "fat": 0
+  },
+  {
+    "name": "Cranberries, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 24,
+    "protein": 0.5,
+    "carbohydrates": 4,
+    "fat": 0
+  },
+  {
+    "name": "Cranberrysap, ongezoet (fles)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 62,
+    "protein": 0,
+    "carbohydrates": 15.5,
+    "fat": 0
+  },
+  {
+    "name": "Cream cheese",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 354,
+    "protein": 7.5,
+    "carbohydrates": 2.8,
+    "fat": 35.4
+  },
+  {
+    "name": "Crème fraiche",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 336,
+    "protein": 2.5,
+    "carbohydrates": 2,
+    "fat": 36
+  },
+  {
+    "name": "Crème fraiche, halfvol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 162,
+    "protein": 3,
+    "carbohydrates": 4.4,
+    "fat": 15
+  },
+  {
+    "name": "Croissant",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 478,
+    "protein": 9.2,
+    "carbohydrates": 50.3,
+    "fat": 26.3
+  },
+  {
+    "name": "Currysaus",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 131,
+    "protein": 1.8,
+    "carbohydrates": 30,
+    "fat": 0.3
+  },
+  {
+    "name": "Custard met melk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 117,
+    "protein": 3.7,
+    "carbohydrates": 15.2,
+    "fat": 4.6
+  },
+  {
+    "name": "Custardpoeder",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 345,
+    "protein": 0,
+    "carbohydrates": 85,
+    "fat": 0.1
+  },
+  {
+    "name": "Dadel, geconfijt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 286,
+    "protein": 1.8,
+    "carbohydrates": 65,
+    "fat": 0
+  },
+  {
+    "name": "Dadels, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 152,
+    "protein": 2.2,
+    "carbohydrates": 33,
+    "fat": 0
+  },
+  {
+    "name": "Dagoeblad",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 35,
+    "protein": 3.5,
+    "carbohydrates": 4.8,
+    "fat": 0
+  },
+  {
+    "name": "Danish blue",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 377,
+    "protein": 19,
+    "carbohydrates": 0,
+    "fat": 34
+  },
+  {
+    "name": "Dieetolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 883,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 100
+  },
+  {
+    "name": "Donut, gevuld gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 372,
+    "protein": 7,
+    "carbohydrates": 31,
+    "fat": 24.5
+  },
+  {
+    "name": "Donut, ongevuld gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 440,
+    "protein": 4.5,
+    "carbohydrates": 50,
+    "fat": 24.5
+  },
+  {
+    "name": "Donut, ongevuld gesuikerd gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 416,
+    "protein": 5.5,
+    "carbohydrates": 48.5,
+    "fat": 22
+  },
+  {
+    "name": "Doperwten, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 86,
+    "protein": 5,
+    "carbohydrates": 14,
+    "fat": 0
+  },
+  {
+    "name": "Doperwten, blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 88,
+    "protein": 6.5,
+    "carbohydrates": 10.8,
+    "fat": 1
+  },
+  {
+    "name": "Doperwten, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 64,
+    "protein": 4.5,
+    "carbohydrates": 8.9,
+    "fat": 0
+  },
+  {
+    "name": "Dressing, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 372,
+    "protein": 0.7,
+    "carbohydrates": 9.6,
+    "fat": 37.4
+  },
+  {
+    "name": "Dressing, zonder olie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 49,
+    "protein": 0.1,
+    "carbohydrates": 12,
+    "fat": 0
+  },
+  {
+    "name": "Drop, dubbelzout",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 332,
+    "protein": 10,
+    "carbohydrates": 72,
+    "fat": 0
+  },
+  {
+    "name": "Drop, Engelse",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 383,
+    "protein": 3.1,
+    "carbohydrates": 81,
+    "fat": 5.2
+  },
+  {
+    "name": "Drop, zoete",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 349,
+    "protein": 11,
+    "carbohydrates": 75,
+    "fat": 0
+  },
+  {
+    "name": "Drop, zoute",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 341,
+    "protein": 10,
+    "carbohydrates": 74,
+    "fat": 0
+  },
+  {
+    "name": "Druiven, blauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 53,
+    "protein": 0.9,
+    "carbohydrates": 11.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Druiven, wit",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 57,
+    "protein": 0.5,
+    "carbohydrates": 13.5,
+    "fat": 0
+  },
+  {
+    "name": "Druivenpitolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 879,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99.5
+  },
+  {
+    "name": "Druivensap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 69,
+    "protein": 0.2,
+    "carbohydrates": 16.9,
+    "fat": 0
+  },
+  { "name": "Duif", "baseAmount": 100, "metric": "gram", "kcal": 287, "protein": 18.5, "carbohydrates": 0, "fat": 24 },
+  {
+    "name": "Edammer, kaas 30+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 250,
+    "protein": 26.4,
+    "carbohydrates": 0,
+    "fat": 16.2
+  },
+  {
+    "name": "Edammer, kaas 40+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 313,
+    "protein": 26.1,
+    "carbohydrates": 0,
+    "fat": 23.4
+  },
+  {
+    "name": "Eekhoorntjesbrood",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 20,
+    "protein": 2.5,
+    "carbohydrates": 0,
+    "fat": 0.6
+  },
+  {
+    "name": "Eend, bereid (gem.)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 337,
+    "protein": 19,
+    "carbohydrates": 0,
+    "fat": 28.3
+  },
+  {
+    "name": "Eend, rauw (gem.)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 333,
+    "protein": 18.1,
+    "carbohydrates": 0,
+    "fat": 29
+  },
+  {
+    "name": "Eendeborst, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 135,
+    "protein": 18.3,
+    "carbohydrates": 0.9,
+    "fat": 6
+  },
+  {
+    "name": "Eendebout, rauw (legs)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 295,
+    "protein": 14.3,
+    "carbohydrates": 0,
+    "fat": 25.9
+  },
+  {
+    "name": "Ei, eidooier",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 348,
+    "protein": 16.2,
+    "carbohydrates": 0,
+    "fat": 32
+  },
+  {
+    "name": "Ei, eiwit",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 49,
+    "protein": 11.1,
+    "carbohydrates": 0.7,
+    "fat": 0.2
+  },
+  {
+    "name": "Ei, heelei rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 144,
+    "protein": 12.5,
+    "carbohydrates": 1.1,
+    "fat": 10
+  },
+  {
+    "name": "Ei, heelei, gebakken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 235,
+    "protein": 13.5,
+    "carbohydrates": 1,
+    "fat": 20
+  },
+  {
+    "name": "Ei, heelei, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 158,
+    "protein": 12.9,
+    "carbohydrates": 1.5,
+    "fat": 11.2
+  },
+  {
+    "name": "Ei, omelet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 144,
+    "protein": 9.4,
+    "carbohydrates": 2.2,
+    "fat": 11.1
+  },
+  {
+    "name": "Eierkoek",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 327,
+    "protein": 7.5,
+    "carbohydrates": 65,
+    "fat": 3.5
+  },
+  {
+    "name": "Eiersalade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 239,
+    "protein": 8,
+    "carbohydrates": 7,
+    "fat": 20
+  },
+  {
+    "name": "Eipoeder",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 570,
+    "protein": 46,
+    "carbohydrates": 3,
+    "fat": 42
+  },
+  {
+    "name": "Emmenthaler, kaas 45+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 379,
+    "protein": 28.7,
+    "carbohydrates": 0,
+    "fat": 29.7
+  },
+  {
+    "name": "Energiedrank, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 81,
+    "protein": 0,
+    "carbohydrates": 20,
+    "fat": 0
+  },
+  {
+    "name": "Energiereep, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 419,
+    "protein": 4.9,
+    "carbohydrates": 72,
+    "fat": 11.5
+  },
+  {
+    "name": "Entrecôte, kalf",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 180,
+    "protein": 21.5,
+    "carbohydrates": 0.2,
+    "fat": 10.5
+  },
+  {
+    "name": "Entrecôte, kalf bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 199,
+    "protein": 26.5,
+    "carbohydrates": 1,
+    "fat": 10
+  },
+  {
+    "name": "Entrecôte, rund",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 146,
+    "protein": 22.8,
+    "carbohydrates": 0.2,
+    "fat": 6
+  },
+  {
+    "name": "Entrecôte, runder bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 199,
+    "protein": 26,
+    "carbohydrates": 1,
+    "fat": 10.2
+  },
+  {
+    "name": "Erwten, gedroogd, groene, split",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 326,
+    "protein": 22.5,
+    "carbohydrates": 45,
+    "fat": 1.6
+  },
+  {
+    "name": "Erwten, groen, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 106,
+    "protein": 6.6,
+    "carbohydrates": 16.5,
+    "fat": 0.5
+  },
+  {
+    "name": "Escargots",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 80,
+    "protein": 16,
+    "carbohydrates": 1.6,
+    "fat": 1
+  },
+  {
+    "name": "Falafel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 275,
+    "protein": 9.1,
+    "carbohydrates": 27,
+    "fat": 12.5
+  },
+  {
+    "name": "Fazant",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 229,
+    "protein": 30.5,
+    "carbohydrates": 0,
+    "fat": 12
+  },
+  {
+    "name": "Fètakaas, geitenkaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 252,
+    "protein": 14.2,
+    "carbohydrates": 1.2,
+    "fat": 21.5
+  },
+  {
+    "name": "Fijngehakt, vegetarisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 233,
+    "protein": 28,
+    "carbohydrates": 10.2,
+    "fat": 8.5
+  },
+  {
+    "name": "Filet Américain",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 146,
+    "protein": 18.2,
+    "carbohydrates": 1.8,
+    "fat": 7.4
+  },
+  {
+    "name": "Filetlap, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 144,
+    "protein": 22.7,
+    "carbohydrates": 0,
+    "fat": 5.9
+  },
+  {
+    "name": "Filodeeg",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 299,
+    "protein": 7.5,
+    "carbohydrates": 53,
+    "fat": 6
+  },
+  {
+    "name": "Forel, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 132,
+    "protein": 22.1,
+    "carbohydrates": 0,
+    "fat": 4.8
+  },
+  {
+    "name": "Forel, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 126,
+    "protein": 18.4,
+    "carbohydrates": 0,
+    "fat": 5.8
+  },
+  {
+    "name": "Framboos",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 48,
+    "protein": 1.2,
+    "carbohydrates": 7.5,
+    "fat": 0.5
+  },
+  {
+    "name": "Frankfurterworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 305,
+    "protein": 11.5,
+    "carbohydrates": 0.7,
+    "fat": 29
+  },
+  {
+    "name": "Fricandeau, kalf",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 104,
+    "protein": 23,
+    "carbohydrates": 0,
+    "fat": 1.3
+  },
+  {
+    "name": "Fricandeau, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 124,
+    "protein": 23,
+    "carbohydrates": 0.1,
+    "fat": 3.5
+  },
+  {
+    "name": "Fricandeau, varken bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 152,
+    "protein": 31.2,
+    "carbohydrates": 0,
+    "fat": 2.9
+  },
+  {
+    "name": "Fricandeau, varken gebraden",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 128,
+    "protein": 21,
+    "carbohydrates": 2.4,
+    "fat": 3.8
+  },
+  {
+    "name": "Fricandel, gefrituurd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 315,
+    "protein": 16,
+    "carbohydrates": 9.5,
+    "fat": 24
+  },
+  {
+    "name": "Frisdrank, algemeen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 42,
+    "protein": 0,
+    "carbohydrates": 10.5,
+    "fat": 0
+  },
+  {
+    "name": "Frisdrank, light",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 0,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Frites, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 327,
+    "protein": 4.5,
+    "carbohydrates": 40,
+    "fat": 16
+  },
+  {
+    "name": "Frites, oven",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 307,
+    "protein": 5.5,
+    "carbohydrates": 46,
+    "fat": 10.5
+  },
+  {
+    "name": "Frites, sticks",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 515,
+    "protein": 6.5,
+    "carbohydrates": 48.5,
+    "fat": 31.5
+  },
+  {
+    "name": "Frites, voorgebakken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 142,
+    "protein": 3,
+    "carbohydrates": 23.5,
+    "fat": 4
+  },
+  {
+    "name": "Fritessaus, 25 % olie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 282,
+    "protein": 1,
+    "carbohydrates": 12,
+    "fat": 26
+  },
+  {
+    "name": "Fritessaus, 35 % olie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 370,
+    "protein": 1,
+    "carbohydrates": 12,
+    "fat": 36
+  },
+  {
+    "name": "Frituurvet, plantaardig",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 884,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 100
+  },
+  {
+    "name": "Frituurvet, vast",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 884,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 100
+  },
+  {
+    "name": "Fromage frais 50+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 265,
+    "protein": 13.5,
+    "carbohydrates": 0.5,
+    "fat": 23.5
+  },
+  {
+    "name": "Fromage frais 60+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 326,
+    "protein": 11.3,
+    "carbohydrates": 0.5,
+    "fat": 31.5
+  },
+  {
+    "name": "Gamba",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 97,
+    "protein": 20.5,
+    "carbohydrates": 0.2,
+    "fat": 1.5
+  },
+  {
+    "name": "Gans, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 278,
+    "protein": 30,
+    "carbohydrates": 0,
+    "fat": 17.8
+  },
+  {
+    "name": "Gans, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 340,
+    "protein": 15.7,
+    "carbohydrates": 0.5,
+    "fat": 31
+  },
+  {
+    "name": "Ganzelever, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 133,
+    "protein": 16.4,
+    "carbohydrates": 6.3,
+    "fat": 4.3
+  },
+  {
+    "name": "Garnaal, Hollandse",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 90,
+    "protein": 18,
+    "carbohydrates": 0,
+    "fat": 2
+  },
+  {
+    "name": "Garnaal, Noordzee, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 91,
+    "protein": 18.5,
+    "carbohydrates": 0,
+    "fat": 1.9
+  },
+  {
+    "name": "Gebraden gehakt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 302,
+    "protein": 14.5,
+    "carbohydrates": 1.6,
+    "fat": 26.8
+  },
+  {
+    "name": "Gecondenseerde melk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 131,
+    "protein": 6.5,
+    "carbohydrates": 9.5,
+    "fat": 7.5
+  },
+  {
+    "name": "Gehakt, gevogelte",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 136,
+    "protein": 20.2,
+    "carbohydrates": 0,
+    "fat": 6.1
+  },
+  {
+    "name": "Gehakt, half om half",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 252,
+    "protein": 17.5,
+    "carbohydrates": 0,
+    "fat": 20.6
+  },
+  {
+    "name": "Gehakt, kalf",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 148,
+    "protein": 19,
+    "carbohydrates": 0,
+    "fat": 8
+  },
+  {
+    "name": "Gehakt, lam",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 192,
+    "protein": 19.3,
+    "carbohydrates": 0,
+    "fat": 12.9
+  },
+  {
+    "name": "Gehakt, rund",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 209,
+    "protein": 19.1,
+    "carbohydrates": 0.8,
+    "fat": 14.6
+  },
+  {
+    "name": "Gehakt, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 208,
+    "protein": 18.8,
+    "carbohydrates": 2,
+    "fat": 14
+  },
+  {
+    "name": "Gehaktbal, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 372,
+    "protein": 15,
+    "carbohydrates": 11.5,
+    "fat": 30
+  },
+  {
+    "name": "Geitenkaas, halfzacht",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 264,
+    "protein": 14.2,
+    "carbohydrates": 4,
+    "fat": 21.5
+  },
+  {
+    "name": "Geitenkaas, hard",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 400,
+    "protein": 24.5,
+    "carbohydrates": 0.2,
+    "fat": 33.5
+  },
+  {
+    "name": "Geitenkaas, zacht",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 205,
+    "protein": 12,
+    "carbohydrates": 1.1,
+    "fat": 17.3
+  },
+  {
+    "name": "Geitenmelk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 64,
+    "protein": 3.8,
+    "carbohydrates": 4.5,
+    "fat": 3.8
+  },
+  {
+    "name": "Geitenvlees",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 150,
+    "protein": 19.5,
+    "carbohydrates": 0,
+    "fat": 8.1
+  },
+  {
+    "name": "Gekookte worst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 320,
+    "protein": 13.2,
+    "carbohydrates": 2.5,
+    "fat": 29.1
+  },
+  {
+    "name": "Gelatine",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 366,
+    "protein": 90,
+    "carbohydrates": 0,
+    "fat": 0.1
+  },
+  {
+    "name": "Gelatinepudding",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 60,
+    "protein": 1.5,
+    "carbohydrates": 13.5,
+    "fat": 0
+  },
+  {
+    "name": "Gember op siroop",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 289,
+    "protein": 0,
+    "carbohydrates": 70,
+    "fat": 0
+  },
+  {
+    "name": "Gemberwortel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 62,
+    "protein": 1.2,
+    "carbohydrates": 11.5,
+    "fat": 1
+  },
+  {
+    "name": "Gerst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 333,
+    "protein": 11,
+    "carbohydrates": 59.5,
+    "fat": 2.1
+  },
+  {
+    "name": "Gerstemeel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 301,
+    "protein": 11,
+    "carbohydrates": 58,
+    "fat": 2
+  },
+  {
+    "name": "Gerstvlokken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 386,
+    "protein": 9.1,
+    "carbohydrates": 77,
+    "fat": 2
+  },
+  {
+    "name": "Gevulde koek",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 461,
+    "protein": 5.5,
+    "carbohydrates": 58,
+    "fat": 22.5
+  },
+  {
+    "name": "Gevulde speculaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 473,
+    "protein": 7.5,
+    "carbohydrates": 50,
+    "fat": 26.5
+  },
+  {
+    "name": "Gierst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 327,
+    "protein": 10.6,
+    "carbohydrates": 60,
+    "fat": 3.9
+  },
+  {
+    "name": "Gierst, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 102,
+    "protein": 3.5,
+    "carbohydrates": 18.6,
+    "fat": 1.2
+  },
+  {
+    "name": "Gin, 37 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 210,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Ginger ale",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 15,
+    "protein": 0,
+    "carbohydrates": 3.8,
+    "fat": 0
+  },
+  {
+    "name": "Gist, Bakker's",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 88,
+    "protein": 16.5,
+    "carbohydrates": 1,
+    "fat": 0.5
+  },
+  {
+    "name": "Gist, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 406,
+    "protein": 47.9,
+    "carbohydrates": 34.5,
+    "fat": 4.2
+  },
+  {
+    "name": "Gistextract",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 236,
+    "protein": 42,
+    "carbohydrates": 14,
+    "fat": 0.4
+  },
+  {
+    "name": "Gorgonzola",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 354,
+    "protein": 19.4,
+    "carbohydrates": 0,
+    "fat": 31.2
+  },
+  {
+    "name": "Goudse kaas 48+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 390,
+    "protein": 25.5,
+    "carbohydrates": 0,
+    "fat": 32.5
+  },
+  {
+    "name": "Goulash, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 118,
+    "protein": 9.8,
+    "carbohydrates": 1.7,
+    "fat": 8
+  },
+  {
+    "name": "Granaatappel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 85,
+    "protein": 1,
+    "carbohydrates": 17.5,
+    "fat": 0.7
+  },
+  {
+    "name": "Granaatappelsap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 45,
+    "protein": 0.2,
+    "carbohydrates": 10.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Grapefruit",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 45,
+    "protein": 0.6,
+    "carbohydrates": 9.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Grapefruitsap, gezoet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 48,
+    "protein": 0.5,
+    "carbohydrates": 11.3,
+    "fat": 0.1
+  },
+  {
+    "name": "Grapefruitsap, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 37,
+    "protein": 0.5,
+    "carbohydrates": 8.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Griesmeel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 343,
+    "protein": 10.3,
+    "carbohydrates": 70,
+    "fat": 0.8
+  },
+  {
+    "name": "Griesmeelpap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 103,
+    "protein": 4,
+    "carbohydrates": 15,
+    "fat": 3
+  },
+  {
+    "name": "Groene kool, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 30,
+    "protein": 1.2,
+    "carbohydrates": 2.8,
+    "fat": 1
+  },
+  {
+    "name": "Groene kool, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 46,
+    "protein": 4.3,
+    "carbohydrates": 3.2,
+    "fat": 0.9
+  },
+  {
+    "name": "Groenteburger, vegetarisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 139,
+    "protein": 9,
+    "carbohydrates": 11,
+    "fat": 6
+  },
+  {
+    "name": "Groentespread, komkommer",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 160,
+    "protein": 1.4,
+    "carbohydrates": 13.8,
+    "fat": 11.2
+  },
+  {
+    "name": "Groentespread, naturel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 205,
+    "protein": 2.6,
+    "carbohydrates": 13.8,
+    "fat": 14.8
+  },
+  {
+    "name": "Gruyère kaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 411,
+    "protein": 29.5,
+    "carbohydrates": 1,
+    "fat": 32.5
+  },
+  {
+    "name": "Guave",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 46,
+    "protein": 0.9,
+    "carbohydrates": 7.5,
+    "fat": 0.5
+  },
+  {
+    "name": "Haaienolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 879,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99.5
+  },
+  {
+    "name": "Haas, wild",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 114,
+    "protein": 21.8,
+    "carbohydrates": 0,
+    "fat": 3
+  },
+  {
+    "name": "Haaskarbonade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 150,
+    "protein": 22.6,
+    "carbohydrates": 0,
+    "fat": 6.7
+  },
+  {
+    "name": "Haaskarbonade, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 212,
+    "protein": 28,
+    "carbohydrates": 0.4,
+    "fat": 11
+  },
+  {
+    "name": "Hacheevlees, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 413,
+    "protein": 25,
+    "carbohydrates": 0.5,
+    "fat": 35
+  },
+  {
+    "name": "Halskarbonade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 195,
+    "protein": 19.4,
+    "carbohydrates": 0,
+    "fat": 13.2
+  },
+  {
+    "name": "Halskarbonade, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 275,
+    "protein": 27.5,
+    "carbohydrates": 0,
+    "fat": 18.5
+  },
+  {
+    "name": "Halvarine, 25 % vet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 255,
+    "protein": 2.5,
+    "carbohydrates": 6,
+    "fat": 25
+  },
+  {
+    "name": "Halvarine, 40 % vet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 361,
+    "protein": 1.5,
+    "carbohydrates": 0.5,
+    "fat": 40
+  },
+  {
+    "name": "Ham, rauwe",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 201,
+    "protein": 21.5,
+    "carbohydrates": 1,
+    "fat": 12.5
+  },
+  {
+    "name": "Hamburger, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 272,
+    "protein": 21,
+    "carbohydrates": 2.5,
+    "fat": 20
+  },
+  {
+    "name": "Hamburger, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 229,
+    "protein": 18,
+    "carbohydrates": 3.8,
+    "fat": 16
+  },
+  {
+    "name": "Hamburger, vegetarisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 168,
+    "protein": 16,
+    "carbohydrates": 7,
+    "fat": 8
+  },
+  {
+    "name": "Hamlappen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 129,
+    "protein": 21,
+    "carbohydrates": 0,
+    "fat": 5
+  },
+  {
+    "name": "Hangop",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 78,
+    "protein": 9.1,
+    "carbohydrates": 4.3,
+    "fat": 2.7
+  },
+  {
+    "name": "Haricots verts, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 44,
+    "protein": 2.4,
+    "carbohydrates": 6.1,
+    "fat": 0.3
+  },
+  {
+    "name": "Haring",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 216,
+    "protein": 18,
+    "carbohydrates": 0.5,
+    "fat": 16
+  },
+  {
+    "name": "Haring in tomatensaus",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 164,
+    "protein": 14.8,
+    "carbohydrates": 2.8,
+    "fat": 10.5
+  },
+  {
+    "name": "Haring, gerookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 236,
+    "protein": 22.1,
+    "carbohydrates": 0,
+    "fat": 16.6
+  },
+  {
+    "name": "Haring, gezouten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 183,
+    "protein": 18,
+    "carbohydrates": 1,
+    "fat": 12
+  },
+  {
+    "name": "Haring, in zuur, glas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 208,
+    "protein": 16,
+    "carbohydrates": 0.5,
+    "fat": 16
+  },
+  {
+    "name": "Haring, maatjes",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 165,
+    "protein": 19,
+    "carbohydrates": 0.8,
+    "fat": 9.7
+  },
+  {
+    "name": "Hart, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 100,
+    "protein": 17,
+    "carbohydrates": 0,
+    "fat": 3.5
+  },
+  {
+    "name": "Hausmacherleverworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 267,
+    "protein": 15.4,
+    "carbohydrates": 5.2,
+    "fat": 20.8
+  },
+  {
+    "name": "Haver",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 374,
+    "protein": 12.6,
+    "carbohydrates": 61.5,
+    "fat": 7.1
+  },
+  {
+    "name": "Haverkoek",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 353,
+    "protein": 8.3,
+    "carbohydrates": 55,
+    "fat": 10.2
+  },
+  {
+    "name": "Havermeel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 390,
+    "protein": 14.9,
+    "carbohydrates": 62,
+    "fat": 7.2
+  },
+  {
+    "name": "Havermout",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 380,
+    "protein": 13.1,
+    "carbohydrates": 62,
+    "fat": 7
+  },
+  {
+    "name": "Havermoutpap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 76,
+    "protein": 3.5,
+    "carbohydrates": 9.5,
+    "fat": 2.5
+  },
+  {
+    "name": "Havervlokken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 381,
+    "protein": 13.5,
+    "carbohydrates": 62,
+    "fat": 7
+  },
+  {
+    "name": "Hazelnootolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 883,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 100
+  },
+  {
+    "name": "Hazelnoten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 667,
+    "protein": 14.2,
+    "carbohydrates": 10.6,
+    "fat": 62.5
+  },
+  { "name": "Heek", "baseAmount": 100, "metric": "gram", "kcal": 78, "protein": 17.3, "carbohydrates": 0, "fat": 0.9 },
+  {
+    "name": "Heilbot, witte",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 105,
+    "protein": 20.5,
+    "carbohydrates": 0,
+    "fat": 2.5
+  },
+  {
+    "name": "Hennepzaad",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 600,
+    "protein": 33.2,
+    "carbohydrates": 5.2,
+    "fat": 47.5
+  },
+  {
+    "name": "Hersenen, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 122,
+    "protein": 10.6,
+    "carbohydrates": 0,
+    "fat": 9
+  },
+  { "name": "Hert", "baseAmount": 100, "metric": "gram", "kcal": 114, "protein": 20.5, "carbohydrates": 0, "fat": 3.5 },
+  {
+    "name": "Hollandaisesaus",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 98,
+    "protein": 1.8,
+    "carbohydrates": 5.4,
+    "fat": 7.8
+  },
+  {
+    "name": "Honing",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 308,
+    "protein": 0.4,
+    "carbohydrates": 75.5,
+    "fat": 0
+  },
+  {
+    "name": "Hoofdkaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 193,
+    "protein": 22.5,
+    "carbohydrates": 0.2,
+    "fat": 11.5
+  },
+  {
+    "name": "Hotdog",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 251,
+    "protein": 10.2,
+    "carbohydrates": 27,
+    "fat": 11.4
+  },
+  {
+    "name": "Hummus, biologisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 242,
+    "protein": 6.1,
+    "carbohydrates": 10.5,
+    "fat": 18
+  },
+  {
+    "name": "Hüttenkase (cottage)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 98,
+    "protein": 12.3,
+    "carbohydrates": 2.5,
+    "fat": 4.3
+  },
+  {
+    "name": "Huzarensalade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 170,
+    "protein": 6,
+    "carbohydrates": 12.5,
+    "fat": 10.5
+  },
+  {
+    "name": "IJs, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 196,
+    "protein": 3.9,
+    "carbohydrates": 21,
+    "fat": 10.8
+  },
+  {
+    "name": "IJs, roomijs, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 257,
+    "protein": 3.9,
+    "carbohydrates": 23.5,
+    "fat": 16.5
+  },
+  {
+    "name": "IJs, water gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 96,
+    "protein": 0.1,
+    "carbohydrates": 23.5,
+    "fat": 0.1
+  },
+  {
+    "name": "IJsbergsla",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 11,
+    "protein": 1.2,
+    "carbohydrates": 0.9,
+    "fat": 0.1
+  },
+  {
+    "name": "Inktvis",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 80,
+    "protein": 16.2,
+    "carbohydrates": 0,
+    "fat": 1.7
+  },
+  {
+    "name": "Inktvis, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 147,
+    "protein": 24.5,
+    "carbohydrates": 1,
+    "fat": 5
+  },
+  {
+    "name": "Inktvisringen, gefrituurd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 429,
+    "protein": 25,
+    "carbohydrates": 13.2,
+    "fat": 31.1
+  },
+  {
+    "name": "Jacobsschelpen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 72,
+    "protein": 15.5,
+    "carbohydrates": 2.2,
+    "fat": 0.1
+  },
+  {
+    "name": "Jägermeister, 34 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 299,
+    "protein": 0,
+    "carbohydrates": 15,
+    "fat": 0
+  },
+  {
+    "name": "Jam, aardbei, huishoud",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 247,
+    "protein": 0.4,
+    "carbohydrates": 60,
+    "fat": 0
+  },
+  {
+    "name": "Jam, halva",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 135,
+    "protein": 0,
+    "carbohydrates": 33,
+    "fat": 0
+  },
+  {
+    "name": "Jenever, bessen 16 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 184,
+    "protein": 0,
+    "carbohydrates": 18,
+    "fat": 0
+  },
+  {
+    "name": "Jenever, citroen 30 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 160,
+    "protein": 0,
+    "carbohydrates": 3,
+    "fat": 0
+  },
+  {
+    "name": "Jenever, jong, 28 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 196,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Jenever, oud, 28 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 200,
+    "protein": 0,
+    "carbohydrates": 1,
+    "fat": 0
+  },
+  {
+    "name": "Jus d'orange",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 47,
+    "protein": 0.7,
+    "carbohydrates": 10.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Kaas 10+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 193,
+    "protein": 33.5,
+    "carbohydrates": 0,
+    "fat": 6.5
+  },
+  {
+    "name": "Kaas 20+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 235,
+    "protein": 32,
+    "carbohydrates": 0,
+    "fat": 12
+  },
+  {
+    "name": "Kaas 30+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 253,
+    "protein": 26.5,
+    "carbohydrates": 0,
+    "fat": 16.5
+  },
+  {
+    "name": "Kaas 40+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 317,
+    "protein": 26.9,
+    "carbohydrates": 0,
+    "fat": 23.6
+  },
+  {
+    "name": "Kaas 45+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 364,
+    "protein": 25.5,
+    "carbohydrates": 0,
+    "fat": 29.5
+  },
+  {
+    "name": "Kaas 48+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 382,
+    "protein": 24.5,
+    "carbohydrates": 0,
+    "fat": 32
+  },
+  {
+    "name": "Kaas, komijn 48+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 373,
+    "protein": 23.5,
+    "carbohydrates": 0.1,
+    "fat": 31
+  },
+  {
+    "name": "Kaas, strooi",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 217,
+    "protein": 35,
+    "carbohydrates": 0,
+    "fat": 8.5
+  },
+  {
+    "name": "Kaasburger, vegetarisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 258,
+    "protein": 15.2,
+    "carbohydrates": 15.8,
+    "fat": 14.4
+  },
+  {
+    "name": "Kaassoufflé, gefrituurd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 403,
+    "protein": 7.6,
+    "carbohydrates": 32.6,
+    "fat": 27.2
+  },
+  {
+    "name": "Kaasspread/dip",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 315,
+    "protein": 18.2,
+    "carbohydrates": 9.5,
+    "fat": 23
+  },
+  {
+    "name": "Kabeljauw, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 72,
+    "protein": 16.4,
+    "carbohydrates": 0,
+    "fat": 0.7
+  },
+  {
+    "name": "Kabeljauwfilet, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 118,
+    "protein": 22,
+    "carbohydrates": 0.6,
+    "fat": 3
+  },
+  { "name": "Kaki", "baseAmount": 100, "metric": "gram", "kcal": 78, "protein": 0.5, "carbohydrates": 18.5, "fat": 0 },
+  {
+    "name": "Kalfsvlees, mager",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 104,
+    "protein": 22.4,
+    "carbohydrates": 0,
+    "fat": 1.6
+  },
+  {
+    "name": "Kalfsvlees, vet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 170,
+    "protein": 20,
+    "carbohydrates": 0,
+    "fat": 10.1
+  },
+  {
+    "name": "Kalkoen, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 141,
+    "protein": 21.8,
+    "carbohydrates": 0,
+    "fat": 6
+  },
+  {
+    "name": "Kalkoenborst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 106,
+    "protein": 22.6,
+    "carbohydrates": 0.6,
+    "fat": 1.4
+  },
+  {
+    "name": "Kalkoenbout",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 115,
+    "protein": 20.5,
+    "carbohydrates": 0,
+    "fat": 3.6
+  },
+  {
+    "name": "Kaneel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 314,
+    "protein": 3.8,
+    "carbohydrates": 55,
+    "fat": 3.2
+  },
+  {
+    "name": "Kapucijners, blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 104,
+    "protein": 6.5,
+    "carbohydrates": 14,
+    "fat": 1
+  },
+  {
+    "name": "Karnemelk, gesuikerd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 53,
+    "protein": 2.3,
+    "carbohydrates": 10.2,
+    "fat": 0.3
+  },
+  {
+    "name": "Karnemelk, ongesuikerd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 32,
+    "protein": 2.5,
+    "carbohydrates": 4.5,
+    "fat": 0.4
+  },
+  {
+    "name": "Karnemelksepap, gort",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 49,
+    "protein": 3.5,
+    "carbohydrates": 7.5,
+    "fat": 0.5
+  },
+  { "name": "Karper", "baseAmount": 100, "metric": "gram", "kcal": 115, "protein": 18, "carbohydrates": 0, "fat": 4.8 },
+  {
+    "name": "Kastanjes, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 188,
+    "protein": 4,
+    "carbohydrates": 35,
+    "fat": 2
+  },
+  { "name": "Kauwgom", "baseAmount": 100, "metric": "gram", "kcal": 284, "protein": 0, "carbohydrates": 70, "fat": 0 },
+  {
+    "name": "Kauwgom, suikervrij",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 0,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Kaviaar",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 273,
+    "protein": 26.1,
+    "carbohydrates": 0,
+    "fat": 19
+  },
+  {
+    "name": "Kaviaar, imitatie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 120,
+    "protein": 15.5,
+    "carbohydrates": 0,
+    "fat": 6.5
+  },
+  {
+    "name": "Kefir",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 63,
+    "protein": 3.3,
+    "carbohydrates": 4.5,
+    "fat": 3.5
+  },
+  {
+    "name": "Kernhemmer, kaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 423,
+    "protein": 19.5,
+    "carbohydrates": 0,
+    "fat": 39
+  },
+  {
+    "name": "Kerrie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 325,
+    "protein": 12.5,
+    "carbohydrates": 36,
+    "fat": 12
+  },
+  {
+    "name": "Kersen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 54,
+    "protein": 0.5,
+    "carbohydrates": 12,
+    "fat": 0.1
+  },
+  {
+    "name": "Kervel, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 305,
+    "protein": 23.5,
+    "carbohydrates": 39,
+    "fat": 3.5
+  },
+  {
+    "name": "Kervel, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 75,
+    "protein": 4,
+    "carbohydrates": 12,
+    "fat": 1
+  },
+  {
+    "name": "Ketjap, zoet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 266,
+    "protein": 3.5,
+    "carbohydrates": 62,
+    "fat": 0.1
+  },
+  {
+    "name": "Ketjap, zout",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 128,
+    "protein": 11.5,
+    "carbohydrates": 20,
+    "fat": 0.1
+  },
+  {
+    "name": "Keukenstroop",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 304,
+    "protein": 0,
+    "carbohydrates": 75,
+    "fat": 0
+  },
+  {
+    "name": "Kibbeling, gebakken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 268,
+    "protein": 24.5,
+    "carbohydrates": 12.1,
+    "fat": 13.5
+  },
+  {
+    "name": "Kidneybonen (vers)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 126,
+    "protein": 7.8,
+    "carbohydrates": 21.5,
+    "fat": 0.5
+  },
+  {
+    "name": "Kievitsbonen, borlotti, gedr.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 265,
+    "protein": 20,
+    "carbohydrates": 43,
+    "fat": 1.5
+  },
+  {
+    "name": "Kikkerbilletjes",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 69,
+    "protein": 16.4,
+    "carbohydrates": 0,
+    "fat": 0.3
+  },
+  {
+    "name": "Kikkererwten, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 119,
+    "protein": 7.5,
+    "carbohydrates": 13,
+    "fat": 3
+  },
+  {
+    "name": "Kikkererwten, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 325,
+    "protein": 20,
+    "carbohydrates": 48,
+    "fat": 3.5
+  },
+  {
+    "name": "Kikkererwten, groen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 155,
+    "protein": 7.5,
+    "carbohydrates": 22,
+    "fat": 3
+  },
+  {
+    "name": "Kip met vel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 165,
+    "protein": 19.3,
+    "carbohydrates": 0,
+    "fat": 9.9
+  },
+  {
+    "name": "Kip zonder vel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 138,
+    "protein": 20.5,
+    "carbohydrates": 0,
+    "fat": 6.3
+  },
+  {
+    "name": "Kip, drumsticks, met vel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 150,
+    "protein": 18.9,
+    "carbohydrates": 0,
+    "fat": 8.2
+  },
+  {
+    "name": "Kip, rollade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 176,
+    "protein": 18,
+    "carbohydrates": 1.5,
+    "fat": 11
+  },
+  {
+    "name": "Kip, vleugel met vel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 161,
+    "protein": 24.3,
+    "carbohydrates": 0,
+    "fat": 7.1
+  },
+  {
+    "name": "Kipfilet, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 157,
+    "protein": 30,
+    "carbohydrates": 0,
+    "fat": 4
+  },
+  {
+    "name": "Kippenborst, kipfilet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 100,
+    "protein": 22.8,
+    "carbohydrates": 0,
+    "fat": 0.9
+  },
+  {
+    "name": "Kippenbout",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 103,
+    "protein": 20.6,
+    "carbohydrates": 0,
+    "fat": 2.3
+  },
+  {
+    "name": "Kippendij met vel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 213,
+    "protein": 16,
+    "carbohydrates": 0.2,
+    "fat": 16.5
+  },
+  {
+    "name": "Kippenei",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 142,
+    "protein": 13.3,
+    "carbohydrates": 0,
+    "fat": 10
+  },
+  {
+    "name": "Kippenlever",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 132,
+    "protein": 22.5,
+    "carbohydrates": 1,
+    "fat": 4.2
+  },
+  {
+    "name": "Kipsaté met pindasaus",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 229,
+    "protein": 15,
+    "carbohydrates": 12,
+    "fat": 13.5
+  },
+  { "name": "Kiwi", "baseAmount": 100, "metric": "gram", "kcal": 48, "protein": 1, "carbohydrates": 10.3, "fat": 0.2 },
+  {
+    "name": "Klapstuk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 165,
+    "protein": 20.4,
+    "carbohydrates": 0,
+    "fat": 9.4
+  },
+  {
+    "name": "Knäckebröd met vezels, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 352,
+    "protein": 13,
+    "carbohydrates": 45,
+    "fat": 8
+  },
+  {
+    "name": "Knäckebröd, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 388,
+    "protein": 12,
+    "carbohydrates": 65,
+    "fat": 7.5
+  },
+  {
+    "name": "Knäckebröd, light",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 341,
+    "protein": 10,
+    "carbohydrates": 64,
+    "fat": 1.2
+  },
+  {
+    "name": "Knäckebröd, maanzaad",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 401,
+    "protein": 11,
+    "carbohydrates": 66,
+    "fat": 8.5
+  },
+  {
+    "name": "Knäckebröd, Sandwich, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 481,
+    "protein": 11.5,
+    "carbohydrates": 48,
+    "fat": 26
+  },
+  {
+    "name": "Knäckebröd, Sesam",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 413,
+    "protein": 12,
+    "carbohydrates": 65,
+    "fat": 10
+  },
+  {
+    "name": "Knäckebröd, volkoren",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 348,
+    "protein": 9.5,
+    "carbohydrates": 65.5,
+    "fat": 1.5
+  },
+  {
+    "name": "Knakworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 293,
+    "protein": 10.9,
+    "carbohydrates": 2.5,
+    "fat": 27.1
+  },
+  {
+    "name": "Knoflook, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 140,
+    "protein": 6,
+    "carbohydrates": 28,
+    "fat": 0.1
+  },
+  {
+    "name": "Knolselderij, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 32,
+    "protein": 2,
+    "carbohydrates": 5,
+    "fat": 0
+  },
+  {
+    "name": "Knolselderij, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 31,
+    "protein": 2,
+    "carbohydrates": 5,
+    "fat": 0.4
+  },
+  {
+    "name": "Koekje, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 421,
+    "protein": 8.5,
+    "carbohydrates": 78,
+    "fat": 7.5
+  },
+  {
+    "name": "Koffie met melk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 10,
+    "protein": 0.7,
+    "carbohydrates": 1.9,
+    "fat": 0.1
+  },
+  {
+    "name": "Koffie, melk en suiker",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 22,
+    "protein": 0.7,
+    "carbohydrates": 4.6,
+    "fat": 0.1
+  },
+  {
+    "name": "Koffie, zwart",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 0,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Koffiecreamer",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 550,
+    "protein": 4.2,
+    "carbohydrates": 55,
+    "fat": 35
+  },
+  {
+    "name": "Koffiekoek",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 399,
+    "protein": 7.9,
+    "carbohydrates": 37,
+    "fat": 23.7
+  },
+  {
+    "name": "Koffiekoek met abrikozen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 278,
+    "protein": 5.2,
+    "carbohydrates": 35.3,
+    "fat": 11.8
+  },
+  {
+    "name": "Koffiekoek met chocolade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 382,
+    "protein": 7.1,
+    "carbohydrates": 30.1,
+    "fat": 25.9
+  },
+  {
+    "name": "Koffiekoek met rozijnen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 283,
+    "protein": 5.8,
+    "carbohydrates": 36.1,
+    "fat": 11
+  },
+  {
+    "name": "Koffiemelk, halfvol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 113,
+    "protein": 7.8,
+    "carbohydrates": 11,
+    "fat": 4.2
+  },
+  {
+    "name": "Koffiemelk, mager",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 79,
+    "protein": 8,
+    "carbohydrates": 11,
+    "fat": 0.2
+  },
+  {
+    "name": "Koffiemelk, vol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 149,
+    "protein": 8.2,
+    "carbohydrates": 10,
+    "fat": 8.5
+  },
+  {
+    "name": "Koffieroom",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 204,
+    "protein": 2.8,
+    "carbohydrates": 4,
+    "fat": 20
+  },
+  {
+    "name": "Köfte, rundergehakt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 252,
+    "protein": 26,
+    "carbohydrates": 8,
+    "fat": 13
+  },
+  {
+    "name": "Köfte, schapengehakt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 208,
+    "protein": 22,
+    "carbohydrates": 4,
+    "fat": 11.5
+  },
+  {
+    "name": "Kokkel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 64,
+    "protein": 15.5,
+    "carbohydrates": 0,
+    "fat": 0.1
+  },
+  {
+    "name": "Kokos, vers, stukjes",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 410,
+    "protein": 4,
+    "carbohydrates": 3,
+    "fat": 40
+  },
+  {
+    "name": "Kokosbrood",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 446,
+    "protein": 4.3,
+    "carbohydrates": 35,
+    "fat": 30
+  },
+  {
+    "name": "Kokoskoek, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 550,
+    "protein": 5.5,
+    "carbohydrates": 53,
+    "fat": 35
+  },
+  {
+    "name": "Kokosmakroon",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 448,
+    "protein": 4.6,
+    "carbohydrates": 57.6,
+    "fat": 20.4
+  },
+  {
+    "name": "Kokosnootmelk, blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 208,
+    "protein": 1.5,
+    "carbohydrates": 3,
+    "fat": 21.5
+  },
+  {
+    "name": "Kokosolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 878,
+    "protein": 0.8,
+    "carbohydrates": 0,
+    "fat": 99
+  },
+  {
+    "name": "Kokossap, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 21,
+    "protein": 0.7,
+    "carbohydrates": 3.7,
+    "fat": 0.2
+  },
+  {
+    "name": "Kokosvlees, geraspt, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 680,
+    "protein": 7,
+    "carbohydrates": 11,
+    "fat": 64.5
+  },
+  {
+    "name": "Koksroom, 20 % vet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 207,
+    "protein": 2.9,
+    "carbohydrates": 4.5,
+    "fat": 20.1
+  },
+  {
+    "name": "Komijn, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 425,
+    "protein": 18,
+    "carbohydrates": 34,
+    "fat": 22
+  },
+  {
+    "name": "Komijnzaad",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 356,
+    "protein": 19,
+    "carbohydrates": 36,
+    "fat": 15
+  },
+  {
+    "name": "Komkommer",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 14,
+    "protein": 0.6,
+    "carbohydrates": 2.2,
+    "fat": 0.2
+  },
+  {
+    "name": "Konijn, tam",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 173,
+    "protein": 21,
+    "carbohydrates": 0,
+    "fat": 10
+  },
+  {
+    "name": "Konijn, wild",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 133,
+    "protein": 22,
+    "carbohydrates": 0,
+    "fat": 5
+  },
+  { "name": "Koolraap", "baseAmount": 100, "metric": "gram", "kcal": 24, "protein": 1, "carbohydrates": 5, "fat": 0.2 },
+  { "name": "Koolrabi", "baseAmount": 100, "metric": "gram", "kcal": 29, "protein": 2, "carbohydrates": 4, "fat": 0 },
+  {
+    "name": "Koolvis, diepvries",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 76,
+    "protein": 18,
+    "carbohydrates": 0,
+    "fat": 0.4
+  },
+  {
+    "name": "Koolvis, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 80,
+    "protein": 17.2,
+    "carbohydrates": 0,
+    "fat": 1.2
+  },
+  {
+    "name": "Koolzaadolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 875,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99
+  },
+  {
+    "name": "Korhoen, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 183,
+    "protein": 31,
+    "carbohydrates": 0,
+    "fat": 6.5
+  },
+  {
+    "name": "Koriander, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 37,
+    "protein": 4,
+    "carbohydrates": 1,
+    "fat": 0
+  },
+  { "name": "Kousenband", "baseAmount": 100, "metric": "gram", "kcal": 42, "protein": 3, "carbohydrates": 7, "fat": 0 },
+  { "name": "Krab", "baseAmount": 100, "metric": "gram", "kcal": 85, "protein": 17, "carbohydrates": 1, "fat": 1.4 },
+  {
+    "name": "Krabbetjes, varken bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 258,
+    "protein": 18.3,
+    "carbohydrates": 0,
+    "fat": 20.8
+  },
+  {
+    "name": "Kreeft, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 82,
+    "protein": 16,
+    "carbohydrates": 0,
+    "fat": 2
+  },
+  { "name": "Krenten", "baseAmount": 100, "metric": "gram", "kcal": 329, "protein": 2, "carbohydrates": 75, "fat": 0 },
+  {
+    "name": "Krentenbrood/bol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 283,
+    "protein": 7.5,
+    "carbohydrates": 54,
+    "fat": 3.2
+  },
+  {
+    "name": "Kristalsuiker",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 406,
+    "protein": 0,
+    "carbohydrates": 100,
+    "fat": 0
+  },
+  {
+    "name": "Kroepoek, naturel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 502,
+    "protein": 4,
+    "carbohydrates": 65,
+    "fat": 25
+  },
+  {
+    "name": "Kroket, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 305,
+    "protein": 7.5,
+    "carbohydrates": 24,
+    "fat": 20
+  },
+  {
+    "name": "Kroket, vegetarisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 204,
+    "protein": 20.8,
+    "carbohydrates": 9.7,
+    "fat": 8.8
+  },
+  {
+    "name": "Kruidnagel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 427,
+    "protein": 6.2,
+    "carbohydrates": 51,
+    "fat": 20
+  },
+  {
+    "name": "Kruisbessen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 36,
+    "protein": 1,
+    "carbohydrates": 8,
+    "fat": 0
+  },
+  {
+    "name": "Kuikenrollade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 117,
+    "protein": 18,
+    "carbohydrates": 0.2,
+    "fat": 5
+  },
+  { "name": "Kuit", "baseAmount": 100, "metric": "gram", "kcal": 150, "protein": 26, "carbohydrates": 0, "fat": 5.1 },
+  { "name": "Kumkwat", "baseAmount": 100, "metric": "gram", "kcal": 71, "protein": 1, "carbohydrates": 16, "fat": 0 },
+  {
+    "name": "Kwark, halfvol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 100,
+    "protein": 12,
+    "carbohydrates": 3,
+    "fat": 4.5
+  },
+  {
+    "name": "Kwark, magere",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 53,
+    "protein": 9.9,
+    "carbohydrates": 3.5,
+    "fat": 0.5
+  },
+  {
+    "name": "Kwark, volle",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 130,
+    "protein": 7.8,
+    "carbohydrates": 4.3,
+    "fat": 9.1
+  },
+  {
+    "name": "Kwartel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 190,
+    "protein": 19.5,
+    "carbohydrates": 0.1,
+    "fat": 12.5
+  },
+  {
+    "name": "Kweepeer",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 69,
+    "protein": 0.5,
+    "carbohydrates": 15.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Kwetsen, pruim",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 60,
+    "protein": 0.8,
+    "carbohydrates": 12,
+    "fat": 0.6
+  },
+  {
+    "name": "Lamsbout",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 173,
+    "protein": 19.2,
+    "carbohydrates": 0,
+    "fat": 10.8
+  },
+  {
+    "name": "Lamskarbonade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 243,
+    "protein": 19.2,
+    "carbohydrates": 0,
+    "fat": 18.7
+  },
+  {
+    "name": "Lamsvlees, mager",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 190,
+    "protein": 20.8,
+    "carbohydrates": 0,
+    "fat": 12
+  },
+  {
+    "name": "Lamsvlees, vet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 281,
+    "protein": 15,
+    "carbohydrates": 0,
+    "fat": 25
+  },
+  {
+    "name": "Lamszadel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 253,
+    "protein": 18.6,
+    "carbohydrates": 0,
+    "fat": 20.2
+  },
+  {
+    "name": "Langoestine",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 85,
+    "protein": 17.2,
+    "carbohydrates": 1.3,
+    "fat": 1.1
+  },
+  {
+    "name": "Lasagne, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 146,
+    "protein": 6.8,
+    "carbohydrates": 13.6,
+    "fat": 6.9
+  },
+  {
+    "name": "Leerdammer, kaas 45+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 367,
+    "protein": 27.5,
+    "carbohydrates": 0,
+    "fat": 29
+  },
+  {
+    "name": "Lekkerbekje, gebakken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 235,
+    "protein": 23.5,
+    "carbohydrates": 2,
+    "fat": 15
+  },
+  {
+    "name": "Lenderollade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 126,
+    "protein": 22.5,
+    "carbohydrates": 0,
+    "fat": 4
+  },
+  { "name": "Leng", "baseAmount": 100, "metric": "gram", "kcal": 75, "protein": 18.4, "carbohydrates": 0, "fat": 0.2 },
+  {
+    "name": "Lever, kalf",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 109,
+    "protein": 17.7,
+    "carbohydrates": 2,
+    "fat": 3.3
+  },
+  {
+    "name": "Lever, lam",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 131,
+    "protein": 21,
+    "carbohydrates": 2.9,
+    "fat": 3.9
+  },
+  {
+    "name": "Lever, rund",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 123,
+    "protein": 20.7,
+    "carbohydrates": 2,
+    "fat": 3.6
+  },
+  {
+    "name": "Lever, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 132,
+    "protein": 22.2,
+    "carbohydrates": 2,
+    "fat": 3.9
+  },
+  {
+    "name": "Leverkaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 322,
+    "protein": 13.3,
+    "carbohydrates": 1.7,
+    "fat": 29.6
+  },
+  {
+    "name": "Leverpastei",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 314,
+    "protein": 14.2,
+    "carbohydrates": 1.7,
+    "fat": 28.3
+  },
+  {
+    "name": "Levertraan",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 881,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99.8
+  },
+  {
+    "name": "Leverworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 306,
+    "protein": 18.8,
+    "carbohydrates": 1.8,
+    "fat": 25.2
+  },
+  {
+    "name": "Lijnzaad",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 486,
+    "protein": 20,
+    "carbohydrates": 13.5,
+    "fat": 32.5
+  },
+  {
+    "name": "Lijnzaadolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 882,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99.8
+  },
+  {
+    "name": "Likeur < 15 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 205,
+    "protein": 0,
+    "carbohydrates": 30,
+    "fat": 0
+  },
+  {
+    "name": "Likeur > 25 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 355,
+    "protein": 0,
+    "carbohydrates": 30,
+    "fat": 0
+  },
+  {
+    "name": "Likeur, 15 - 25 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 246,
+    "protein": 0,
+    "carbohydrates": 30,
+    "fat": 0
+  },
+  {
+    "name": "Limabonen, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 137,
+    "protein": 8.2,
+    "carbohydrates": 21,
+    "fat": 0.5
+  },
+  {
+    "name": "Limabonen, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 363,
+    "protein": 21.5,
+    "carbohydrates": 58.6,
+    "fat": 0.7
+  },
+  {
+    "name": "Limburgse kaas 40+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 269,
+    "protein": 22.5,
+    "carbohydrates": 1.5,
+    "fat": 19.5
+  },
+  { "name": "Limoen", "baseAmount": 100, "metric": "gram", "kcal": 32, "protein": 0.5, "carbohydrates": 2, "fat": 2.5 },
+  {
+    "name": "Limonade, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 41,
+    "protein": 0,
+    "carbohydrates": 10,
+    "fat": 0
+  },
+  {
+    "name": "Limonade, light",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 7,
+    "protein": 0,
+    "carbohydrates": 1.8,
+    "fat": 0
+  },
+  {
+    "name": "Limonadesiroop",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 223,
+    "protein": 0,
+    "carbohydrates": 55,
+    "fat": 0
+  },
+  {
+    "name": "Linzen, bereid, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 117,
+    "protein": 10,
+    "carbohydrates": 15,
+    "fat": 0.7
+  },
+  {
+    "name": "Linzen, gedroogd, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 309,
+    "protein": 21,
+    "carbohydrates": 44.5,
+    "fat": 1.5
+  },
+  {
+    "name": "Loempia",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 207,
+    "protein": 8.5,
+    "carbohydrates": 20,
+    "fat": 10
+  },
+  {
+    "name": "Luncheonmeat, blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 334,
+    "protein": 13,
+    "carbohydrates": 4,
+    "fat": 30
+  },
+  {
+    "name": "Lychee",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 81,
+    "protein": 0.9,
+    "carbohydrates": 18,
+    "fat": 0.3
+  },
+  {
+    "name": "Maanzaad",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 511,
+    "protein": 20,
+    "carbohydrates": 4.2,
+    "fat": 41.5
+  },
+  {
+    "name": "Maaslander 48+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 374,
+    "protein": 24.7,
+    "carbohydrates": 0,
+    "fat": 31
+  },
+  {
+    "name": "Macadamianoten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 733,
+    "protein": 9,
+    "carbohydrates": 6.5,
+    "fat": 74.5
+  },
+  {
+    "name": "Macaroni, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 359,
+    "protein": 13.5,
+    "carbohydrates": 67,
+    "fat": 3
+  },
+  {
+    "name": "Macaroni, volkoren onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 336,
+    "protein": 11,
+    "carbohydrates": 62,
+    "fat": 2.2
+  },
+  {
+    "name": "Madeira, 18 - 20 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 156,
+    "protein": 0,
+    "carbohydrates": 10,
+    "fat": 0
+  },
+  {
+    "name": "Madeira, 20 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 165,
+    "protein": 0,
+    "carbohydrates": 10,
+    "fat": 0
+  },
+  {
+    "name": "Maïs, blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 121,
+    "protein": 3.5,
+    "carbohydrates": 22.5,
+    "fat": 1
+  },
+  {
+    "name": "Maïs, hele korrel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 354,
+    "protein": 9.2,
+    "carbohydrates": 65.5,
+    "fat": 3.8
+  },
+  {
+    "name": "Maïsburger, vegetarisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 193,
+    "protein": 10,
+    "carbohydrates": 20,
+    "fat": 7
+  },
+  {
+    "name": "Maïskiemolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 883,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 100
+  },
+  {
+    "name": "Maïskolf, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 127,
+    "protein": 3.4,
+    "carbohydrates": 23.1,
+    "fat": 2.1
+  },
+  {
+    "name": "Maïsmeel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 365,
+    "protein": 8.9,
+    "carbohydrates": 75,
+    "fat": 2.8
+  },
+  {
+    "name": "Maïsolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 883,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 100
+  },
+  {
+    "name": "Maïzena",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 370,
+    "protein": 0.3,
+    "carbohydrates": 90.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Majoraan, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 331,
+    "protein": 12.5,
+    "carbohydrates": 45,
+    "fat": 7.2
+  },
+  {
+    "name": "Makreel, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 244,
+    "protein": 24,
+    "carbohydrates": 0,
+    "fat": 16.7
+  },
+  {
+    "name": "Makreel, gerookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 282,
+    "protein": 21,
+    "carbohydrates": 0,
+    "fat": 26
+  },
+  {
+    "name": "Makreel, in water (blik)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 264,
+    "protein": 18,
+    "carbohydrates": 0,
+    "fat": 21.3
+  },
+  {
+    "name": "Makreel, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 258,
+    "protein": 18,
+    "carbohydrates": 0,
+    "fat": 20.7
+  },
+  {
+    "name": "Mandarijnen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 49,
+    "protein": 0.7,
+    "carbohydrates": 10.1,
+    "fat": 0.3
+  },
+  {
+    "name": "Mango",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 61,
+    "protein": 1.1,
+    "carbohydrates": 12.8,
+    "fat": 0.3
+  },
+  {
+    "name": "Mangosap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 41,
+    "protein": 0.1,
+    "carbohydrates": 9.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Margarine, 80% vet, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 711,
+    "protein": 0,
+    "carbohydrates": 1,
+    "fat": 80
+  },
+  {
+    "name": "Margarine, vloeibaar > 80 % vet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 725,
+    "protein": 0,
+    "carbohydrates": 0.2,
+    "fat": 82
+  },
+  {
+    "name": "Marmalade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 292,
+    "protein": 0.8,
+    "carbohydrates": 70,
+    "fat": 0.5
+  },
+  { "name": "Marmite", "baseAmount": 100, "metric": "gram", "kcal": 240, "protein": 43, "carbohydrates": 15, "fat": 0 },
+  {
+    "name": "Marsepein",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 456,
+    "protein": 8,
+    "carbohydrates": 50,
+    "fat": 25
+  },
+  {
+    "name": "Marshmellows",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 332,
+    "protein": 2,
+    "carbohydrates": 80,
+    "fat": 0
+  },
+  {
+    "name": "Mascarpone",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 408,
+    "protein": 5,
+    "carbohydrates": 4.2,
+    "fat": 42
+  },
+  {
+    "name": "Mayonaise",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 741,
+    "protein": 1.7,
+    "carbohydrates": 2.5,
+    "fat": 82
+  },
+  {
+    "name": "Melk, halfvol, lactosevrij",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 44,
+    "protein": 3.4,
+    "carbohydrates": 4.2,
+    "fat": 1.5
+  },
+  {
+    "name": "Melk, halfvolle",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 46,
+    "protein": 3.4,
+    "carbohydrates": 4.8,
+    "fat": 1.5
+  },
+  {
+    "name": "Melk, halfvolle Ca+",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 47,
+    "protein": 3.3,
+    "carbohydrates": 4.9,
+    "fat": 1.6
+  },
+  {
+    "name": "Melk, magere",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 37,
+    "protein": 3.9,
+    "carbohydrates": 5.1,
+    "fat": 0.1
+  },
+  {
+    "name": "Melk, volle",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 62,
+    "protein": 3.7,
+    "carbohydrates": 4.3,
+    "fat": 3.4
+  },
+  {
+    "name": "Melkdrank, halfvol gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 50,
+    "protein": 3.1,
+    "carbohydrates": 5,
+    "fat": 2
+  },
+  {
+    "name": "Melkpoeder, mager",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 349,
+    "protein": 35,
+    "carbohydrates": 50,
+    "fat": 1
+  },
+  {
+    "name": "Melkpoeder, volle",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 503,
+    "protein": 27,
+    "carbohydrates": 35,
+    "fat": 28.5
+  },
+  {
+    "name": "Meloen, suiker",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 34,
+    "protein": 0.9,
+    "carbohydrates": 7,
+    "fat": 0.3
+  },
+  {
+    "name": "Mierikswortel, Horse-radish",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 72,
+    "protein": 3.1,
+    "carbohydrates": 10.3,
+    "fat": 0.3
+  },
+  {
+    "name": "Milkshake, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 128,
+    "protein": 3.2,
+    "carbohydrates": 16.8,
+    "fat": 5.2
+  },
+  {
+    "name": "Mineraalwater",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 0,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Mini pizza, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 232,
+    "protein": 11.5,
+    "carbohydrates": 24.5,
+    "fat": 9.5
+  },
+  { "name": "Miso", "baseAmount": 100, "metric": "gram", "kcal": 139, "protein": 13, "carbohydrates": 6.5, "fat": 5.3 },
+  {
+    "name": "Moedermelk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 69,
+    "protein": 1.3,
+    "carbohydrates": 7,
+    "fat": 4
+  },
+  {
+    "name": "Moessaka, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 208,
+    "protein": 6.5,
+    "carbohydrates": 10,
+    "fat": 15
+  },
+  {
+    "name": "Molsla, paardebloemblad",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 56,
+    "protein": 2.7,
+    "carbohydrates": 9.2,
+    "fat": 0.7
+  },
+  {
+    "name": "Monterey kaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 374,
+    "protein": 24.6,
+    "carbohydrates": 0.7,
+    "fat": 30.7
+  },
+  { "name": "Morellen", "baseAmount": 100, "metric": "gram", "kcal": 52, "protein": 1, "carbohydrates": 11, "fat": 0 },
+  {
+    "name": "Mortadella",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 304,
+    "protein": 16.5,
+    "carbohydrates": 3.4,
+    "fat": 25.3
+  },
+  { "name": "Mosselen", "baseAmount": 100, "metric": "gram", "kcal": 74, "protein": 9.8, "carbohydrates": 2, "fat": 3 },
+  {
+    "name": "Mosselen in zuur",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 111,
+    "protein": 23.1,
+    "carbohydrates": 0,
+    "fat": 2
+  },
+  {
+    "name": "Mosselen, gebakken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 323,
+    "protein": 32,
+    "carbohydrates": 2,
+    "fat": 21
+  },
+  { "name": "Mosterd", "baseAmount": 100, "metric": "gram", "kcal": 85, "protein": 5, "carbohydrates": 7.4, "fat": 4 },
+  {
+    "name": "Mozzarella",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 246,
+    "protein": 20,
+    "carbohydrates": 4.6,
+    "fat": 16.5
+  },
+  {
+    "name": "Muesli, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 379,
+    "protein": 10,
+    "carbohydrates": 66.5,
+    "fat": 6
+  },
+  {
+    "name": "Muesli, krokant",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 478,
+    "protein": 7.4,
+    "carbohydrates": 60,
+    "fat": 22.2
+  },
+  {
+    "name": "Mueslireep, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 499,
+    "protein": 7.5,
+    "carbohydrates": 57.8,
+    "fat": 24.7
+  },
+  {
+    "name": "Muffin, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 327,
+    "protein": 8,
+    "carbohydrates": 48,
+    "fat": 11.3
+  },
+  {
+    "name": "Muscatel, 15 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 139,
+    "protein": 0,
+    "carbohydrates": 12,
+    "fat": 0
+  },
+  {
+    "name": "Nasi goreng, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 160,
+    "protein": 4.5,
+    "carbohydrates": 26,
+    "fat": 4
+  },
+  {
+    "name": "Nasibal, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 317,
+    "protein": 6.5,
+    "carbohydrates": 32.5,
+    "fat": 18
+  },
+  {
+    "name": "Nasivlees, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 129,
+    "protein": 21.5,
+    "carbohydrates": 0,
+    "fat": 4.8
+  },
+  {
+    "name": "Nectarines",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 36,
+    "protein": 1,
+    "carbohydrates": 7.5,
+    "fat": 0
+  },
+  {
+    "name": "Nier, rund",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 86,
+    "protein": 17,
+    "carbohydrates": 0,
+    "fat": 2
+  },
+  {
+    "name": "Nier, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 116,
+    "protein": 16.5,
+    "carbohydrates": 0.8,
+    "fat": 5.2
+  },
+  {
+    "name": "Noedels, Japanse, soba",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 368,
+    "protein": 14.5,
+    "carbohydrates": 74,
+    "fat": 1
+  },
+  {
+    "name": "Noedels, rijst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 361,
+    "protein": 5,
+    "carbohydrates": 82,
+    "fat": 0.6
+  },
+  {
+    "name": "Noga, nougat",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 447,
+    "protein": 6.5,
+    "carbohydrates": 76.5,
+    "fat": 12.8
+  },
+  {
+    "name": "Nootmuskaat",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 545,
+    "protein": 5.5,
+    "carbohydrates": 44,
+    "fat": 38
+  },
+  {
+    "name": "Oesters",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 70,
+    "protein": 10,
+    "carbohydrates": 3.4,
+    "fat": 1.8
+  },
+  {
+    "name": "Oesterzwam",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 29,
+    "protein": 3,
+    "carbohydrates": 1,
+    "fat": 0.4
+  },
+  { "name": "Okra", "baseAmount": 100, "metric": "gram", "kcal": 42, "protein": 2.2, "carbohydrates": 8, "fat": 0.2 },
+  {
+    "name": "Okra, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 34,
+    "protein": 1.5,
+    "carbohydrates": 6.2,
+    "fat": 0.2
+  },
+  {
+    "name": "Oliebol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 266,
+    "protein": 6.5,
+    "carbohydrates": 42,
+    "fat": 7.5
+  },
+  {
+    "name": "Olijfolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 883,
+    "protein": 0,
+    "carbohydrates": 0.2,
+    "fat": 99.8
+  },
+  {
+    "name": "Olijven",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 136,
+    "protein": 1.4,
+    "carbohydrates": 0.2,
+    "fat": 13.8
+  },
+  {
+    "name": "Ontbijtkoek",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 308,
+    "protein": 3.3,
+    "carbohydrates": 67.7,
+    "fat": 1.7
+  },
+  {
+    "name": "Ontbijtspek, gegrild",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 262,
+    "protein": 15.8,
+    "carbohydrates": 0.2,
+    "fat": 22.3
+  },
+  {
+    "name": "Ontbijtspek, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 399,
+    "protein": 15.2,
+    "carbohydrates": 0.4,
+    "fat": 37.9
+  },
+  {
+    "name": "Oregano, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 371,
+    "protein": 11.4,
+    "carbohydrates": 50,
+    "fat": 10.4
+  },
+  {
+    "name": "Ossenhaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 126,
+    "protein": 21.5,
+    "carbohydrates": 0,
+    "fat": 4.4
+  },
+  {
+    "name": "Ossenstaart",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 183,
+    "protein": 20.1,
+    "carbohydrates": 0,
+    "fat": 11.5
+  },
+  {
+    "name": "Ossenworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 170,
+    "protein": 18.2,
+    "carbohydrates": 1.4,
+    "fat": 10.1
+  },
+  {
+    "name": "Paardenmelk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 47,
+    "protein": 2.2,
+    "carbohydrates": 6.3,
+    "fat": 1.4
+  },
+  {
+    "name": "Paardenvlees, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 108,
+    "protein": 22.4,
+    "carbohydrates": 0,
+    "fat": 2
+  },
+  {
+    "name": "Paksoi, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 9,
+    "protein": 1,
+    "carbohydrates": 0.8,
+    "fat": 0
+  },
+  {
+    "name": "Paling, gerookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 244,
+    "protein": 17.8,
+    "carbohydrates": 0,
+    "fat": 19.5
+  },
+  {
+    "name": "Paling, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 200,
+    "protein": 14.5,
+    "carbohydrates": 0,
+    "fat": 16
+  },
+  {
+    "name": "Palingworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 438,
+    "protein": 13.6,
+    "carbohydrates": 4.2,
+    "fat": 41.5
+  },
+  {
+    "name": "Palmolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 874,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 98.9
+  },
+  {
+    "name": "Paneermeel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 383,
+    "protein": 13,
+    "carbohydrates": 73,
+    "fat": 3
+  },
+  {
+    "name": "Pannenkoek",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 210,
+    "protein": 7.6,
+    "carbohydrates": 30,
+    "fat": 6.5
+  },
+  {
+    "name": "Papaja",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 45,
+    "protein": 0.6,
+    "carbohydrates": 9.9,
+    "fat": 0.1
+  },
+  {
+    "name": "Paprika, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 26,
+    "protein": 1,
+    "carbohydrates": 4.5,
+    "fat": 0
+  },
+  {
+    "name": "Paprikapoeder",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 353,
+    "protein": 15,
+    "carbohydrates": 35,
+    "fat": 12.7
+  },
+  {
+    "name": "Paranoten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 679,
+    "protein": 14,
+    "carbohydrates": 4.5,
+    "fat": 67
+  },
+  {
+    "name": "Parmezaanse kaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 422,
+    "protein": 40,
+    "carbohydrates": 2,
+    "fat": 28.5
+  },
+  {
+    "name": "Passievrucht",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 120,
+    "protein": 2.3,
+    "carbohydrates": 22.3,
+    "fat": 0.7
+  },
+  {
+    "name": "Passievruchtensap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 47,
+    "protein": 0.8,
+    "carbohydrates": 10,
+    "fat": 0.4
+  },
+  {
+    "name": "Pasta, bereid, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 99,
+    "protein": 4.5,
+    "carbohydrates": 17.5,
+    "fat": 1
+  },
+  {
+    "name": "Pasta, onbereid, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 359,
+    "protein": 13.5,
+    "carbohydrates": 67,
+    "fat": 3
+  },
+  {
+    "name": "Pasta, volkoren, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 352,
+    "protein": 12,
+    "carbohydrates": 65,
+    "fat": 2.5
+  },
+  {
+    "name": "Pastinaak",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 89,
+    "protein": 1.5,
+    "carbohydrates": 17,
+    "fat": 0.5
+  },
+  {
+    "name": "Patates frites, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 327,
+    "protein": 4.5,
+    "carbohydrates": 40,
+    "fat": 16
+  },
+  {
+    "name": "Patates frites, oven bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 249,
+    "protein": 4.8,
+    "carbohydrates": 38,
+    "fat": 7.8
+  },
+  { "name": "Paté", "baseAmount": 100, "metric": "gram", "kcal": 374, "protein": 11, "carbohydrates": 4, "fat": 35.5 },
+  {
+    "name": "Patrijs",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 210,
+    "protein": 35,
+    "carbohydrates": 0.5,
+    "fat": 7.5
+  },
+  {
+    "name": "Pecannoten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 717,
+    "protein": 8.5,
+    "carbohydrates": 9.5,
+    "fat": 72
+  },
+  {
+    "name": "Pekelvlees",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 285,
+    "protein": 16,
+    "carbohydrates": 0,
+    "fat": 25
+  },
+  {
+    "name": "Peper, zwart/wit",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 309,
+    "protein": 11.3,
+    "carbohydrates": 50,
+    "fat": 2.6
+  },
+  {
+    "name": "Peperkoek",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 308,
+    "protein": 3.3,
+    "carbohydrates": 67.7,
+    "fat": 1.7
+  },
+  {
+    "name": "Pepermunt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 402,
+    "protein": 0,
+    "carbohydrates": 99,
+    "fat": 0
+  },
+  {
+    "name": "Pepperoni",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 448,
+    "protein": 20,
+    "carbohydrates": 3.3,
+    "fat": 40
+  },
+  { "name": "Peren", "baseAmount": 100, "metric": "gram", "kcal": 54, "protein": 0.5, "carbohydrates": 11, "fat": 0.3 },
+  {
+    "name": "Peren op siroop",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 76,
+    "protein": 0.3,
+    "carbohydrates": 17.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Perzik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 39,
+    "protein": 0.8,
+    "carbohydrates": 8.7,
+    "fat": 0.1
+  },
+  {
+    "name": "Peterselie, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 315,
+    "protein": 22,
+    "carbohydrates": 42,
+    "fat": 4
+  },
+  {
+    "name": "Peterselie, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 34,
+    "protein": 4.4,
+    "carbohydrates": 1.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Peultjes, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 47,
+    "protein": 2.5,
+    "carbohydrates": 7.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Piccalilly",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 42,
+    "protein": 1,
+    "carbohydrates": 6.5,
+    "fat": 1
+  },
+  {
+    "name": "Piccolo",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 312,
+    "protein": 12.5,
+    "carbohydrates": 58.7,
+    "fat": 2
+  },
+  {
+    "name": "Pijnboompitten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 635,
+    "protein": 27,
+    "carbohydrates": 13.5,
+    "fat": 52.5
+  },
+  {
+    "name": "Pindakaas, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 625,
+    "protein": 26,
+    "carbohydrates": 12,
+    "fat": 52
+  },
+  {
+    "name": "Pinda's, gezouten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 625,
+    "protein": 25.5,
+    "carbohydrates": 10,
+    "fat": 53
+  },
+  {
+    "name": "Pinda's, ongezouten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 623,
+    "protein": 26,
+    "carbohydrates": 11.2,
+    "fat": 52
+  },
+  {
+    "name": "Pistachenoten, geroosterd, gezouten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 606,
+    "protein": 17.5,
+    "carbohydrates": 8.4,
+    "fat": 55.5
+  },
+  {
+    "name": "Pistachenoten, ongezouten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 601,
+    "protein": 19.5,
+    "carbohydrates": 10.2,
+    "fat": 51.5
+  },
+  {
+    "name": "Pistolet, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 299,
+    "protein": 9.5,
+    "carbohydrates": 55,
+    "fat": 3.5
+  },
+  {
+    "name": "Pitabroodje",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 267,
+    "protein": 8.8,
+    "carbohydrates": 52,
+    "fat": 1.5
+  },
+  {
+    "name": "Pizza, bereid, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 203,
+    "protein": 9,
+    "carbohydrates": 25.7,
+    "fat": 6.8
+  },
+  {
+    "name": "Platvis, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 80,
+    "protein": 17.5,
+    "carbohydrates": 0,
+    "fat": 1
+  },
+  {
+    "name": "Poedersuiker",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 406,
+    "protein": 0,
+    "carbohydrates": 100,
+    "fat": 0
+  },
+  {
+    "name": "Poelet, runder bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 198,
+    "protein": 30,
+    "carbohydrates": 0.5,
+    "fat": 8.5
+  },
+  {
+    "name": "Poelet, runder vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 115,
+    "protein": 22.1,
+    "carbohydrates": 0,
+    "fat": 2.9
+  },
+  {
+    "name": "Poffertjes",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 294,
+    "protein": 7,
+    "carbohydrates": 33.2,
+    "fat": 14.9
+  },
+  {
+    "name": "Pompoen (butternut squash), vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 56,
+    "protein": 1,
+    "carbohydrates": 11.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Pompoen, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 17,
+    "protein": 0.6,
+    "carbohydrates": 2.5,
+    "fat": 0.3
+  },
+  {
+    "name": "Pompoen, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 20,
+    "protein": 1.1,
+    "carbohydrates": 3,
+    "fat": 0.2
+  },
+  {
+    "name": "Pompoenpitten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 345,
+    "protein": 24.5,
+    "carbohydrates": 7,
+    "fat": 23.5
+  },
+  {
+    "name": "Poon, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 169,
+    "protein": 25.5,
+    "carbohydrates": 0.1,
+    "fat": 7.4
+  },
+  {
+    "name": "Popcorn",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 376,
+    "protein": 12.5,
+    "carbohydrates": 70,
+    "fat": 3.6
+  },
+  {
+    "name": "Port du salut",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 310,
+    "protein": 20,
+    "carbohydrates": 0,
+    "fat": 26
+  },
+  {
+    "name": "Port, 19 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 150,
+    "protein": 0,
+    "carbohydrates": 13,
+    "fat": 0
+  },
+  {
+    "name": "Postelein (glas)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 21,
+    "protein": 2,
+    "carbohydrates": 2,
+    "fat": 0
+  },
+  {
+    "name": "Postelein, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 17,
+    "protein": 1.2,
+    "carbohydrates": 1.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Prei, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 27,
+    "protein": 1.5,
+    "carbohydrates": 3.8,
+    "fat": 0
+  },
+  {
+    "name": "Prei, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 30,
+    "protein": 1.8,
+    "carbohydrates": 4,
+    "fat": 0.3
+  },
+  {
+    "name": "Pretzel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 395,
+    "protein": 9.3,
+    "carbohydrates": 80,
+    "fat": 3.6
+  },
+  {
+    "name": "Provolone",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 346,
+    "protein": 25,
+    "carbohydrates": 2.1,
+    "fat": 26.8
+  },
+  {
+    "name": "Pruimen, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 221,
+    "protein": 2,
+    "carbohydrates": 45,
+    "fat": 0
+  },
+  {
+    "name": "Pruimen, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 56,
+    "protein": 0.6,
+    "carbohydrates": 12,
+    "fat": 0.2
+  },
+  {
+    "name": "Pruimensap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 58,
+    "protein": 0.6,
+    "carbohydrates": 13.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Pudding, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 135,
+    "protein": 3.8,
+    "carbohydrates": 21.3,
+    "fat": 3.2
+  },
+  {
+    "name": "Puddingpoeder, instant chocolade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 356,
+    "protein": 3.2,
+    "carbohydrates": 80,
+    "fat": 2
+  },
+  {
+    "name": "Puddingpoeder, instant gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 358,
+    "protein": 0,
+    "carbohydrates": 88,
+    "fat": 0
+  },
+  {
+    "name": "Quinoa, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 121,
+    "protein": 4.7,
+    "carbohydrates": 19.8,
+    "fat": 2.1
+  },
+  {
+    "name": "Quinoa, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 372,
+    "protein": 15.2,
+    "carbohydrates": 60.6,
+    "fat": 6.5
+  },
+  {
+    "name": "Quorn, vleesvervanger",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 141,
+    "protein": 14,
+    "carbohydrates": 12.7,
+    "fat": 2.6
+  },
+  {
+    "name": "Raapstelen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 25,
+    "protein": 1.5,
+    "carbohydrates": 3.4,
+    "fat": 0.2
+  },
+  {
+    "name": "Rabarber",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 14,
+    "protein": 0.5,
+    "carbohydrates": 2,
+    "fat": 0.1
+  },
+  {
+    "name": "Rabarbermoes, gezoet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 87,
+    "protein": 0.5,
+    "carbohydrates": 20,
+    "fat": 0.1
+  },
+  { "name": "Radijs", "baseAmount": 100, "metric": "gram", "kcal": 18, "protein": 1, "carbohydrates": 2.5, "fat": 0.2 },
+  {
+    "name": "Rambol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 321,
+    "protein": 13.7,
+    "carbohydrates": 3.4,
+    "fat": 28.5
+  },
+  { "name": "Rammenas", "baseAmount": 100, "metric": "gram", "kcal": 32, "protein": 2, "carbohydrates": 5, "fat": 0.2 },
+  {
+    "name": "Ratatouille, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 51,
+    "protein": 1.4,
+    "carbohydrates": 4.9,
+    "fat": 2.5
+  },
+  {
+    "name": "Rauwkost, vers gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 19,
+    "protein": 1,
+    "carbohydrates": 2.9,
+    "fat": 0
+  },
+  {
+    "name": "Ravioli, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 101,
+    "protein": 4,
+    "carbohydrates": 13.5,
+    "fat": 3.5
+  },
+  {
+    "name": "Ree, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 121,
+    "protein": 23,
+    "carbohydrates": 0,
+    "fat": 3.2
+  },
+  {
+    "name": "Rendiermelk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 233,
+    "protein": 10.8,
+    "carbohydrates": 4.1,
+    "fat": 19.6
+  },
+  { "name": "Reuzel", "baseAmount": 100, "metric": "gram", "kcal": 882, "protein": 0, "carbohydrates": 0, "fat": 99.8 },
+  {
+    "name": "Ribeye, rund",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 170,
+    "protein": 21.5,
+    "carbohydrates": 0,
+    "fat": 9.3
+  },
+  {
+    "name": "Ribkarbonade, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 144,
+    "protein": 22.7,
+    "carbohydrates": 1,
+    "fat": 5.9
+  },
+  {
+    "name": "Riblap, rund",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 171,
+    "protein": 20.8,
+    "carbohydrates": 0,
+    "fat": 9.7
+  },
+  {
+    "name": "Ricottakaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 171,
+    "protein": 9.5,
+    "carbohydrates": 0.2,
+    "fat": 15
+  },
+  {
+    "name": "Rijst, wit bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 96,
+    "protein": 2.5,
+    "carbohydrates": 20,
+    "fat": 0.4
+  },
+  {
+    "name": "Rijst, witte",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 355,
+    "protein": 7,
+    "carbohydrates": 78.5,
+    "fat": 0.7
+  },
+  {
+    "name": "Rijst, zilvervlies",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 361,
+    "protein": 7.5,
+    "carbohydrates": 75,
+    "fat": 2.2
+  },
+  {
+    "name": "Rijst, zilvervlies bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 137,
+    "protein": 3.2,
+    "carbohydrates": 26,
+    "fat": 1.5
+  },
+  {
+    "name": "Rijstebloem",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 359,
+    "protein": 7.5,
+    "carbohydrates": 79.5,
+    "fat": 0.7
+  },
+  {
+    "name": "Rijstepap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 81,
+    "protein": 3.5,
+    "carbohydrates": 10,
+    "fat": 3
+  },
+  {
+    "name": "Rijstevlaai",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 250,
+    "protein": 6,
+    "carbohydrates": 34.4,
+    "fat": 9.5
+  },
+  {
+    "name": "Rijstpapier",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 320,
+    "protein": 4.9,
+    "carbohydrates": 71.6,
+    "fat": 1.2
+  },
+  {
+    "name": "Rijstwafel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 374,
+    "protein": 8,
+    "carbohydrates": 74.5,
+    "fat": 3.5
+  },
+  {
+    "name": "Rijstwafel, meergranen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 380,
+    "protein": 10,
+    "carbohydrates": 75,
+    "fat": 3
+  },
+  {
+    "name": "Rivierbaars",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 81,
+    "protein": 18.4,
+    "carbohydrates": 0,
+    "fat": 0.8
+  },
+  {
+    "name": "Rivierkreeft",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 68,
+    "protein": 16,
+    "carbohydrates": 1,
+    "fat": 0.1
+  },
+  {
+    "name": "Rivierpaling",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 280,
+    "protein": 15,
+    "carbohydrates": 0,
+    "fat": 24.5
+  },
+  { "name": "Rode bes", "baseAmount": 100, "metric": "gram", "kcal": 38, "protein": 1, "carbohydrates": 4.8, "fat": 0 },
+  {
+    "name": "Rode biet, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 34,
+    "protein": 1.4,
+    "carbohydrates": 5.8,
+    "fat": 0
+  },
+  {
+    "name": "Rode biet, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 43,
+    "protein": 2,
+    "carbohydrates": 7,
+    "fat": 0.2
+  },
+  {
+    "name": "Rode kool, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 18,
+    "protein": 1.2,
+    "carbohydrates": 2.4,
+    "fat": 0
+  },
+  {
+    "name": "Rode kool, glas/blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 46,
+    "protein": 1,
+    "carbohydrates": 9.5,
+    "fat": 0
+  },
+  {
+    "name": "Rode kool, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 26,
+    "protein": 1.5,
+    "carbohydrates": 3.5,
+    "fat": 0.2
+  },
+  { "name": "Rog", "baseAmount": 100, "metric": "gram", "kcal": 85, "protein": 20.7, "carbohydrates": 0, "fat": 0.2 },
+  {
+    "name": "Roggemeel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 305,
+    "protein": 7.6,
+    "carbohydrates": 56.6,
+    "fat": 1.5
+  },
+  {
+    "name": "Roodbaars",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 105,
+    "protein": 18.2,
+    "carbohydrates": 0,
+    "fat": 3.6
+  },
+  {
+    "name": "Rookkaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 311,
+    "protein": 22,
+    "carbohydrates": 1.5,
+    "fat": 24.5
+  },
+  {
+    "name": "Rookworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 322,
+    "protein": 14.3,
+    "carbohydrates": 0.9,
+    "fat": 29.5
+  },
+  {
+    "name": "Rookworst, mager",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 245,
+    "protein": 15,
+    "carbohydrates": 5,
+    "fat": 18.5
+  },
+  {
+    "name": "Roomkaas, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 326,
+    "protein": 8,
+    "carbohydrates": 2.5,
+    "fat": 32.1
+  },
+  {
+    "name": "Roquefort",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 359,
+    "protein": 19,
+    "carbohydrates": 0,
+    "fat": 32
+  },
+  {
+    "name": "Rosbief, rund",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 168,
+    "protein": 28.3,
+    "carbohydrates": 0.8,
+    "fat": 5.7
+  },
+  {
+    "name": "Rösti, bereid, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 134,
+    "protein": 2.5,
+    "carbohydrates": 21.5,
+    "fat": 3.5
+  },
+  {
+    "name": "Rösti, onbereid, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 106,
+    "protein": 2,
+    "carbohydrates": 16,
+    "fat": 3.8
+  },
+  {
+    "name": "Rozemarijn, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 380,
+    "protein": 4.5,
+    "carbohydrates": 45,
+    "fat": 16
+  },
+  {
+    "name": "Rozenbotteljam",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 256,
+    "protein": 0.1,
+    "carbohydrates": 62.5,
+    "fat": 0
+  },
+  {
+    "name": "Rozenbottels",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 95,
+    "protein": 3.5,
+    "carbohydrates": 19.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Rozenbottelsiroop",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 223,
+    "protein": 0,
+    "carbohydrates": 55,
+    "fat": 0
+  },
+  {
+    "name": "Rozijnen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 291,
+    "protein": 2.5,
+    "carbohydrates": 66.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Rozijnenbrood",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 289,
+    "protein": 6.3,
+    "carbohydrates": 46,
+    "fat": 8
+  },
+  {
+    "name": "Rucola, sla",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 13,
+    "protein": 1.3,
+    "carbohydrates": 1,
+    "fat": 0.2
+  },
+  {
+    "name": "Rum, 43 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 229,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Runderrollade, mager",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 154,
+    "protein": 21,
+    "carbohydrates": 0.8,
+    "fat": 7.5
+  },
+  {
+    "name": "Runderrookvlees",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 152,
+    "protein": 22.9,
+    "carbohydrates": 0.6,
+    "fat": 6.5
+  },
+  {
+    "name": "Rundvleeslap, doorregen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 187,
+    "protein": 19.9,
+    "carbohydrates": 0,
+    "fat": 12.1
+  },
+  {
+    "name": "Rundvleeslap, doorregen bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 279,
+    "protein": 30,
+    "carbohydrates": 0.7,
+    "fat": 17.5
+  },
+  {
+    "name": "Saffloerolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 883,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 100
+  },
+  {
+    "name": "Saint Paulin, kaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 333,
+    "protein": 25,
+    "carbohydrates": 1,
+    "fat": 25.8
+  },
+  {
+    "name": "Salami",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 375,
+    "protein": 19.5,
+    "carbohydrates": 0.1,
+    "fat": 33
+  },
+  {
+    "name": "Salie, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 315,
+    "protein": 10.6,
+    "carbohydrates": 60.6,
+    "fat": 12.7
+  },
+  {
+    "name": "Sambal Oelek",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 25,
+    "protein": 2,
+    "carbohydrates": 3.5,
+    "fat": 0.5
+  },
+  {
+    "name": "Sambal, gebakken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 59,
+    "protein": 4.5,
+    "carbohydrates": 2.5,
+    "fat": 3.5
+  },
+  {
+    "name": "Sardines, olie, in blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 220,
+    "protein": 22.5,
+    "carbohydrates": 0,
+    "fat": 14.6
+  },
+  {
+    "name": "Sardines, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 115,
+    "protein": 19.4,
+    "carbohydrates": 0,
+    "fat": 4.2
+  },
+  {
+    "name": "Satéballetjes, vegetarisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 251,
+    "protein": 20,
+    "carbohydrates": 9,
+    "fat": 15
+  },
+  {
+    "name": "Satésaus",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 275,
+    "protein": 8.5,
+    "carbohydrates": 18,
+    "fat": 19
+  },
+  {
+    "name": "Saucijzenbroodje",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 423,
+    "protein": 10.5,
+    "carbohydrates": 35,
+    "fat": 27
+  },
+  {
+    "name": "Saus, wit, roux",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 87,
+    "protein": 2.5,
+    "carbohydrates": 7,
+    "fat": 5.5
+  },
+  {
+    "name": "Savooiekool",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 30,
+    "protein": 2.5,
+    "carbohydrates": 4,
+    "fat": 0.5
+  },
+  {
+    "name": "Scampi of Langoustine",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 86,
+    "protein": 17.5,
+    "carbohydrates": 1.3,
+    "fat": 1.1
+  },
+  {
+    "name": "Schapekaas, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 301,
+    "protein": 15.3,
+    "carbohydrates": 6.5,
+    "fat": 24
+  },
+  {
+    "name": "Schapenvlees, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 217,
+    "protein": 17.5,
+    "carbohydrates": 0,
+    "fat": 16.5
+  },
+  {
+    "name": "Schar, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 112,
+    "protein": 20.7,
+    "carbohydrates": 0,
+    "fat": 3.2
+  },
+  {
+    "name": "Schar, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 95,
+    "protein": 17,
+    "carbohydrates": 0,
+    "fat": 3
+  },
+  {
+    "name": "Schelvis, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 79,
+    "protein": 19,
+    "carbohydrates": 0,
+    "fat": 0.3
+  },
+  {
+    "name": "Schelvislever, blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 397,
+    "protein": 6.5,
+    "carbohydrates": 0,
+    "fat": 42
+  },
+  {
+    "name": "Schenkel, kalf",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 112,
+    "protein": 21.3,
+    "carbohydrates": 0,
+    "fat": 2.9
+  },
+  {
+    "name": "Schenkel, rund",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 114,
+    "protein": 22.6,
+    "carbohydrates": 0,
+    "fat": 2.6
+  },
+  {
+    "name": "Schnitzel, ongepaneerd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 120,
+    "protein": 22.9,
+    "carbohydrates": 0,
+    "fat": 3.1
+  },
+  {
+    "name": "Schnitzel, vegetarisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 188,
+    "protein": 16,
+    "carbohydrates": 8.5,
+    "fat": 10
+  },
+  {
+    "name": "Schol, gebakken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 179,
+    "protein": 21,
+    "carbohydrates": 1.5,
+    "fat": 10
+  },
+  {
+    "name": "Schol, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 94,
+    "protein": 19,
+    "carbohydrates": 0,
+    "fat": 2
+  },
+  {
+    "name": "Schorseneer",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 90,
+    "protein": 3.3,
+    "carbohydrates": 18.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Schouder, lam",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 206,
+    "protein": 25,
+    "carbohydrates": 0,
+    "fat": 11.9
+  },
+  {
+    "name": "Schouderham",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 136,
+    "protein": 17.4,
+    "carbohydrates": 1.5,
+    "fat": 6.8
+  },
+  {
+    "name": "Schouderkarbonade",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 195,
+    "protein": 19.4,
+    "carbohydrates": 0,
+    "fat": 13.2
+  },
+  {
+    "name": "Schuimpjes",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 259,
+    "protein": 4.2,
+    "carbohydrates": 60.5,
+    "fat": 0
+  },
+  {
+    "name": "Seitan",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 106,
+    "protein": 22.1,
+    "carbohydrates": 3.8,
+    "fat": 0.2
+  },
+  {
+    "name": "Seitan, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 135,
+    "protein": 24,
+    "carbohydrates": 9,
+    "fat": 0.2
+  },
+  {
+    "name": "Selderij, blad, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 12,
+    "protein": 1,
+    "carbohydrates": 2,
+    "fat": 0
+  },
+  {
+    "name": "Selderij, bleek, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 17,
+    "protein": 0.7,
+    "carbohydrates": 3.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Sesamolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 883,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 100
+  },
+  {
+    "name": "Sesampasta, tahin",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 568,
+    "protein": 21.5,
+    "carbohydrates": 6.5,
+    "fat": 51.5
+  },
+  {
+    "name": "Sesamzaad",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 581,
+    "protein": 20.9,
+    "carbohydrates": 6,
+    "fat": 53.5
+  },
+  {
+    "name": "Sherry, droog 15 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 90,
+    "protein": 0.2,
+    "carbohydrates": 1.4,
+    "fat": 0
+  },
+  {
+    "name": "Sherry, medium 15 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 110,
+    "protein": 0,
+    "carbohydrates": 3,
+    "fat": 0
+  },
+  {
+    "name": "Sherry, zoet, 15 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 115,
+    "protein": 0.3,
+    "carbohydrates": 7,
+    "fat": 0
+  },
+  {
+    "name": "Shiitake, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 292,
+    "protein": 13,
+    "carbohydrates": 55,
+    "fat": 2.2
+  },
+  {
+    "name": "Sinaasappels",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 44,
+    "protein": 1,
+    "carbohydrates": 9.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Sinaasappelsap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 45,
+    "protein": 0.7,
+    "carbohydrates": 10,
+    "fat": 0.2
+  },
+  {
+    "name": "Sjalotten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 32,
+    "protein": 1.8,
+    "carbohydrates": 7.3,
+    "fat": 0.2
+  },
+  { "name": "Sla", "baseAmount": 100, "metric": "gram", "kcal": 11, "protein": 1.3, "carbohydrates": 1, "fat": 0.2 },
+  {
+    "name": "Slagroom, geklopt suiker",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 355,
+    "protein": 2,
+    "carbohydrates": 18,
+    "fat": 31
+  },
+  {
+    "name": "Slagroom, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 337,
+    "protein": 2,
+    "carbohydrates": 2.8,
+    "fat": 36
+  },
+  {
+    "name": "Slakken, Wijngaard",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 82,
+    "protein": 16,
+    "carbohydrates": 2,
+    "fat": 1
+  },
+  {
+    "name": "Slaolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 879,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99.5
+  },
+  {
+    "name": "Slasaus, 25 % olie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 269,
+    "protein": 1,
+    "carbohydrates": 10,
+    "fat": 25.5
+  },
+  {
+    "name": "Slasaus, 40 % olie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 382,
+    "protein": 1.1,
+    "carbohydrates": 6,
+    "fat": 40
+  },
+  {
+    "name": "Slavink",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 279,
+    "protein": 16.8,
+    "carbohydrates": 0,
+    "fat": 23.9
+  },
+  {
+    "name": "Smeerkaas, 20 +",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 176,
+    "protein": 17,
+    "carbohydrates": 7,
+    "fat": 9
+  },
+  {
+    "name": "Smeerkaas, 48 +",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 267,
+    "protein": 17,
+    "carbohydrates": 2,
+    "fat": 21.5
+  },
+  {
+    "name": "Smeerleverworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 306,
+    "protein": 12.2,
+    "carbohydrates": 1.6,
+    "fat": 28.4
+  },
+  {
+    "name": "Snijbiet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 23,
+    "protein": 1.8,
+    "carbohydrates": 3.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Snijbonen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 18,
+    "protein": 2,
+    "carbohydrates": 2,
+    "fat": 0.2
+  },
+  {
+    "name": "Snijbonen, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 21,
+    "protein": 1.8,
+    "carbohydrates": 3.6,
+    "fat": 0
+  },
+  {
+    "name": "Snoep, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 398,
+    "protein": 3.5,
+    "carbohydrates": 68.5,
+    "fat": 12
+  },
+  {
+    "name": "Soep, bruine bonen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 61,
+    "protein": 3.2,
+    "carbohydrates": 6.8,
+    "fat": 2.4
+  },
+  {
+    "name": "Soep, champignon",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 66,
+    "protein": 1.7,
+    "carbohydrates": 4.9,
+    "fat": 4.5
+  },
+  {
+    "name": "Soep, erwten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 48,
+    "protein": 2.5,
+    "carbohydrates": 6,
+    "fat": 1.6
+  },
+  {
+    "name": "Soep, gebonden groente-",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 41,
+    "protein": 1,
+    "carbohydrates": 3,
+    "fat": 2.9
+  },
+  {
+    "name": "Soep, goulash",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 51,
+    "protein": 1.2,
+    "carbohydrates": 5,
+    "fat": 3
+  },
+  {
+    "name": "Soep, heldere groente-",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 16,
+    "protein": 0.8,
+    "carbohydrates": 1.8,
+    "fat": 0.7
+  },
+  {
+    "name": "Soep, heldere kippe-",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 26,
+    "protein": 2.4,
+    "carbohydrates": 2.5,
+    "fat": 0.8
+  },
+  {
+    "name": "Soep, minestrone",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 46,
+    "protein": 3.2,
+    "carbohydrates": 4,
+    "fat": 2
+  },
+  {
+    "name": "Soep, ossenstaart",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 30,
+    "protein": 1.5,
+    "carbohydrates": 4.5,
+    "fat": 0.7
+  },
+  {
+    "name": "Soep, uien",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 39,
+    "protein": 1.7,
+    "carbohydrates": 3.6,
+    "fat": 2.1
+  },
+  {
+    "name": "Soep, vis gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 32,
+    "protein": 2,
+    "carbohydrates": 3,
+    "fat": 1.4
+  },
+  {
+    "name": "Soepballetjes, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 195,
+    "protein": 17,
+    "carbohydrates": 5,
+    "fat": 12
+  },
+  {
+    "name": "Sojabonen, bereid (gekookt)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 221,
+    "protein": 20.5,
+    "carbohydrates": 10,
+    "fat": 11
+  },
+  {
+    "name": "Sojabonen, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 428,
+    "protein": 37,
+    "carbohydrates": 29.5,
+    "fat": 18
+  },
+  {
+    "name": "Sojadrink",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 34,
+    "protein": 3.6,
+    "carbohydrates": 0.5,
+    "fat": 2
+  },
+  {
+    "name": "Sojameel, vet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 427,
+    "protein": 37.5,
+    "carbohydrates": 23,
+    "fat": 20.5
+  },
+  {
+    "name": "Sojamelk",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 38,
+    "protein": 3.8,
+    "carbohydrates": 1,
+    "fat": 2.2
+  },
+  {
+    "name": "Sojaolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 882,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99.9
+  },
+  {
+    "name": "Sojasaus, manis, zoet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 231,
+    "protein": 3.1,
+    "carbohydrates": 54,
+    "fat": 0
+  },
+  {
+    "name": "Sojasaus, zout",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 128,
+    "protein": 11.5,
+    "carbohydrates": 20,
+    "fat": 0.1
+  },
+  {
+    "name": "Sojayoghurt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 91,
+    "protein": 4.7,
+    "carbohydrates": 12,
+    "fat": 2.7
+  },
+  {
+    "name": "Spaanse peper, rood, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 29,
+    "protein": 1.4,
+    "carbohydrates": 5.1,
+    "fat": 0.3
+  },
+  {
+    "name": "Spaghetti/macaroni (bereid tom.saus)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 117,
+    "protein": 4.2,
+    "carbohydrates": 11.9,
+    "fat": 5.9
+  },
+  {
+    "name": "Speculaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 501,
+    "protein": 5.6,
+    "carbohydrates": 70,
+    "fat": 22
+  },
+  {
+    "name": "Speculaas, gevuld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 460,
+    "protein": 7.5,
+    "carbohydrates": 50,
+    "fat": 25
+  },
+  {
+    "name": "Spek, katen, gerookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 315,
+    "protein": 13.5,
+    "carbohydrates": 1,
+    "fat": 28.5
+  },
+  {
+    "name": "Spek, rug, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 679,
+    "protein": 5.2,
+    "carbohydrates": 0,
+    "fat": 73
+  },
+  {
+    "name": "Spek, varken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 882,
+    "protein": 0.2,
+    "carbohydrates": 0,
+    "fat": 99.7
+  },
+  {
+    "name": "Spekkies",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 329,
+    "protein": 6.2,
+    "carbohydrates": 75,
+    "fat": 0
+  },
+  {
+    "name": "Speklap zonder zwoerd, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 329,
+    "protein": 16.7,
+    "carbohydrates": 0,
+    "fat": 29.1
+  },
+  {
+    "name": "Speklap,bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 435,
+    "protein": 29.1,
+    "carbohydrates": 0,
+    "fat": 35.4
+  },
+  {
+    "name": "Spelt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 356,
+    "protein": 12.2,
+    "carbohydrates": 65.8,
+    "fat": 2.6
+  },
+  {
+    "name": "Speltmeel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 372,
+    "protein": 13.3,
+    "carbohydrates": 69.6,
+    "fat": 2.8
+  },
+  {
+    "name": "Sperziebonen, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 24,
+    "protein": 2.5,
+    "carbohydrates": 3.6,
+    "fat": 0
+  },
+  {
+    "name": "Sperziebonen, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 36,
+    "protein": 2.4,
+    "carbohydrates": 6,
+    "fat": 0.3
+  },
+  {
+    "name": "Spinazie (glas/blik)",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 16,
+    "protein": 3.6,
+    "carbohydrates": 0.6,
+    "fat": 0
+  },
+  {
+    "name": "Spinazie, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 15,
+    "protein": 2.5,
+    "carbohydrates": 0.6,
+    "fat": 0.3
+  },
+  {
+    "name": "Spitskool",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 33,
+    "protein": 3,
+    "carbohydrates": 4,
+    "fat": 0.6
+  },
+  {
+    "name": "Sprot, filet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 222,
+    "protein": 20,
+    "carbohydrates": 0,
+    "fat": 16
+  },
+  {
+    "name": "Spruitjes",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 37,
+    "protein": 3.8,
+    "carbohydrates": 4.2,
+    "fat": 0.5
+  },
+  {
+    "name": "Spruitjes, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 25,
+    "protein": 3,
+    "carbohydrates": 3.4,
+    "fat": 0
+  },
+  { "name": "Sterkers", "baseAmount": 100, "metric": "gram", "kcal": 8, "protein": 2, "carbohydrates": 0, "fat": 0 },
+  {
+    "name": "Stiltonkaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 413,
+    "protein": 23.5,
+    "carbohydrates": 0,
+    "fat": 36
+  },
+  {
+    "name": "Stokbrood, wit",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 283,
+    "protein": 8.4,
+    "carbohydrates": 58,
+    "fat": 1.9
+  },
+  {
+    "name": "Stokvis, droog",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 342,
+    "protein": 80,
+    "carbohydrates": 0,
+    "fat": 2
+  },
+  {
+    "name": "Stokvis, geweekt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 138,
+    "protein": 32,
+    "carbohydrates": 0,
+    "fat": 1
+  },
+  {
+    "name": "Stroop, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 292,
+    "protein": 0,
+    "carbohydrates": 72,
+    "fat": 0
+  },
+  {
+    "name": "Stroopwafel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 428,
+    "protein": 4.5,
+    "carbohydrates": 65,
+    "fat": 16.5
+  },
+  {
+    "name": "Struisvogelfilet",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 104,
+    "protein": 21.5,
+    "carbohydrates": 1,
+    "fat": 1.5
+  },
+  {
+    "name": "Studentenhaver",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 490,
+    "protein": 8.5,
+    "carbohydrates": 36,
+    "fat": 35
+  },
+  {
+    "name": "Suiker, rietsuiker",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 390,
+    "protein": 0,
+    "carbohydrates": 96,
+    "fat": 0
+  },
+  {
+    "name": "Suiker, wit",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 402,
+    "protein": 0,
+    "carbohydrates": 99,
+    "fat": 0
+  },
+  {
+    "name": "Suikerbrood",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 310,
+    "protein": 7,
+    "carbohydrates": 54.4,
+    "fat": 7.2
+  },
+  { "name": "Sukade", "baseAmount": 100, "metric": "gram", "kcal": 307, "protein": 0.5, "carbohydrates": 75, "fat": 0 },
+  {
+    "name": "Sukadelap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 130,
+    "protein": 20.9,
+    "carbohydrates": 0,
+    "fat": 5.1
+  },
+  {
+    "name": "Surimi",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 105,
+    "protein": 15.5,
+    "carbohydrates": 8.4,
+    "fat": 1
+  },
+  {
+    "name": "Taart, diversen gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 384,
+    "protein": 4,
+    "carbohydrates": 41,
+    "fat": 22.5
+  },
+  {
+    "name": "Taart, kwark gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 241,
+    "protein": 5,
+    "carbohydrates": 26,
+    "fat": 13
+  },
+  {
+    "name": "Taart, slagroom gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 321,
+    "protein": 5,
+    "carbohydrates": 30,
+    "fat": 20.2
+  },
+  {
+    "name": "Taart, vruchten gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 251,
+    "protein": 3.5,
+    "carbohydrates": 30.7,
+    "fat": 12.5
+  },
+  {
+    "name": "Tacoschelpen, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 506,
+    "protein": 7.5,
+    "carbohydrates": 62,
+    "fat": 25
+  },
+  {
+    "name": "Tahoe/tofu",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 121,
+    "protein": 12,
+    "carbohydrates": 1.5,
+    "fat": 6.5
+  },
+  {
+    "name": "Tapiocameel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 349,
+    "protein": 0.6,
+    "carbohydrates": 85,
+    "fat": 0.2
+  },
+  { "name": "Tarbot", "baseAmount": 100, "metric": "gram", "kcal": 84, "protein": 17, "carbohydrates": 0, "fat": 1.8 },
+  {
+    "name": "Tartaar, rund",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 127,
+    "protein": 21.8,
+    "carbohydrates": 0,
+    "fat": 4.4
+  },
+  {
+    "name": "Tarwe, bloem",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 346,
+    "protein": 11.4,
+    "carbohydrates": 69.8,
+    "fat": 1.5
+  },
+  {
+    "name": "Tarwe, hele korrel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 329,
+    "protein": 12.4,
+    "carbohydrates": 59.5,
+    "fat": 2
+  },
+  {
+    "name": "Tarwekiemen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 391,
+    "protein": 27,
+    "carbohydrates": 45,
+    "fat": 9.5
+  },
+  {
+    "name": "Tarwekiemolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 879,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99.5
+  },
+  {
+    "name": "Tarwemeel, volkoren",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 332,
+    "protein": 11.4,
+    "carbohydrates": 62.2,
+    "fat": 1.5
+  },
+  {
+    "name": "Taugé, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 75,
+    "protein": 7,
+    "carbohydrates": 4.5,
+    "fat": 2.5
+  },
+  {
+    "name": "Teffzaad",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 358,
+    "protein": 9.6,
+    "carbohydrates": 73,
+    "fat": 2
+  },
+  {
+    "name": "Tempeh",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 151,
+    "protein": 12,
+    "carbohydrates": 5.5,
+    "fat": 8.3
+  },
+  {
+    "name": "Teriyakisaus",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 90,
+    "protein": 6.1,
+    "carbohydrates": 16.2,
+    "fat": 0
+  },
+  {
+    "name": "Thee met suiker",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 10,
+    "protein": 0,
+    "carbohydrates": 2.7,
+    "fat": 0
+  },
+  {
+    "name": "Thee, groene",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 0,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Thee, zwart, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 353,
+    "protein": 22.5,
+    "carbohydrates": 59,
+    "fat": 2.5
+  },
+  {
+    "name": "Thee, zwarte, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 0,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Theeworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 373,
+    "protein": 12.6,
+    "carbohydrates": 0.2,
+    "fat": 35.8
+  },
+  {
+    "name": "Tijm, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 327,
+    "protein": 9.1,
+    "carbohydrates": 37.7,
+    "fat": 7.4
+  },
+  {
+    "name": "Tijm, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 163,
+    "protein": 5.5,
+    "carbohydrates": 24.5,
+    "fat": 1.7
+  },
+  {
+    "name": "Tilapia",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 114,
+    "protein": 17.9,
+    "carbohydrates": 0,
+    "fat": 4.8
+  },
+  {
+    "name": "Toffee, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 464,
+    "protein": 3.1,
+    "carbohydrates": 69.5,
+    "fat": 19.2
+  },
+  {
+    "name": "Tofuballetjes, vegetarisch",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 198,
+    "protein": 19.3,
+    "carbohydrates": 12.4,
+    "fat": 7.2
+  },
+  {
+    "name": "Tomaat, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 19,
+    "protein": 1,
+    "carbohydrates": 2.9,
+    "fat": 0.2
+  },
+  {
+    "name": "Tomatenketchup",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 119,
+    "protein": 0.5,
+    "carbohydrates": 28.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Tomatenpuree, geconc. 30 %",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 76,
+    "protein": 3.5,
+    "carbohydrates": 14,
+    "fat": 0
+  },
+  {
+    "name": "Tomatensap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 18,
+    "protein": 0.8,
+    "carbohydrates": 3.1,
+    "fat": 0.1
+  },
+  {
+    "name": "Tomatensaus",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 51,
+    "protein": 1.4,
+    "carbohydrates": 6.9,
+    "fat": 1.9
+  },
+  {
+    "name": "Tompouce, gebak",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 324,
+    "protein": 4.5,
+    "carbohydrates": 36.4,
+    "fat": 17.7
+  },
+  {
+    "name": "Tong, kalf",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 167,
+    "protein": 17.6,
+    "carbohydrates": 0,
+    "fat": 10.9
+  },
+  {
+    "name": "Tong, platvis bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 119,
+    "protein": 24,
+    "carbohydrates": 0,
+    "fat": 2.5
+  },
+  {
+    "name": "Tong, platvis onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 79,
+    "protein": 15,
+    "carbohydrates": 0,
+    "fat": 2.1
+  },
+  {
+    "name": "Tong, rund",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 188,
+    "protein": 17.3,
+    "carbohydrates": 0,
+    "fat": 13.2
+  },
+  {
+    "name": "Tongenworst",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 261,
+    "protein": 16.6,
+    "carbohydrates": 2,
+    "fat": 20.7
+  },
+  { "name": "Tonic", "baseAmount": 100, "metric": "gram", "kcal": 38, "protein": 0, "carbohydrates": 9.5, "fat": 0 },
+  {
+    "name": "Tonijn, naturel, blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 114,
+    "protein": 25.9,
+    "carbohydrates": 0,
+    "fat": 1.1
+  },
+  {
+    "name": "Tonijn, olie, blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 190,
+    "protein": 24.5,
+    "carbohydrates": 0,
+    "fat": 10.3
+  },
+  {
+    "name": "Tonijn, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 96,
+    "protein": 21.5,
+    "carbohydrates": 0,
+    "fat": 1
+  },
+  {
+    "name": "Tortilla chips",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 509,
+    "protein": 7.1,
+    "carbohydrates": 66.5,
+    "fat": 23.6
+  },
+  {
+    "name": "Tosti ham/kaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 292,
+    "protein": 12.5,
+    "carbohydrates": 25.5,
+    "fat": 15.2
+  },
+  {
+    "name": "Tosti kaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 318,
+    "protein": 10,
+    "carbohydrates": 29.5,
+    "fat": 17.4
+  },
+  {
+    "name": "Trassi, garnalen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 200,
+    "protein": 35,
+    "carbohydrates": 3.5,
+    "fat": 5
+  },
+  {
+    "name": "Truffels",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 34,
+    "protein": 5.5,
+    "carbohydrates": 1,
+    "fat": 0.5
+  },
+  {
+    "name": "Tuinbonen, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 42,
+    "protein": 4.5,
+    "carbohydrates": 3.7,
+    "fat": 0
+  },
+  {
+    "name": "Tuinbonen, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 39,
+    "protein": 5.3,
+    "carbohydrates": 4.5,
+    "fat": 0
+  },
+  {
+    "name": "Tuinkers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 16,
+    "protein": 2,
+    "carbohydrates": 0.4,
+    "fat": 0.1
+  },
+  {
+    "name": "Turks Fruit",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 342,
+    "protein": 0.1,
+    "carbohydrates": 85.5,
+    "fat": 0
+  },
+  {
+    "name": "Tuttifrutti",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 259,
+    "protein": 2,
+    "carbohydrates": 56.5,
+    "fat": 0
+  },
+  {
+    "name": "Ui, gebakken",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 57,
+    "protein": 1,
+    "carbohydrates": 5,
+    "fat": 3.5
+  },
+  {
+    "name": "Ui, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 274,
+    "protein": 10.5,
+    "carbohydrates": 44.5,
+    "fat": 1
+  },
+  {
+    "name": "Ui, gefrituurd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 628,
+    "protein": 6,
+    "carbohydrates": 44.5,
+    "fat": 46.5
+  },
+  {
+    "name": "Ui, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 36,
+    "protein": 1.2,
+    "carbohydrates": 6.1,
+    "fat": 0.2
+  },
+  {
+    "name": "Vanillevla",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 100,
+    "protein": 3.2,
+    "carbohydrates": 15,
+    "fat": 3
+  },
+  {
+    "name": "Varkensbuik, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 384,
+    "protein": 15,
+    "carbohydrates": 0.1,
+    "fat": 36.5
+  },
+  {
+    "name": "Varkenshaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 119,
+    "protein": 22.8,
+    "carbohydrates": 0,
+    "fat": 3.1
+  },
+  {
+    "name": "Varkenskarbonade, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 196,
+    "protein": 19,
+    "carbohydrates": 0.1,
+    "fat": 13.5
+  },
+  {
+    "name": "Varkenskrabbetjes, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 280,
+    "protein": 16.8,
+    "carbohydrates": 0.1,
+    "fat": 24
+  },
+  {
+    "name": "Varkenslever, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 198,
+    "protein": 28.5,
+    "carbohydrates": 4,
+    "fat": 7.5
+  },
+  {
+    "name": "Varkenslever, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 137,
+    "protein": 21.2,
+    "carbohydrates": 2,
+    "fat": 4.9
+  },
+  {
+    "name": "Varkensniertjes, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 113,
+    "protein": 16.5,
+    "carbohydrates": 0.1,
+    "fat": 5.2
+  },
+  {
+    "name": "Varkensoester",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 116,
+    "protein": 23.5,
+    "carbohydrates": 0,
+    "fat": 2.4
+  },
+  {
+    "name": "Varkenssaté met pindasaus",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 215,
+    "protein": 13.5,
+    "carbohydrates": 10.5,
+    "fat": 13.3
+  },
+  {
+    "name": "Varkensschouder, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 217,
+    "protein": 20.4,
+    "carbohydrates": 0,
+    "fat": 15.2
+  },
+  {
+    "name": "Varkensvlees, spier, algemeen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 111,
+    "protein": 21,
+    "carbohydrates": 0,
+    "fat": 3
+  },
+  {
+    "name": "Varkenswangen, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 533,
+    "protein": 10,
+    "carbohydrates": 0.1,
+    "fat": 55.8
+  },
+  {
+    "name": "Vegetarische pizza, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 171,
+    "protein": 7.5,
+    "carbohydrates": 26,
+    "fat": 3.5
+  },
+  { "name": "Veldsla", "baseAmount": 100, "metric": "gram", "kcal": 20, "protein": 2, "carbohydrates": 3, "fat": 0 },
+  {
+    "name": "Venkel, knol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 40,
+    "protein": 2,
+    "carbohydrates": 7,
+    "fat": 0
+  },
+  {
+    "name": "Vermicelli, gemiddeld, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 361,
+    "protein": 10,
+    "carbohydrates": 75,
+    "fat": 1.5
+  },
+  {
+    "name": "Vermouth, 12 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 150,
+    "protein": 0,
+    "carbohydrates": 16.5,
+    "fat": 0
+  },
+  {
+    "name": "Vieux, 35 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 248,
+    "protein": 0,
+    "carbohydrates": 1.5,
+    "fat": 0
+  },
+  {
+    "name": "Vijgen, gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 270,
+    "protein": 3.5,
+    "carbohydrates": 54,
+    "fat": 1.3
+  },
+  {
+    "name": "Vijgen, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 64,
+    "protein": 1.4,
+    "carbohydrates": 13,
+    "fat": 0.2
+  },
+  {
+    "name": "Vissticks, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 247,
+    "protein": 15.1,
+    "carbohydrates": 18.3,
+    "fat": 12.4
+  },
+  {
+    "name": "Vissticks, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 159,
+    "protein": 12.5,
+    "carbohydrates": 12.5,
+    "fat": 6.5
+  },
+  { "name": "Vlaflip", "baseAmount": 100, "metric": "gram", "kcal": 86, "protein": 4, "carbohydrates": 13, "fat": 2 },
+  {
+    "name": "Vleesvervanger, basis melkeiwit",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 134,
+    "protein": 15.5,
+    "carbohydrates": 5,
+    "fat": 5
+  },
+  {
+    "name": "Vleesvervanger, gepaneerd gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 212,
+    "protein": 12.8,
+    "carbohydrates": 12.6,
+    "fat": 11.5
+  },
+  {
+    "name": "Vleesvervanger, rauw gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 169,
+    "protein": 18.4,
+    "carbohydrates": 6.1,
+    "fat": 7.2
+  },
+  {
+    "name": "Vruchtenhagel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 398,
+    "protein": 0,
+    "carbohydrates": 98.2,
+    "fat": 0
+  },
+  {
+    "name": "Vruchtenvlaai, diversen gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 270,
+    "protein": 3.5,
+    "carbohydrates": 43,
+    "fat": 8.7
+  },
+  {
+    "name": "Wafel, Belgische gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 459,
+    "protein": 6,
+    "carbohydrates": 56,
+    "fat": 23.5
+  },
+  {
+    "name": "Walnoten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 675,
+    "protein": 14.4,
+    "carbohydrates": 12.1,
+    "fat": 62.5
+  },
+  {
+    "name": "Walnotenolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 879,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99.5
+  },
+  {
+    "name": "Water in flessen gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 0,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Waterkers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 20,
+    "protein": 1.6,
+    "carbohydrates": 2,
+    "fat": 0.3
+  },
+  {
+    "name": "Watermeloen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 37,
+    "protein": 0.6,
+    "carbohydrates": 7.8,
+    "fat": 0.2
+  },
+  {
+    "name": "Whiskey, 40 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 277,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Wijn, rood 13 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 86,
+    "protein": 0.2,
+    "carbohydrates": 3,
+    "fat": 0
+  },
+  {
+    "name": "Wijn, rosé 11 %",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 63,
+    "protein": 0.1,
+    "carbohydrates": 2.5,
+    "fat": 0
+  },
+  {
+    "name": "Wijn, sekt 12-14 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 64,
+    "protein": 0.2,
+    "carbohydrates": 0.5,
+    "fat": 0
+  },
+  {
+    "name": "Wijn, wit 11,5 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 80,
+    "protein": 0.2,
+    "carbohydrates": 0.5,
+    "fat": 0
+  },
+  {
+    "name": "Wijn, wit, zoet, 11 % v/v",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 89,
+    "protein": 0.2,
+    "carbohydrates": 6.5,
+    "fat": 0
+  },
+  {
+    "name": "Wijting",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 85,
+    "protein": 18.5,
+    "carbohydrates": 0,
+    "fat": 1.2
+  },
+  {
+    "name": "Winegums",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 233,
+    "protein": 1.5,
+    "carbohydrates": 55.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Witlof, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 14,
+    "protein": 1.2,
+    "carbohydrates": 1.9,
+    "fat": 0
+  },
+  {
+    "name": "Witlofsla, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 13,
+    "protein": 1.3,
+    "carbohydrates": 1.1,
+    "fat": 0.2
+  },
+  {
+    "name": "Witte bonen, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 114,
+    "protein": 7.5,
+    "carbohydrates": 14.5,
+    "fat": 0.6
+  },
+  {
+    "name": "Witte kool, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 27,
+    "protein": 1.5,
+    "carbohydrates": 3.8,
+    "fat": 0.2
+  },
+  {
+    "name": "Worcestersaus",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 67,
+    "protein": 2,
+    "carbohydrates": 9.5,
+    "fat": 2.4
+  },
+  {
+    "name": "Worstenbroodje, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 383,
+    "protein": 12,
+    "carbohydrates": 32,
+    "fat": 23
+  },
+  {
+    "name": "Wortelen, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 27,
+    "protein": 0.8,
+    "carbohydrates": 4.7,
+    "fat": 0
+  },
+  {
+    "name": "Wortelen, vers, waspeen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 33,
+    "protein": 1,
+    "carbohydrates": 5.2,
+    "fat": 0.2
+  },
+  {
+    "name": "Wortelpeterselie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 24,
+    "protein": 2,
+    "carbohydrates": 2.7,
+    "fat": 0.6
+  },
+  {
+    "name": "Wortelsap",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 30,
+    "protein": 0,
+    "carbohydrates": 7.5,
+    "fat": 0
+  },
+  {
+    "name": "Yam, gekookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 115,
+    "protein": 1.5,
+    "carbohydrates": 27.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Yam, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 107,
+    "protein": 2,
+    "carbohydrates": 22.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Yoghurt, Bulgaarse mager",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 59,
+    "protein": 4.8,
+    "carbohydrates": 7.5,
+    "fat": 1
+  },
+  {
+    "name": "Yoghurt, Bulgaarse vol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 88,
+    "protein": 4.9,
+    "carbohydrates": 7.2,
+    "fat": 4.5
+  },
+  {
+    "name": "Yoghurt, Griekse, mager",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 56,
+    "protein": 10.2,
+    "carbohydrates": 3.5,
+    "fat": 0.4
+  },
+  {
+    "name": "Yoghurt, Griekse, vol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 119,
+    "protein": 4.8,
+    "carbohydrates": 3.5,
+    "fat": 9.5
+  },
+  {
+    "name": "Yoghurt, halfvol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 49,
+    "protein": 3.5,
+    "carbohydrates": 5.2,
+    "fat": 1.6
+  },
+  {
+    "name": "Yoghurt, mager",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 33,
+    "protein": 3.4,
+    "carbohydrates": 4.5,
+    "fat": 0.1
+  },
+  {
+    "name": "Yoghurt, vanille, halfvol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 80,
+    "protein": 3.2,
+    "carbohydrates": 13.5,
+    "fat": 1.4
+  },
+  {
+    "name": "Yoghurt, vol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 65,
+    "protein": 3.8,
+    "carbohydrates": 4.5,
+    "fat": 3.5
+  },
+  {
+    "name": "Yoghurt, vruchten, vol",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 96,
+    "protein": 3.9,
+    "carbohydrates": 14.5,
+    "fat": 2.5
+  },
+  {
+    "name": "Yoghurtdrank",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 69,
+    "protein": 3,
+    "carbohydrates": 14,
+    "fat": 0.1
+  },
+  {
+    "name": "Yoghurtdrank, vruchten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 37,
+    "protein": 4,
+    "carbohydrates": 4,
+    "fat": 0.5
+  },
+  {
+    "name": "Yoghurtijs",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 148,
+    "protein": 3.5,
+    "carbohydrates": 20.5,
+    "fat": 5.7
+  },
+  {
+    "name": "Zalm, blik",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 164,
+    "protein": 23.5,
+    "carbohydrates": 0,
+    "fat": 7.8
+  },
+  {
+    "name": "Zalm, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 200,
+    "protein": 20,
+    "carbohydrates": 0,
+    "fat": 13.5
+  },
+  {
+    "name": "Zalm, gerookt",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 200,
+    "protein": 25,
+    "carbohydrates": 0,
+    "fat": 11.2
+  },
+  {
+    "name": "Zalm, onbereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 220,
+    "protein": 20.2,
+    "carbohydrates": 0,
+    "fat": 15.7
+  },
+  {
+    "name": "Zalmforel, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 162,
+    "protein": 22.7,
+    "carbohydrates": 0,
+    "fat": 8
+  },
+  {
+    "name": "Zandkoekje",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 518,
+    "protein": 5.4,
+    "carbohydrates": 58,
+    "fat": 28.9
+  },
+  {
+    "name": "Zeebaars",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 120,
+    "protein": 23.5,
+    "carbohydrates": 0,
+    "fat": 2.8
+  },
+  {
+    "name": "Zeeduivel",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 74,
+    "protein": 15,
+    "carbohydrates": 0,
+    "fat": 1.5
+  },
+  {
+    "name": "Zeekraal, vers, rauw",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 45,
+    "protein": 3.1,
+    "carbohydrates": 9.1,
+    "fat": 0.7
+  },
+  {
+    "name": "Zeewier, gemid. gedroogd",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 280,
+    "protein": 11.5,
+    "carbohydrates": 55,
+    "fat": 1.2
+  },
+  {
+    "name": "Zeewier, kelp, vers",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 86,
+    "protein": 7.5,
+    "carbohydrates": 10.5,
+    "fat": 1.2
+  },
+  {
+    "name": "Zeewolf, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 132,
+    "protein": 25,
+    "carbohydrates": 0,
+    "fat": 3.5
+  },
+  {
+    "name": "Zelfrijzend bakmeel, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 343,
+    "protein": 10.5,
+    "carbohydrates": 71,
+    "fat": 1
+  },
+  {
+    "name": "Zemelen, tarwe",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 317,
+    "protein": 17,
+    "carbohydrates": 25,
+    "fat": 8
+  },
+  {
+    "name": "Zevengranenbrood",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 266,
+    "protein": 9.7,
+    "carbohydrates": 46,
+    "fat": 3.4
+  },
+  {
+    "name": "Zilverui, zoetzuur",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 37,
+    "protein": 0,
+    "carbohydrates": 8.5,
+    "fat": 0
+  },
+  {
+    "name": "Zoetstof, gemiddeld",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 0,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 0
+  },
+  {
+    "name": "Zoetwaterbaars",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 87,
+    "protein": 15,
+    "carbohydrates": 0,
+    "fat": 3
+  },
+  {
+    "name": "Zonnebloemolie",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 881,
+    "protein": 0,
+    "carbohydrates": 0,
+    "fat": 99.8
+  },
+  {
+    "name": "Zonnebloempitten",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 629,
+    "protein": 27,
+    "carbohydrates": 10.5,
+    "fat": 53
+  },
+  { "name": "Zout, tafel", "baseAmount": 100, "metric": "gram", "kcal": 0, "protein": 0, "carbohydrates": 0, "fat": 0 },
+  {
+    "name": "Zure room",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 185,
+    "protein": 2.8,
+    "carbohydrates": 3.5,
+    "fat": 18
+  },
+  {
+    "name": "Zure zult",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 241,
+    "protein": 11,
+    "carbohydrates": 2,
+    "fat": 21.4
+  },
+  { "name": "Zuring", "baseAmount": 100, "metric": "gram", "kcal": 35, "protein": 2, "carbohydrates": 6, "fat": 0.3 },
+  { "name": "Zuurkool", "baseAmount": 100, "metric": "gram", "kcal": 17, "protein": 2, "carbohydrates": 1, "fat": 0 },
+  {
+    "name": "Zuurkoolstamppot",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 146,
+    "protein": 4.2,
+    "carbohydrates": 11.8,
+    "fat": 8.7
+  },
+  {
+    "name": "Zuurtjes, gem.",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 385,
+    "protein": 0.1,
+    "carbohydrates": 95,
+    "fat": 0
+  },
+  {
+    "name": "Zwaardvis",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 119,
+    "protein": 19.5,
+    "carbohydrates": 0,
+    "fat": 4.5
+  },
+  {
+    "name": "Zwarte bessen",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 47,
+    "protein": 1.2,
+    "carbohydrates": 8.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Zwarte bonen, bereid",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 154,
+    "protein": 9,
+    "carbohydrates": 24,
+    "fat": 0.5
+  },
+  {
+    "name": "Zwezerik, kalfs",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 89,
+    "protein": 18.4,
+    "carbohydrates": 0,
+    "fat": 1.7
+  },
+  {
+    "name": "Zwitserse kaas",
+    "baseAmount": 100,
+    "metric": "gram",
+    "kcal": 377,
+    "protein": 28.9,
+    "carbohydrates": 3.6,
+    "fat": 27.8
+  }
+]
