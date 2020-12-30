@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Host: undefined
-Sitemap: undefined/sitemap.xml
+Host: https://brent-strykr-app.vercel.app
+Sitemap: https://brent-strykr-app.vercel.app/sitemap.xml

@@ -1,5 +1,5 @@
-import {jsx} from '@emotion/core'
 import Head from 'next/head'
+import 'twin.macro'
 
 export default function Home() {
   return (
@@ -9,8 +9,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-3xl text-pink-500" css={{backgroundColor: 'teal'}}>
-        Welcome to Your App
+      <h1 tw="text-3xl text-pink-500" css={{ backgroundColor: 'teal' }}>
+        Welcome to Your App blabla
       </h1>
     </div>
   )

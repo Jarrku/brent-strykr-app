@@ -1,12 +1,13 @@
 import React from 'react'
 import { AppProps } from 'next/app'
-import '../styles/globals.css'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../../next-seo.json'
+import { GlobalStyles } from 'twin.macro'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <GlobalStyles />
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
     </>
