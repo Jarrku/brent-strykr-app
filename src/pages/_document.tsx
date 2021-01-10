@@ -1,17 +1,17 @@
-import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
-import { extractCritical } from '@emotion/server'
+import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
+import { extractCritical } from '@emotion/server';
 
 export default class MyDocument extends Document<{ ids: string[]; css: string }> {
   static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx)
-    const page = await ctx.renderPage()
-    const styles = extractCritical(page.html)
-    return { ...initialProps, ...page, ...styles }
+    const initialProps = await Document.getInitialProps(ctx);
+    const page = await ctx.renderPage();
+    const styles = extractCritical(page.html);
+    return { ...initialProps, ...page, ...styles };
   }
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <link
             rel="icon"
@@ -24,6 +24,6 @@ export default class MyDocument extends Document<{ ids: string[]; css: string }>
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
