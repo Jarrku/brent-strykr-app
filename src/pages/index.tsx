@@ -20,6 +20,8 @@ function round(number: number) {
 }
 
 function getNutrientValue({ amount, ingredient }: MealComponent) {
+  if (!ingredient) throw new Error('shouldnt happen');
+
   const multiplier = amount / ingredient.baseAmount;
 
   return {
@@ -116,6 +118,7 @@ function MealItems({ menuIdx, mealIdx }: { menuIdx: number; mealIdx: number }) {
       (state) =>
         void state.mealplan.menus[menuIdx].meals[mealIdx].components.push({
           ingredient: selectedIngredient,
+          ingredientId: selectedIngredient.name,
           amount: newItemAmount,
         }),
     );
@@ -124,7 +127,13 @@ function MealItems({ menuIdx, mealIdx }: { menuIdx: number; mealIdx: number }) {
   };
 
   const previewMetrics = useMemo(
-    () => selectedIngredient && getNutrientValue({ amount: newItemAmount, ingredient: selectedIngredient }),
+    () =>
+      selectedIngredient &&
+      getNutrientValue({
+        amount: newItemAmount,
+        ingredient: selectedIngredient,
+        ingredientId: selectedIngredient.name,
+      }),
     [newItemAmount, selectedIngredient],
   );
 
@@ -141,6 +150,8 @@ function MealItems({ menuIdx, mealIdx }: { menuIdx: number; mealIdx: number }) {
       {/* ITEMS */}
       {components.map((component, componentIdx) => {
         const { kcal, protein, carbohydrates, fat } = getNutrientValue(component);
+
+        if (!component.ingredient) throw new Error('shouldnt happen');
 
         return (
           <Fragment>
@@ -315,6 +326,7 @@ function MenuUI({ menuIdx }: { menuIdx: number }) {
           set(
             (state) =>
               void state.mealplan.menus[menuIdx].meals.push({
+                id: `${Date.now()}`,
                 label: 'Maaltijd ' + (menu.meals.length + 1),
                 components: [],
                 note: '',
@@ -353,6 +365,8 @@ function MenuUI({ menuIdx }: { menuIdx: number }) {
   );
 }
 
+const isSSR = typeof window === 'undefined';
+
 export default function Home() {
   const menus = useMealplan((state) => state.mealplan.menus);
 
@@ -366,8 +380,21 @@ export default function Home() {
         {/* <h1>
           Mealplan: {mealplan.name} - Voor: {mealplan.user}
         </h1> */}
-        {typeof window !== 'undefined' && menus?.map((_, menuIdx) => <MenuUI menuIdx={menuIdx} />)}
+        {!isSSR && menus?.map((_, menuIdx) => <MenuUI menuIdx={menuIdx} />)}
       </div>
     </div>
   );
 }
+
+// TODO: add SSG when data is on server
+// export async function getStaticProps() {
+//   const queryClient = new QueryClient()
+
+//   await queryClient.prefetchQuery(['posts', 10], () => fetchPosts(10))
+
+//   return {
+//     props: {
+//       dehydratedState: dehydrate(queryClient),
+//     },
+//   }
+// }

@@ -6,9 +6,11 @@ import { Mealplan } from './types';
 import ingredients from '../ingredients.json';
 
 const mealplan: Mealplan = {
+  id: 'bla',
   name: 'Eerste plan',
   menus: [
     {
+      id: 'blabla',
       label: 'Menu Ma/Woe/Vrij',
       note: 'Menu voor workout days',
       meals: [

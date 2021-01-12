@@ -1,8 +1,13 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: ['./src/**/*.tsx', './src/**/*.tsx'],
   theme: {
     // typography: (theme) => ({}),
     extend: {
+      colors: {
+        rose: colors.rose,
+      },
       screens: {
         print: { raw: 'print' },
       },
