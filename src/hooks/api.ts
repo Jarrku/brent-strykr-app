@@ -1,7 +1,7 @@
 import { Mealplan, Menu, Meal, Ingredient } from 'model/types';
 import { v4 as uuidv4 } from 'uuid';
 
-import { get, set, createStore, keys, update, entries, values, del } from 'idb-keyval';
+import { get, set, createStore, update, values, del } from 'idb-keyval';
 
 import ingredients from '../ingredients.json';
 
@@ -95,13 +95,6 @@ function getDefaultMealplan(menuId: string) {
     menus: [menuId],
   };
 }
-
-const DEFAULT_MEALPLAN: Mealplan = {
-  id: uuidv4(),
-  name: 'Eerste plan',
-  user: 'Simon',
-  menus: [],
-};
 
 // const DEFAULT_MEALPLAN: Mealplan = {
 //   id: uuidv4(),

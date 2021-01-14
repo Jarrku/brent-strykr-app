@@ -1,8 +1,8 @@
-import { QueryObserverResult, useMutation, useQueries, useQuery, UseQueryOptions } from 'react-query';
-import { queryClient } from 'queryClient';
+import { QueryObserverResult, useMutation, useQueries, useQuery, useQueryClient, UseQueryOptions } from 'react-query';
+
+import { Meal } from '@/model/types';
 
 import { mealApi, mealplanApi, MealplanApi, menuApi, MenuApi } from './api';
-import { Meal } from 'model/types';
 
 const MEALPLAN_QUERY_ID = 'mealplans';
 
@@ -12,6 +12,7 @@ export const useMealplan = (id?: string, options?: UseQueryOptions<MealplanApi, 
 
 export const useMealplanMutation = () => {
   type Context = { previous: MealplanApi; updated: MealplanApi };
+  const queryClient = useQueryClient();
 
   const mutation = useMutation<void, unknown, MealplanApi, Context>((mealplan) => mealplanApi.update(mealplan), {
     onMutate: async (updatedMealplan) => {
@@ -39,6 +40,7 @@ export const useMenu = (id: string) => useQuery([MENU_QUERY_ID, id], () => menuA
 
 export const useMenuMutation = () => {
   type Context = { previous: MenuApi; updated: MenuApi };
+  const queryClient = useQueryClient();
 
   const mutation = useMutation<void, unknown, MenuApi, Context>((menu) => menuApi.update(menu), {
     onMutate: async (updatedMenu) => {
@@ -74,6 +76,7 @@ export const useMultipleMeals = (ids: string[]) =>
 
 export const useMealMutation = () => {
   type Context = { previous: Meal; updated: Meal };
+  const queryClient = useQueryClient();
 
   const mutation = useMutation<void, unknown, Meal, Context>((meal) => mealApi.update(meal), {
     onMutate: async (updatedMeal) => {
@@ -97,6 +100,7 @@ export const useMealMutation = () => {
 
 export const useCreateMealMutation = () => {
   type NewMeal = { label: string; note: string };
+  const queryClient = useQueryClient();
 
   const mutation = useMutation((meal: NewMeal) => mealApi.create(meal), {
     // onMutate: async (newTodo) => {

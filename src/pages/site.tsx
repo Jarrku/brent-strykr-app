@@ -1,6 +1,10 @@
 import 'twin.macro';
+import { Transition } from '@headlessui/react';
+import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Site() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
       <div tw="relative bg-white overflow-hidden">
@@ -29,6 +33,7 @@ export default function Site() {
                     </a>
                     <div tw="-mr-2 flex items-center md:hidden">
                       <button
+                        onClick={() => setIsMenuOpen(true)}
                         type="button"
                         tw="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                         id="main-menu"
@@ -45,9 +50,9 @@ export default function Site() {
                           aria-hidden="true"
                         >
                           <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="M4 6h16M4 12h16M4 18h16"
                           />
                         </svg>
@@ -89,84 +94,100 @@ export default function Site() {
               From: "opacity-100 scale-100"
               To: "opacity-0 scale-95"
           --> */}
-            <div tw="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-              <div tw="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-                <div tw="px-5 pt-4 flex items-center justify-between">
-                  <div>
-                    <img tw="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="" />
-                  </div>
-                  <div tw="-mr-2">
-                    <button
-                      type="button"
-                      tw="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                    >
-                      <span tw="sr-only">Close main menu</span>
-                      {/* <!-- Heroicon name: x --> */}
-                      <svg
-                        tw="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M6 18L18 6M6 6l12 12"
+            <Transition
+              show={isMenuOpen}
+              enter="transition duration-150 ease-out transform"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="transition duration-100 ease-in transform"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              {(ref) => (
+                <div ref={ref} tw="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                  <div tw="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                    <div tw="px-5 pt-4 flex items-center justify-between">
+                      <div>
+                        <img
+                          tw="h-8 w-auto"
+                          src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                          alt=""
                         />
-                      </svg>
-                    </button>
+                      </div>
+                      <div tw="-mr-2">
+                        <button
+                          onClick={() => setIsMenuOpen(false)}
+                          type="button"
+                          tw="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                        >
+                          <span tw="sr-only">Close main menu</span>
+                          {/* <!-- Heroicon name: x --> */}
+                          <svg
+                            tw="h-6 w-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M6 18L18 6M6 6l12 12"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                      <div tw="px-2 pt-2 pb-3 space-y-1" role="none">
+                        <a
+                          href="#"
+                          tw="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                          role="menuitem"
+                        >
+                          Product
+                        </a>
+
+                        <a
+                          href="#"
+                          tw="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                          role="menuitem"
+                        >
+                          Features
+                        </a>
+
+                        <a
+                          href="#"
+                          tw="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                          role="menuitem"
+                        >
+                          Marketplace
+                        </a>
+
+                        <a
+                          href="#"
+                          tw="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                          role="menuitem"
+                        >
+                          Company
+                        </a>
+                      </div>
+                      <div role="none">
+                        <a
+                          href="#"
+                          tw="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                          role="menuitem"
+                        >
+                          Log in
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
-                  <div tw="px-2 pt-2 pb-3 space-y-1" role="none">
-                    <a
-                      href="#"
-                      tw="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                      role="menuitem"
-                    >
-                      Product
-                    </a>
-
-                    <a
-                      href="#"
-                      tw="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                      role="menuitem"
-                    >
-                      Features
-                    </a>
-
-                    <a
-                      href="#"
-                      tw="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                      role="menuitem"
-                    >
-                      Marketplace
-                    </a>
-
-                    <a
-                      href="#"
-                      tw="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                      role="menuitem"
-                    >
-                      Company
-                    </a>
-                  </div>
-                  <div role="none">
-                    <a
-                      href="#"
-                      tw="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                      role="menuitem"
-                    >
-                      Log in
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+              )}
+            </Transition>
             <main tw="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div tw="sm:text-center lg:text-left">
                 <h1 tw="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -202,7 +223,7 @@ export default function Site() {
         <div tw="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             tw="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+            src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80"
             alt=""
           />
         </div>
@@ -243,9 +264,9 @@ function FeatureList() {
                     aria-hidden="true"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                     />
                   </svg>
@@ -273,9 +294,9 @@ function FeatureList() {
                     aria-hidden="true"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
                     />
                   </svg>
@@ -302,12 +323,7 @@ function FeatureList() {
                     stroke="currentColor"
                     aria-hidden="true"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
               </div>
@@ -333,9 +349,9 @@ function FeatureList() {
                     aria-hidden="true"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
                     />
                   </svg>

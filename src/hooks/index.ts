@@ -1,1 +1,1 @@
-export * from './usePosts';
+export * from './useMeals';

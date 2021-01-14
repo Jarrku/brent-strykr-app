@@ -73,12 +73,8 @@ function MealItems({ mealId }: { mealId: string }) {
   const [newItemAmount, setNewItemAmount] = useState(100);
   const [selectedIngredient, setSelectedIngredient] = useState<Ingredient | null>(null);
 
-  if (!meal.data) return null;
-
-  const totals = getMealTotals(meal.data.components);
-
   const addIngredient = () => {
-    if (!selectedIngredient) return;
+    if (!selectedIngredient || !meal.data) return;
 
     const result = produce(meal.data, (draft) => {
       draft.components.push({
@@ -102,6 +98,10 @@ function MealItems({ mealId }: { mealId: string }) {
       }),
     [newItemAmount, selectedIngredient],
   );
+
+  if (!meal.data) return null;
+
+  const totals = getMealTotals(meal.data.components);
 
   return (
     <div tw="mt-2 grid gap-2 grid-cols-ingredient-row items-center">
@@ -274,7 +274,7 @@ function MenuUI({ menuId }: { menuId: string }) {
         <MenuTitle menuId={menuId} />
         <button
           tw="print:hidden inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          onClick={() => print()}
+          onClick={() => window.print()}
         >
           Print
         </button>

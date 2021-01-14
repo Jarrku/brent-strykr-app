@@ -1,18 +1,21 @@
-const withPlugins = require('next-compose-plugins')
+const withPlugins = require('next-compose-plugins');
 
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    domains: ['tailwindui.com', 'images.unsplash.com'],
+  },
   async redirects() {
-    return []
+    return [];
   },
   webpack: (config, { isServer }) => {
     // Fixes npm packages that depend on `fs` module
     if (!isServer) {
-      config.node = { fs: 'empty' }
+      config.node = { fs: 'empty' };
     }
 
-    return config
+    return config;
   },
-}
+};
 
-module.exports = withPlugins([], nextConfig)
+module.exports = withPlugins([], nextConfig);

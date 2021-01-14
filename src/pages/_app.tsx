@@ -1,4 +1,5 @@
 import { QueryClientProvider } from 'react-query';
+import { QueryClient } from 'react-query';
 import { Hydrate } from 'react-query/hydration';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import { DefaultSeo } from 'next-seo';
@@ -7,7 +8,8 @@ import { GlobalStyles } from 'twin.macro';
 
 import SEO from '../../next-seo.json';
 import '../styles/globals.css';
-import { queryClient } from 'queryClient';
+
+const queryClient = new QueryClient();
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
