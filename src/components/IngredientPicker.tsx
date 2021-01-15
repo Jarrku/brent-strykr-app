@@ -4,6 +4,8 @@ import { useMealplan } from '@/model/mealplan';
 import { Ingredient } from '@/model/types';
 import { OptimizedSelect } from './Select';
 
+import ingredients from '../ingredients.json';
+const mapped = ingredients.map((i) => ({ label: i.name, value: i }));
 interface NormalizedIngredients {
   [x: string]: Ingredient[] | undefined;
 }
@@ -15,9 +17,6 @@ export function IngredientPicker({
   onSelect: (ingredient: Ingredient) => void;
   className?: string;
 }) {
-  const ingredients = useMealplan((state) => state.ingredients);
-  const mapped = useMemo(() => ingredients.map((i) => ({ label: i.name, value: i })), [ingredients]);
-
   return (
     <div className={className}>
       <OptimizedSelect
