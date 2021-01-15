@@ -1,6 +1,3 @@
-import { useMemo } from 'react';
-
-import { useMealplan } from '@/model/mealplan';
 import { Ingredient } from '@/model/types';
 import { OptimizedSelect } from './Select';
 
@@ -34,44 +31,44 @@ export function IngredientPicker({
   );
 }
 
-function getFirstLetter(str: string) {
-  return str.charAt(0).toLowerCase();
-}
+// function getFirstLetter(str: string) {
+//   return str.charAt(0).toLowerCase();
+// }
 
-function useFilteredIngredients(input: string) {
-  const ingredients = useMealplan((state) => state.ingredients);
+// function useFilteredIngredients(input: string) {
+//   const ingredients = useMealplan((state) => state.ingredients);
 
-  const normalizedItems = useMemo(() => {
-    return ingredients.reduce<NormalizedIngredients>((acc, ingredient) => {
-      const letter = getFirstLetter(ingredient.name);
+//   const normalizedItems = useMemo(() => {
+//     return ingredients.reduce<NormalizedIngredients>((acc, ingredient) => {
+//       const letter = getFirstLetter(ingredient.name);
 
-      if (!acc[letter]) acc[letter] = [];
+//       if (!acc[letter]) acc[letter] = [];
 
-      acc[letter]?.push(ingredient);
+//       acc[letter]?.push(ingredient);
 
-      return acc;
-    }, {});
-  }, [ingredients]);
+//       return acc;
+//     }, {});
+//   }, [ingredients]);
 
-  const resolvedItems = useMemo(() => {
-    const letter = getFirstLetter(input);
-    if (letter === '') return [];
+//   const resolvedItems = useMemo(() => {
+//     const letter = getFirstLetter(input);
+//     if (letter === '') return [];
 
-    const searchItems = normalizedItems[letter];
-    if (!searchItems) return [];
+//     const searchItems = normalizedItems[letter];
+//     if (!searchItems) return [];
 
-    const items = [];
+//     const items = [];
 
-    for (let item of searchItems) {
-      if (item.name.toLowerCase().startsWith(input)) {
-        items.push({ value: item, label: item.name });
+//     for (let item of searchItems) {
+//       if (item.name.toLowerCase().startsWith(input)) {
+//         items.push({ value: item, label: item.name });
 
-        if (items.length === 10) break;
-      }
-    }
+//         if (items.length === 10) break;
+//       }
+//     }
 
-    return items;
-  }, [input, normalizedItems]);
+//     return items;
+//   }, [input, normalizedItems]);
 
-  return resolvedItems;
-}
+//   return resolvedItems;
+// }
