@@ -1,5 +1,4 @@
 import { useMemo } from 'react';
-import 'twin.macro';
 
 import { useMealplan } from '@/model/mealplan';
 import { Ingredient } from '@/model/types';

@@ -1,8 +1,7 @@
 import { Fragment, useMemo, useState } from 'react';
 import Head from 'next/head';
-import tw from 'twin.macro';
 import produce from 'immer';
-
+import clsx from 'clsx';
 import { IngredientPicker } from '@/components/IngredientPicker';
 import { PencilButton } from '@/components/PencilButton';
 import { TrashButton } from '@/components/TrashButton';
@@ -31,10 +30,10 @@ function MealUI({ mealId, menuId }: { mealId: string; menuId: string }) {
 
   return (
     <div>
-      <div tw="flex justify-between items-center">
+      <div className="flex justify-between items-center">
         <MealTitle mealId={mealId} />
         <TrashButton
-          tw="print:hidden"
+          className="print:hidden"
           onClick={() => {
             const result = produce(menu.data, (draft) => {
               const index = draft.meals.findIndex((meal) => meal === mealId);
@@ -49,7 +48,7 @@ function MealUI({ mealId, menuId }: { mealId: string; menuId: string }) {
         <textarea
           name="meal-note"
           rows={2}
-          tw="print:hidden shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md"
+          className="print:hidden shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md"
           placeholder="Notitie.."
           value={meal.data.note}
           onChange={({ currentTarget }) => {
@@ -60,7 +59,7 @@ function MealUI({ mealId, menuId }: { mealId: string; menuId: string }) {
             mutation.mutate(result);
           }}
         ></textarea>
-        <p tw="hidden print:block">{meal.data.note}</p>
+        <p className="hidden print:block">{meal.data.note}</p>
       </div>
       <MealItems mealId={mealId} />
     </div>
@@ -104,15 +103,15 @@ function MealItems({ mealId }: { mealId: string }) {
   const totals = getMealTotals(meal.data.components);
 
   return (
-    <div tw="mt-2 grid gap-2 grid-cols-ingredient-row items-center">
+    <div className="mt-2 grid gap-2 grid-cols-ingredient-row items-center">
       {/* HEADER  */}
-      <span tw="col-span-3 font-bold">Naam</span>
-      <span tw="col-span-1 font-bold">Hoeveelheid</span>
-      <span tw="font-bold justify-self-center print:invisible">Eenheid</span>
-      <span tw="font-bold">KCAL</span>
-      <span tw="font-bold">EIW</span>
-      <span tw="font-bold">KH</span>
-      <span tw="font-bold">Vet</span>
+      <span className="col-span-3 font-bold">Naam</span>
+      <span className="col-span-1 font-bold">Hoeveelheid</span>
+      <span className="font-bold justify-self-center print:invisible">Eenheid</span>
+      <span className="font-bold">KCAL</span>
+      <span className="font-bold">EIW</span>
+      <span className="font-bold">KH</span>
+      <span className="font-bold">Vet</span>
       {/* ITEMS */}
       {meal.data.components.map((component, componentIdx) => {
         const { kcal, protein, carbohydrates, fat } = getNutrientValue(component);
@@ -121,9 +120,9 @@ function MealItems({ mealId }: { mealId: string }) {
 
         return (
           <Fragment key={component.ingredientId}>
-            <span tw="col-span-3">{component.ingredient.name}</span>
+            <span className="col-span-3">{component.ingredient.name}</span>
             <input
-              tw="print:hidden"
+              className="print:hidden"
               type="number"
               value={component.amount}
               min={1}
@@ -138,18 +137,18 @@ function MealItems({ mealId }: { mealId: string }) {
               }}
             />
 
-            <span tw="justify-self-center print:col-span-2 print:justify-self-start">
-              <span tw="hidden print:inline-block">
+            <span className="justify-self-center print:col-span-2 print:justify-self-start">
+              <span className="hidden print:inline-block">
                 {component.amount} {component.ingredient.metric}
               </span>
-              <span tw="print:hidden">{component.ingredient.metric}</span>
+              <span className="print:hidden">{component.ingredient.metric}</span>
             </span>
             <span>{kcal}</span>
             <span>{protein}</span>
             <span>{carbohydrates}</span>
             <span>{fat}</span>
             <TrashButton
-              tw="print:hidden justify-self-center"
+              className="print:hidden justify-self-center"
               onClick={() => {
                 const result = produce(meal.data, (draft) => {
                   draft.components.splice(componentIdx, 1);
@@ -162,9 +161,12 @@ function MealItems({ mealId }: { mealId: string }) {
         );
       })}
       {/* NEW ITEM ROW PREVIEW */}
-      <IngredientPicker tw="col-span-3 print:hidden" onSelect={(ingredient) => setSelectedIngredient(ingredient)} />
+      <IngredientPicker
+        className="col-span-3 print:hidden"
+        onSelect={(ingredient) => setSelectedIngredient(ingredient)}
+      />
       <input
-        tw="print:hidden"
+        className="print:hidden"
         type="number"
         min={0}
         value={newItemAmount}
@@ -174,29 +176,31 @@ function MealItems({ mealId }: { mealId: string }) {
           setNewItemAmount(amount);
         }}
       />
-      <span tw="justify-self-center text-gray-400 print:hidden">
+      <span className="justify-self-center text-gray-400 print:hidden">
         <span>{selectedIngredient?.metric}</span>
       </span>
-      <span tw="text-gray-400 print:hidden">{previewMetrics?.kcal}</span>
-      <span tw="text-gray-400 print:hidden">{previewMetrics?.protein}</span>
-      <span tw="text-gray-400 print:hidden">{previewMetrics?.carbohydrates}</span>
-      <span tw="text-gray-400 print:hidden">{previewMetrics?.fat}</span>
+      <span className="text-gray-400 print:hidden">{previewMetrics?.kcal}</span>
+      <span className="text-gray-400 print:hidden">{previewMetrics?.protein}</span>
+      <span className="text-gray-400 print:hidden">{previewMetrics?.carbohydrates}</span>
+      <span className="text-gray-400 print:hidden">{previewMetrics?.fat}</span>
 
       <button
-        tw="col-start-10 cursor-pointer print:hidden inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-        css={[!selectedIngredient && tw`text-gray-400 cursor-not-allowed`]}
+        className={clsx(
+          'col-start-10 cursor-pointer print:hidden inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
+          !selectedIngredient && 'text-gray-400 cursor-not-allowed',
+        )}
         onClick={() => addIngredient()}
       >
         ADD
       </button>
       {/* DIVIDER */}
-      <span tw="col-span-full  border-gray-400 border-t-2"></span>
+      <span className="col-span-full  border-gray-400 border-t-2"></span>
       {/* TOTALS */}
-      <span tw="col-span-5">Totaal</span>
-      <span tw="font-bold">{totals.kcal}</span>
-      <span tw="font-bold">{totals.protein}</span>
-      <span tw="font-bold">{totals.carbohydrates}</span>
-      <span tw="font-bold">{totals.fat}</span>
+      <span className="col-span-5">Totaal</span>
+      <span className="font-bold">{totals.kcal}</span>
+      <span className="font-bold">{totals.protein}</span>
+      <span className="font-bold">{totals.carbohydrates}</span>
+      <span className="font-bold">{totals.fat}</span>
     </div>
   );
 }
@@ -210,13 +214,15 @@ function MealTitle({ mealId }: { mealId: string }) {
 
   return (
     <div>
-      <h4 css={[editTitle && tw`hidden print:block`]}>
-        {meal.data.label} <PencilButton tw="print:hidden" onClick={() => setEditTitle(true)} />
+      <h4 className={clsx([editTitle && 'hidden print:block'])}>
+        {meal.data.label} <PencilButton className="print:hidden" onClick={() => setEditTitle(true)} />
       </h4>
       <input
         type="text"
-        tw="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 hidden w-full sm:text-sm border-gray-300 rounded-md"
-        css={[editTitle && tw`block print:hidden`]}
+        className={clsx(
+          'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 hidden w-full sm:text-sm border-gray-300 rounded-md',
+          editTitle && 'block print:hidden',
+        )}
         value={meal.data.label}
         onKeyPress={({ key }) => key === 'Enter' && setEditTitle(false)}
         onChange={({ currentTarget }) => {
@@ -241,13 +247,15 @@ function MenuTitle({ menuId }: { menuId: string }) {
 
   return (
     <div>
-      <h2 css={[editTitle && tw`hidden print:block`]}>
-        {menu.data?.label} <PencilButton tw="print:hidden" onClick={() => setEditTitle(true)} />
+      <h2 className={clsx(editTitle && 'hidden print:block')}>
+        {menu.data?.label} <PencilButton className="print:hidden" onClick={() => setEditTitle(true)} />
       </h2>
       <input
         type="text"
-        tw="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 hidden w-full sm:text-sm border-gray-300 rounded-md"
-        css={[editTitle && tw`block print:hidden`]}
+        className={clsx(
+          'shadow-sm focus:ring-indigo-500 focus:border-indigo-500 hidden w-full sm:text-sm border-gray-300 rounded-md',
+          editTitle && 'block print:hidden',
+        )}
         value={menu.data?.label}
         onKeyPress={({ key }) => key === 'Enter' && setEditTitle(false)}
         onChange={({ currentTarget }) => {
@@ -270,10 +278,10 @@ function MenuUI({ menuId }: { menuId: string }) {
 
   return (
     <div>
-      <div tw="flex justify-between items-center">
+      <div className="flex justify-between items-center">
         <MenuTitle menuId={menuId} />
         <button
-          tw="print:hidden inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="print:hidden inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           onClick={() => window.print()}
         >
           Print
@@ -283,7 +291,7 @@ function MenuUI({ menuId }: { menuId: string }) {
         <textarea
           name="menu-note"
           rows={2}
-          tw="print:hidden shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md"
+          className="print:hidden shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md"
           placeholder="Notitie.."
           value={menu.data.note}
           onChange={({ currentTarget }) => {
@@ -293,7 +301,7 @@ function MenuUI({ menuId }: { menuId: string }) {
             mutation.mutate(result);
           }}
         ></textarea>
-        <p tw="hidden print:block">{menu.data.note}</p>
+        <p className="hidden print:block">{menu.data.note}</p>
       </div>
       <h3>Maaltijden</h3>
       {menu.data.meals.map((mealId) => (
@@ -301,7 +309,7 @@ function MenuUI({ menuId }: { menuId: string }) {
       ))}
       <button
         type="button"
-        tw="print:hidden inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        className="print:hidden inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         onClick={() => {
           createMeal.mutateAsync({ label: 'Maaltijd ' + (menu.data.meals.length + 1), note: '' }).then(({ id }) => {
             const menuResult = produce(menu.data, (draft) => {
@@ -313,7 +321,7 @@ function MenuUI({ menuId }: { menuId: string }) {
         }}
       >
         Maaltijd Toevoegen
-        <PlusIcon tw="ml-3 -mr-1 h-5 w-5" />
+        <PlusIcon className="ml-3 -mr-1 h-5 w-5" />
       </button>
       <h3>Totalen</h3>
       <MenuTotal mealIds={menu.data.meals} />
@@ -335,16 +343,16 @@ function MenuTotal({ mealIds }: { mealIds: string[] }) {
   if (!totals) return null;
 
   return (
-    <div tw="mt-2 grid gap-2 grid-cols-ingredient-row items-center">
-      <span tw="font-bold col-start-6">KCAL</span>
-      <span tw="font-bold">EIW</span>
-      <span tw="font-bold">KH</span>
-      <span tw="font-bold">Vet</span>
-      <span tw="font-bold col-start-6">{totals.kcal}</span>
-      <span tw="font-bold">{totals.protein}</span>
-      <span tw="font-bold">{totals.carbohydrates}</span>
-      <span tw="font-bold">{totals.fat}</span>
-      <span tw="invisible col-start-10 print:hidden inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+    <div className="mt-2 grid gap-2 grid-cols-ingredient-row items-center">
+      <span className="font-bold col-start-6">KCAL</span>
+      <span className="font-bold">EIW</span>
+      <span className="font-bold">KH</span>
+      <span className="font-bold">Vet</span>
+      <span className="font-bold col-start-6">{totals.kcal}</span>
+      <span className="font-bold">{totals.protein}</span>
+      <span className="font-bold">{totals.carbohydrates}</span>
+      <span className="font-bold">{totals.fat}</span>
+      <span className="invisible col-start-10 print:hidden inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
         ADD
       </span>
     </div>
@@ -362,10 +370,10 @@ export default function Home() {
         <title>Brent Strykr App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div tw="prose max-w-screen-lg p-4 mx-auto">
+      <div className="prose max-w-screen-lg p-4 mx-auto">
         {mealplan.data && mealplan.data.menus.map((menuId) => <MenuUI key={menuId} menuId={menuId} />)}
       </div>
-      {/* <div tw="hidden print:block">TODO print preview</div> */}
+      {/* <div className="hidden print:block">TODO print preview</div> */}
     </div>
   );
 }
