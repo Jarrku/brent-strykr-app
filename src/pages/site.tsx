@@ -1,16 +1,34 @@
-import { Transition } from '@headlessui/react';
-import { useState } from 'react';
+import { DetailedHTMLProps, AnchorHTMLAttributes } from 'react';
 // import Image from 'next/image';
+import clsx from 'clsx';
+import { Navbar } from '@/components/Navbar';
+
+interface AnchorProps extends DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> {}
+
+// interface ButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {}
+
+function HeroButton({ children, className, ...props }: AnchorProps) {
+  return (
+    <a
+      className={clsx(
+        'w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md md:py-4 md:text-lg md:px-10',
+        className,
+      )}
+      {...props}
+    >
+      {children}
+    </a>
+  );
+}
 
 export default function Site() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <div className="relative bg-white overflow-hidden">
+      <div className="relative bg-gray-50 overflow-hidden ">
         <div className="max-w-7xl mx-auto">
-          <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+          <div className="relative z-10 pb-8 bg-gray-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 ">
             <svg
-              className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+              className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-gray-50 transform translate-x-1/2"
               fill="currentColor"
               viewBox="0 0 100 100"
               preserveAspectRatio="none"
@@ -18,180 +36,13 @@ export default function Site() {
             >
               <polygon points="50,0 100,0 50,100 0,100" />
             </svg>
+            <Navbar />
 
-            <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
-              <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
-                <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-                  <div className="flex items-center justify-between w-full md:w-auto">
-                    <a href="#">
-                      <span className="sr-only">Workflow</span>
-                      <img
-                        className="h-8 w-auto sm:h-10"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                      />
-                    </a>
-                    <div className="-mr-2 flex items-center md:hidden">
-                      <button
-                        onClick={() => setIsMenuOpen(true)}
-                        type="button"
-                        className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                        id="main-menu"
-                        aria-haspopup="true"
-                      >
-                        <span className="sr-only">Open main menu</span>
-                        {/* <!-- Heroicon name: menu --> */}
-                        <svg
-                          className="h-6 w-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M4 6h16M4 12h16M4 18h16"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                  <a href="#" className="font-medium text-gray-500 hover:text-gray-900">
-                    Product
-                  </a>
-
-                  <a href="#" className="font-medium text-gray-500 hover:text-gray-900">
-                    Features
-                  </a>
-
-                  <a href="#" className="font-medium text-gray-500 hover:text-gray-900">
-                    Marketplace
-                  </a>
-
-                  <a href="#" className="font-medium text-gray-500 hover:text-gray-900">
-                    Company
-                  </a>
-
-                  <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                    Log in
-                  </a>
-                </div>
-              </nav>
-            </div>
-
-            {/* <!--
-            Mobile menu, show/hide based on menu open state.
-
-            Entering: "duration-150 ease-out"
-              From: "opacity-0 scale-95"
-              To: "opacity-100 scale-100"
-            Leaving: "duration-100 ease-in"
-              From: "opacity-100 scale-100"
-              To: "opacity-0 scale-95"
-          --> */}
-            <Transition
-              show={isMenuOpen}
-              enter="transition duration-150 ease-out transform"
-              enterFrom="opacity-0 scale-95"
-              enterTo="opacity-100 scale-100"
-              leave="transition duration-100 ease-in transform"
-              leaveFrom="opacity-100 scale-100"
-              leaveTo="opacity-0 scale-95"
-            >
-              {(ref) => (
-                <div ref={ref} className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-                  <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-                    <div className="px-5 pt-4 flex items-center justify-between">
-                      <div>
-                        <img
-                          className="h-8 w-auto"
-                          src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="-mr-2">
-                        <button
-                          onClick={() => setIsMenuOpen(false)}
-                          type="button"
-                          className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                        >
-                          <span className="sr-only">Close main menu</span>
-                          {/* <!-- Heroicon name: x --> */}
-                          <svg
-                            className="h-6 w-6"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M6 18L18 6M6 6l12 12"
-                            />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                    <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
-                      <div className="px-2 pt-2 pb-3 space-y-1" role="none">
-                        <a
-                          href="#"
-                          className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                          role="menuitem"
-                        >
-                          Product
-                        </a>
-
-                        <a
-                          href="#"
-                          className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                          role="menuitem"
-                        >
-                          Features
-                        </a>
-
-                        <a
-                          href="#"
-                          className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                          role="menuitem"
-                        >
-                          Marketplace
-                        </a>
-
-                        <a
-                          href="#"
-                          className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                          role="menuitem"
-                        >
-                          Company
-                        </a>
-                      </div>
-                      <div role="none">
-                        <a
-                          href="#"
-                          className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                          role="menuitem"
-                        >
-                          Log in
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </Transition>
-            <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+            <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 ">
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                  <span className="block xl:inline">Data to enrich your</span>{' '}
-                  <span className="block text-indigo-600 xl:inline">online business</span>
+                  <span className="block xl:inline">Brent De Wolf</span>{' '}
+                  <span className="block text-indigo-600 xl:inline">Personal Coaching</span>
                 </h1>
                 <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
@@ -199,20 +50,14 @@ export default function Site() {
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
-                    <a
-                      href="#"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-                    >
+                    <HeroButton href="#" className="text-white bg-indigo-600 hover:bg-indigo-700">
                       Get started
-                    </a>
+                    </HeroButton>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <a
-                      href="#"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
-                    >
-                      Live demo
-                    </a>
+                    <HeroButton href="#" className="text-indigo-700 bg-indigo-100 hover:bg-indigo-200">
+                      Live Demo
+                    </HeroButton>
                   </div>
                 </div>
               </div>
@@ -235,132 +80,140 @@ export default function Site() {
 
 function FeatureList() {
   return (
-    <div className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Transactions</h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            A better way to send money
-          </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-            accusamus quisquam.
-          </p>
-        </div>
+    <div className="bg-gray-50 overflow-hidden">
+      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <svg
+          className="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
+          width="404"
+          height="784"
+          fill="none"
+          viewBox="0 0 404 784"
+          aria-hidden="true"
+        >
+          <defs>
+            <pattern
+              id="8b1b5f72-e944-4457-af67-0c6d15a99f38"
+              x="0"
+              y="0"
+              width="20"
+              height="20"
+              patternUnits="userSpaceOnUse"
+            >
+              <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="404" height="784" fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
+        </svg>
 
-        <div className="mt-10">
-          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                  {/* <!-- Heroicon name: globe-alt --> */}
-                  <svg
-                    className="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                    />
-                  </svg>
-                </div>
+        <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
+          <div className="lg:col-span-1">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Een betere manier om aan fitness te doen.
+            </h2>
+          </div>
+          <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
+            <div>
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                {/* <!-- Heroicon name: globe-alt --> */}
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                  />
+                </svg>
               </div>
-              <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">Competitive exchange rates</dt>
+              <div className="mt-5">
+                <dt className="text-lg leading-6 font-medium text-gray-900">Kracht en/of spiertoename</dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                  iste dolor cupiditate blanditiis ratione.
+                  Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque.
                 </dd>
               </div>
             </div>
 
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                  {/* <!-- Heroicon name: scale --> */}
-                  <svg
-                    className="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
-                    />
-                  </svg>
-                </div>
+            <div>
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                {/* <!-- Heroicon name: scale --> */}
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
+                  />
+                </svg>
               </div>
-              <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">No hidden fees</dt>
+              <div className="mt-5">
+                <dt className="text-lg leading-6 font-medium text-gray-900">Verbeteren conditie</dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                  iste dolor cupiditate blanditiis ratione.
+                  Corporis quisquam nostrum nulla veniam recusandae temporibus aperiam officia incidunt at distinctio
+                  ratione.
                 </dd>
               </div>
             </div>
 
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                  {/* <!-- Heroicon name: lightning-bolt --> */}
-                  <svg
-                    className="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
+            <div>
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                {/* <!-- Heroicon name: lightning-bolt --> */}
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
               </div>
-              <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">Transfers are instant</dt>
+              <div className="mt-5">
+                <dt className="text-lg leading-6 font-medium text-gray-900">Gezond afvallen</dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                  iste dolor cupiditate blanditiis ratione.
+                  Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit
+                  doloribus mollitia.
                 </dd>
               </div>
             </div>
 
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                  {/* <!-- Heroicon name: annotation --> */}
-                  <svg
-                    className="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                    />
-                  </svg>
-                </div>
+            <div>
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                {/* <!-- Heroicon name: mail --> */}
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
               </div>
-              <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">Mobile notifications</dt>
+              <div className="mt-5">
+                <dt className="text-lg leading-6 font-medium text-gray-900">Verbeteren techniek</dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                  iste dolor cupiditate blanditiis ratione.
+                  Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde
+                  accusantium.
                 </dd>
               </div>
             </div>
@@ -376,9 +229,9 @@ function Content() {
     <div className="py-16 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
         <div className="text-base max-w-prose mx-auto lg:max-w-none">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Transactions</h2>
+          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Coaching</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            What makes us different
+            Waarom kiezen voor personal coaching?
           </p>
         </div>
         <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
@@ -405,7 +258,7 @@ function Content() {
                 velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus
                 egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
               </p>
-              <h3>We’re here to help</h3>
+              <h3>Ondersteuning</h3>
               <p>
                 Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam.
                 Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa,
@@ -456,11 +309,15 @@ function Content() {
             </svg>
             <blockquote className="relative bg-white rounded-lg shadow-lg">
               <div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
-                <img
+                <div className="prose">
+                  <h3>Enorme hulp voor starters</h3>
+                </div>
+                {/* <img
                   src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
                   alt="Workcation"
                   className="h-8"
-                />
+                /> */}
+                {/* <h5>Veel nut aan gehad!</h5> */}
                 <div className="relative text-lg text-gray-700 font-medium mt-8">
                   <svg
                     className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200"
@@ -486,8 +343,8 @@ function Content() {
                   />
                 </div>
                 <span className="relative ml-4 text-indigo-300 font-semibold leading-6 sm:ml-24 sm:pl-1">
-                  <p className="text-white font-semibold sm:inline">Judith Black</p>{' '}
-                  <p className="sm:inline">CEO at Workcation</p>
+                  <p className="text-white font-semibold sm:inline">Dikken trol</p>{' '}
+                  <p className="sm:inline">Klant sinds xx/xx/xxxx</p>
                 </span>
               </cite>
             </blockquote>
