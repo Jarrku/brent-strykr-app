@@ -45,10 +45,10 @@ export default function About() {
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none ">
                   <img
                     className="rounded-lg shadow-lg object-cover object-top lg:object-center"
-                    src="/brent.jpg"
+                    src="/brent.webp"
                     alt="Brent De Wolf"
-                    width="1184"
-                    height="1376"
+                    width={1184}
+                    height={1376}
                   />
                 </div>
                 <figcaption className="mt-3 flex text-sm text-gray-500">

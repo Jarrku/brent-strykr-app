@@ -67,7 +67,8 @@ export default function Site() {
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80"
+            src="/fitness-landing.webp"
+            // src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80"
             alt=""
           />
         </div>
@@ -338,11 +339,13 @@ function Content() {
                 <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
                   <img
                     className="w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-indigo-300"
-                    src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80"
+                    src="/testimonial-1.webp"
+                    width={80}
+                    height={80}
                     alt=""
                   />
                 </div>
-                <span className="relative ml-4 text-indigo-300 font-semibold leading-6 sm:ml-24 sm:pl-1">
+                <span className="relative ml-4 text-indigo-200 font-semibold leading-6 sm:ml-24 sm:pl-1">
                   <p className="text-white font-semibold sm:inline">Dikken trol</p>{' '}
                   <p className="sm:inline">Klant sinds xx/xx/xxxx</p>
                 </span>
