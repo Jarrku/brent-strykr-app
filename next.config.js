@@ -1,5 +1,9 @@
 const withPlugins = require('next-compose-plugins');
 
+const withPrefresh = require('@prefresh/next');
+const preact = require('preact');
+const withPreact = require('next-plugin-preact');
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -18,4 +22,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withPlugins([], nextConfig);
+module.exports = withPlugins([[withPreact, { experimental: { modern: true } }]], nextConfig);
