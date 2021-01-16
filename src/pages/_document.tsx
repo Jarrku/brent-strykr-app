@@ -10,7 +10,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="nl">
-        <Head />
+        <Head>
+          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        </Head>
         <body>
           <Main />
           <NextScript />
