@@ -55,7 +55,7 @@ function MobileNavLink({ children, href, ...props }: AnchorProps & { href: strin
 function Nav() {
   return (
     <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-      <NavLink href="/site">Home</NavLink>
+      <NavLink href="/">Home</NavLink>
       <NavLink href="/about">Over mezelf</NavLink>
       <NavLink href="/pricing">Tarieven</NavLink>
       <NavLink href="/contact">Contact</NavLink>
@@ -67,7 +67,7 @@ function MobileNav() {
   return (
     <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
       <div className="px-2 pt-2 pb-3 space-y-1" role="none">
-        <MobileNavLink href="/site">Home</MobileNavLink>
+        <MobileNavLink href="/">Home</MobileNavLink>
         <MobileNavLink href="/about">Over mezelf</MobileNavLink>
         <MobileNavLink href="/pricing">Tarieven</MobileNavLink>
         <MobileNavLink href="/contact">Contact</MobileNavLink>
