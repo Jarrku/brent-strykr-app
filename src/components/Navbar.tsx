@@ -76,11 +76,20 @@ function MobileNav() {
   );
 }
 
-export function Navbar({ className }: { className?: string }) {
+export function Navbar({ className, preview }: { className?: string; preview?: boolean }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
+      {preview && (
+        <a
+          className="bottom-2 right-2 fixed z-50 p-2 bg-yellow-300 rounded-md hover:bg-yellow-500"
+          href="/api/preview-disable"
+        >
+          Disable Preview
+        </a>
+      )}
+
       <div className={clsx('relative pt-6 px-4 sm:px-6 lg:px-8', className)}>
         <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
