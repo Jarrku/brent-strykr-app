@@ -14,6 +14,7 @@ import {
 import { Navbar } from '@/components/Navbar';
 import { GlobeIcon } from '@/components/icons/GlobeIcon';
 import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
+import Head from 'next/head';
 
 const homeId = '3ZRIBHbWfwN3UNvLWRaU3b';
 
@@ -36,6 +37,10 @@ type Props = Omit<PageProps, 'preview'>;
 export default function Site({ t, preview }: PageProps) {
   return (
     <>
+      <Head>
+        <link rel="preconnect" href="https://images.ctfassets.net" />
+        <link rel="preload" as="image" href={t.heroImage.url} />
+      </Head>
       <div className="relative bg-gray-50 overflow-hidden ">
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 bg-gray-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 ">
@@ -78,6 +83,8 @@ export default function Site({ t, preview }: PageProps) {
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            width={1500}
+            height={1000}
             src={t.heroImage.url}
             alt={t.heroImage.title}
           />

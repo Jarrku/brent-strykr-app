@@ -4,6 +4,10 @@ const withPrefresh = require('@prefresh/next');
 const preact = require('preact');
 const withPreact = require('next-plugin-preact');
 
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 const nextConfig = {
   reactStrictMode: true,
 
@@ -36,4 +40,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withPlugins([[withPreact, { experimental: { modern: true } }]], nextConfig);
+module.exports = withPlugins([[withBundleAnalyzer], [withPreact, { experimental: { modern: true } }]], nextConfig);
