@@ -55,7 +55,7 @@ function MobileNavLink({ children, href, ...props }: AnchorProps & { href: strin
 function Nav() {
   return (
     <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-      <NavLink href="/site">Home</NavLink>
+      <NavLink href="/">Home</NavLink>
       <NavLink href="/about">Over mezelf</NavLink>
       <NavLink href="/pricing">Tarieven</NavLink>
       <NavLink href="/contact">Contact</NavLink>
@@ -67,7 +67,7 @@ function MobileNav() {
   return (
     <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
       <div className="px-2 pt-2 pb-3 space-y-1" role="none">
-        <MobileNavLink href="/site">Home</MobileNavLink>
+        <MobileNavLink href="/">Home</MobileNavLink>
         <MobileNavLink href="/about">Over mezelf</MobileNavLink>
         <MobileNavLink href="/pricing">Tarieven</MobileNavLink>
         <MobileNavLink href="/contact">Contact</MobileNavLink>
@@ -76,11 +76,20 @@ function MobileNav() {
   );
 }
 
-export function Navbar({ className }: { className?: string }) {
+export function Navbar({ className, preview }: { className?: string; preview?: boolean }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
+      {preview && (
+        <a
+          className="bottom-2 right-2 fixed z-50 p-2 bg-yellow-300 rounded-md hover:bg-yellow-500"
+          href="/api/preview-disable"
+        >
+          Disable Preview
+        </a>
+      )}
+
       <div className={clsx('relative pt-6 px-4 sm:px-6 lg:px-8', className)}>
         <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">

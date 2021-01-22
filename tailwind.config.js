@@ -7,7 +7,7 @@ module.exports = {
     // typography: (theme) => ({}),
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         rose: colors.rose,
