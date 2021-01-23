@@ -1,3 +1,5 @@
+import 'twin.macro';
+
 export function LightningBoltIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg

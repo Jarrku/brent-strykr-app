@@ -1,3 +1,5 @@
+import 'twin.macro';
+
 export function EmailIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg

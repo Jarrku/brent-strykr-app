@@ -1,3 +1,5 @@
+import 'twin.macro';
+
 export function GlobeIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg

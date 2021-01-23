@@ -1,3 +1,5 @@
+import 'twin.macro';
+
 export function CheckIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg

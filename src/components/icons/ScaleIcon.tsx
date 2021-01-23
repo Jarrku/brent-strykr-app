@@ -1,3 +1,5 @@
+import 'twin.macro';
+
 export function ScaleIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg

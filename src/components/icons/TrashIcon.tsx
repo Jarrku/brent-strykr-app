@@ -1,3 +1,5 @@
+import 'twin.macro';
+
 export function TrashIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" {...props}>
