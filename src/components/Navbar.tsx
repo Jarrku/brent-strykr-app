@@ -2,18 +2,21 @@ import { Transition } from '@headlessui/react';
 import { DetailedHTMLProps, AnchorHTMLAttributes, useState } from 'react';
 import clsx from 'clsx';
 
+import Image from 'next/image';
+
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 function BusinessIcon() {
   return (
-    <img
-      className="h-8 w-auto sm:h-10"
-      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-      alt="company-logo"
-      width={43.75}
-      height={40}
-    />
+    <div className="h-8 w-8 sm:h-10 sm:w-10 relative">
+      <Image
+        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+        alt="strykr-logo"
+        layout="fill"
+        priority
+      />
+    </div>
   );
 }
 
@@ -136,11 +139,14 @@ export function Navbar({ className, preview }: { className?: string; preview?: b
             <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt=""
-                  />
+                  <div className="h-8 w-8 relative">
+                    <Image
+                      priority
+                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      alt="strykr-logo"
+                      layout="fill"
+                    />
+                  </div>
                 </div>
                 <div className="-mr-2">
                   <button
