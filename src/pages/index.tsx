@@ -1,27 +1,17 @@
-import { DetailedHTMLProps, AnchorHTMLAttributes } from 'react';
-// import Image from 'next/image';
 import clsx from 'clsx';
+import { DetailedHTMLProps, AnchorHTMLAttributes } from 'react';
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 
-import {
-  ExplainerContentCollectionItem,
-  getContentfulClient,
-  homeQuery,
-  HomeResponse,
-  Testimonial,
-} from '@/lib/contentfulClient';
+import Image from 'next/image';
+
+import { getHomepageData, Testimonial, ContentList } from '@/lib/contentfulClient';
 
 import { Navbar } from '@/components/Navbar';
 import { GlobeIcon } from '@/components/icons/GlobeIcon';
 import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
-import Head from 'next/head';
-
-const homeId = '3ZRIBHbWfwN3UNvLWRaU3b';
 
 export const getStaticProps = async ({ preview }: GetStaticPropsContext) => {
-  const res = await getContentfulClient(preview)
-    .query<HomeResponse>(homeQuery, { id: homeId, preview: !!preview })
-    .toPromise();
+  const res = await getHomepageData(preview);
 
   return {
     props: {
@@ -37,10 +27,6 @@ type Props = Omit<PageProps, 'preview'>;
 export default function Site({ t, preview }: PageProps) {
   return (
     <>
-      <Head>
-        <link rel="preconnect" href="https://images.ctfassets.net" />
-        <link rel="preload" as="image" href={t.heroImage.url} />
-      </Head>
       <div className="relative bg-gray-50 overflow-hidden ">
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 bg-gray-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 ">
@@ -81,13 +67,9 @@ export default function Site({ t, preview }: PageProps) {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            width={1500}
-            height={1000}
-            src={t.heroImage.url}
-            alt={t.heroImage.title}
-          />
+          <div className="h-56 sm:h-72 md:h-96 lg:h-full w-full relative">
+            <Image layout="fill" objectFit="cover" src={t.heroImage.url} alt={t.heroImage.title} priority />
+          </div>
         </div>
       </div>
       <FeatureList t={t} />
@@ -110,7 +92,7 @@ function FeatureList({ t }: Props) {
           <div className="lg:col-span-1">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">{t.featuresTitle}</h2>
           </div>
-          <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
+          <div className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
             {t.featuresCollection.items.map((item) => (
               <FeatureItem
                 key={item.sys.id}
@@ -122,7 +104,7 @@ function FeatureList({ t }: Props) {
             {/* <ScaleIcon className="h-6 w-6" /> */}
             {/* <LightningBoltIcon className="h-6 w-6" /> */}
             {/* <EmailIcon className="h-6 w-6" /> */}
-          </dl>
+          </div>
         </div>
       </div>
     </div>
@@ -213,15 +195,15 @@ function FeatureItem({ title, description, logo }: { title: string; description:
   return (
     <div>
       <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">{logo}</div>
-      <div className="mt-5">
+      <dl className="mt-5">
         <dt className="text-lg leading-6 font-medium text-gray-900">{title}</dt>
         <dd className="mt-2 text-base text-gray-500">{description}</dd>
-      </div>
+      </dl>
     </div>
   );
 }
 
-function Paragraphs({ items }: { items: ExplainerContentCollectionItem[] }) {
+function Paragraphs({ items }: Pick<ContentList, 'items'>) {
   return (
     <>
       {items.map(({ sys, content, listItems }) =>
@@ -266,13 +248,14 @@ function TestimonialUI({ testimonial }: { testimonial: Testimonial }) {
       </div>
       <cite className="relative flex items-center sm:items-start bg-indigo-600 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
         <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
-          <img
-            className="w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-indigo-300"
-            src={testimonial.authorImage.url}
-            alt={testimonial.authorImage.title}
-            width={80}
-            height={80}
-          />
+          <div className="w-12 h-12 sm:w-20 sm:h-20 relative">
+            <Image
+              className="rounded-full bg-indigo-300"
+              src={testimonial.authorImage.url}
+              alt={testimonial.authorImage.title}
+              layout="fill"
+            />
+          </div>
         </div>
         <span className="relative ml-4 text-indigo-200 font-semibold leading-6 sm:ml-24 sm:pl-1">
           <p className="text-white font-semibold sm:inline">{testimonial.authorName}</p>{' '}
