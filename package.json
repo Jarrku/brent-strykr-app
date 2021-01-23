@@ -13,7 +13,7 @@
     "@headlessui/react": "^0.2.0",
     "clsx": "^1.1.1",
     "idb-keyval": "^5.0.1",
-    "immer": "^8.0.0",
+    "immer": "^8.0.1",
     "next": "10.0.5",
     "next-seo": "^4.17.0",
     "next-sitemap": "^1.4.3",
