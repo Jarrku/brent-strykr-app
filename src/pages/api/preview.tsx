@@ -10,7 +10,6 @@ export default function preview(req: NextApiRequest, res: NextApiResponse) {
     res.setPreviewData({});
     res.redirect(page);
   } else {
-    res.end();
-    throw Error('page query param not passed!');
+    return res.status(401).json({ message: 'Invalid page parameter' });
   }
 }
