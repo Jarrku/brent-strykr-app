@@ -1,11 +1,32 @@
+import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
 import { Navbar } from '@/components/Navbar';
-// import Image from 'next/image';
+import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
+import Image from 'next/image';
 
-export default function About() {
+type PageProps = InferGetStaticPropsType<typeof getStaticProps>;
+// type Props = Omit<PageProps, 'preview'>;
+
+//TODO get correct id
+const aboutId = '3ZRIBHbWfwN3UNvLWRaU3b';
+
+export const getStaticProps = async ({ preview }: GetStaticPropsContext) => {
+  // const res = await getContentfulClient(preview)
+  //   .query(homeQuery, { id: pricingId, preview: !!preview })
+  //   .toPromise();
+
+  return {
+    props: {
+      preview: !!preview,
+      // t: res.data!.home,
+    },
+  };
+};
+
+export default function About({ preview }: PageProps) {
   return (
     <div className="bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <Navbar className="py-4" />
+        <Navbar preview={preview} className="py-4" />
       </div>
 
       <div className="relative max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
@@ -18,37 +39,17 @@ export default function About() {
         </div>
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="relative lg:row-start-1 lg:col-start-2">
-            <svg
-              className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
-              width="404"
-              height="384"
-              fill="none"
-              viewBox="0 0 404 384"
-              aria-hidden="true"
-            >
-              <defs>
-                <pattern
-                  id="de316486-4a29-4312-bdfc-fbce2132a2c1"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor" />
-                </pattern>
-              </defs>
-              <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
-            </svg>
+            <DotsPatternSVG className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20" width="404" height="384" />
+
             <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
               <figure>
-                <div className="aspect-w-12 aspect-h-7 lg:aspect-none ">
-                  <img
+                <div className="aspect-w-12 aspect-h-7 lg:aspect-h-12">
+                  <Image
                     className="rounded-lg shadow-lg object-cover object-top lg:object-center"
                     src="/brent.webp"
                     alt="Brent De Wolf"
-                    width={1184}
-                    height={1376}
+                    layout="fill"
+                    priority
                   />
                 </div>
                 <figcaption className="mt-3 flex text-sm text-gray-500">

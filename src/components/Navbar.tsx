@@ -2,18 +2,21 @@ import { Transition } from '@headlessui/react';
 import { DetailedHTMLProps, AnchorHTMLAttributes, useState } from 'react';
 import clsx from 'clsx';
 
+import Image from 'next/image';
+
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 function BusinessIcon() {
   return (
-    <img
-      className="h-8 w-auto sm:h-10"
-      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-      alt="company-logo"
-      width={43.75}
-      height={40}
-    />
+    <div className="h-8 w-8 sm:h-10 sm:w-10 relative">
+      <Image
+        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+        alt="strykr-logo"
+        layout="fill"
+        priority
+      />
+    </div>
   );
 }
 
@@ -55,7 +58,7 @@ function MobileNavLink({ children, href, ...props }: AnchorProps & { href: strin
 function Nav() {
   return (
     <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-      <NavLink href="/site">Home</NavLink>
+      <NavLink href="/">Home</NavLink>
       <NavLink href="/about">Over mezelf</NavLink>
       <NavLink href="/pricing">Tarieven</NavLink>
       <NavLink href="/contact">Contact</NavLink>
@@ -67,7 +70,7 @@ function MobileNav() {
   return (
     <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
       <div className="px-2 pt-2 pb-3 space-y-1" role="none">
-        <MobileNavLink href="/site">Home</MobileNavLink>
+        <MobileNavLink href="/">Home</MobileNavLink>
         <MobileNavLink href="/about">Over mezelf</MobileNavLink>
         <MobileNavLink href="/pricing">Tarieven</MobileNavLink>
         <MobileNavLink href="/contact">Contact</MobileNavLink>
@@ -76,11 +79,20 @@ function MobileNav() {
   );
 }
 
-export function Navbar({ className }: { className?: string }) {
+export function Navbar({ className, preview }: { className?: string; preview?: boolean }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
+      {preview && (
+        <a
+          className="bottom-2 right-2 fixed z-50 p-2 bg-yellow-300 rounded-md hover:bg-yellow-500"
+          href="/api/preview-disable"
+        >
+          Disable Preview
+        </a>
+      )}
+
       <div className={clsx('relative pt-6 px-4 sm:px-6 lg:px-8', className)}>
         <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
@@ -127,11 +139,14 @@ export function Navbar({ className }: { className?: string }) {
             <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt=""
-                  />
+                  <div className="h-8 w-8 relative">
+                    <Image
+                      priority
+                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      alt="strykr-logo"
+                      layout="fill"
+                    />
+                  </div>
                 </div>
                 <div className="-mr-2">
                   <button
