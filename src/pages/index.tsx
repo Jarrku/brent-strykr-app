@@ -4,30 +4,33 @@ import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 
 import Image from 'next/image';
 
-import { getHomepageData, Testimonial, ContentList } from '@/lib/contentfulClient';
+import { getHomepageData } from '@/lib/contentfulClient';
+import type { IContentListItem, ITestimonial } from '@/lib/fragments';
 
 import { Navbar } from '@/components/Navbar';
 import { GlobeIcon } from '@/components/icons/GlobeIcon';
 import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
 
-export const getStaticProps = async ({ preview }: GetStaticPropsContext) => {
-  const res = await getHomepageData(preview);
+export const getStaticProps = async ({ preview = false }: GetStaticPropsContext) => {
+  const [homepage, navbar] = await getHomepageData(preview);
+  if (!homepage.data || !navbar.data) throw new Error('Failed to fetch data from contentful');
 
   return {
     props: {
-      preview: !!preview,
-      t: res.data!.home,
+      preview,
+      t: homepage.data.home,
+      navbar: navbar.data.navbar,
     },
   };
 };
 
 type PageProps = InferGetStaticPropsType<typeof getStaticProps>;
-type Props = Omit<PageProps, 'preview'>;
+type Props = Pick<PageProps, 't'>;
 
-export default function Site({ t, preview }: PageProps) {
+export default function Site({ t, navbar, preview }: PageProps) {
   return (
     <>
-      <div className="relative bg-gray-50 overflow-hidden ">
+      <div className="relative bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 bg-gray-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 ">
             <svg
@@ -39,7 +42,7 @@ export default function Site({ t, preview }: PageProps) {
             >
               <polygon points="50,0 100,0 50,100 0,100" />
             </svg>
-            <Navbar preview={preview} />
+            <Navbar preview={preview} navbar={navbar} />
 
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 ">
               <div className="sm:text-center lg:text-left">
@@ -203,7 +206,7 @@ function FeatureItem({ title, description, logo }: { title: string; description:
   );
 }
 
-function Paragraphs({ items }: Pick<ContentList, 'items'>) {
+function Paragraphs({ items }: { items: IContentListItem[] }) {
   return (
     <>
       {items.map(({ sys, content, listItems }) =>
@@ -221,7 +224,7 @@ function Paragraphs({ items }: Pick<ContentList, 'items'>) {
   );
 }
 
-function TestimonialUI({ testimonial }: { testimonial: Testimonial }) {
+function TestimonialUI({ testimonial }: { testimonial: ITestimonial }) {
   return (
     <blockquote className="relative bg-white rounded-lg shadow-lg">
       <div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">

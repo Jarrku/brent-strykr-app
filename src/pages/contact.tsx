@@ -1,35 +1,33 @@
-import { Navbar } from '@/components/Navbar';
 import { useState } from 'react';
 import clsx from 'clsx';
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
+
+import { getContactpageData } from '@/lib/contentfulClient';
+import { Navbar } from '@/components/Navbar';
 import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
 
-type PageProps = InferGetStaticPropsType<typeof getStaticProps>;
-// type Props = Omit<PageProps, 'preview'>;
-
-//TODO get correct id
-const contactId = '3ZRIBHbWfwN3UNvLWRaU3b';
-
-export const getStaticProps = async ({ preview }: GetStaticPropsContext) => {
-  // const res = await getContentfulClient(preview)
-  //   .query(homeQuery, { id: pricingId, preview: !!preview })
-  //   .toPromise();
+export const getStaticProps = async ({ preview = false }: GetStaticPropsContext) => {
+  const [contact, navbar] = await getContactpageData(preview);
+  if (!contact.data || !navbar.data) throw new Error('Failed to fetch data from contentful');
 
   return {
     props: {
-      preview: !!preview,
-      // t: res.data!.home,
+      preview,
+      t: contact.data.contactPage,
+      navbar: navbar.data.navbar,
     },
   };
 };
 
-export default function Contact({ preview }: PageProps) {
+type PageProps = InferGetStaticPropsType<typeof getStaticProps>;
+
+export default function Contact({ t, navbar, preview }: PageProps) {
   const [policiesAccepted, setPoliciesAccepted] = useState(false);
 
   return (
     <div className="bg-white overflow-hidden min-h-screen">
       <div className="max-w-7xl mx-auto">
-        <Navbar preview={preview} className="py-4" />
+        <Navbar preview={preview} navbar={navbar} className="py-4" />
       </div>
       <div className="bg-white py-12 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-12">
         <div className="relative max-w-xl mx-auto">
@@ -41,11 +39,8 @@ export default function Contact({ preview }: PageProps) {
           />
 
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Contact</h2>
-            <p className="mt-4 text-lg leading-6 text-gray-500">
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus
-              arcu.
-            </p>
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">{t.title}</h2>
+            <p className="mt-4 text-lg leading-6 text-gray-500">{t.intro}</p>
           </div>
           <div className="mt-12">
             <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
@@ -104,7 +99,7 @@ export default function Contact({ preview }: PageProps) {
                   type="submit"
                   className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                  Verzenden
+                  {t.cta}
                 </button>
               </div>
             </form>

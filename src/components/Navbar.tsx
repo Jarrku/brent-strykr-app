@@ -3,22 +3,10 @@ import { DetailedHTMLProps, AnchorHTMLAttributes, useState } from 'react';
 import clsx from 'clsx';
 
 import Image from 'next/image';
-
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-function BusinessIcon() {
-  return (
-    <div className="h-8 w-8 sm:h-10 sm:w-10 relative">
-      <Image
-        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-        alt="strykr-logo"
-        layout="fill"
-        priority
-      />
-    </div>
-  );
-}
+import { INavbar } from '@/lib/fragments';
 
 interface AnchorProps extends DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> {}
 
@@ -55,31 +43,40 @@ function MobileNavLink({ children, href, ...props }: AnchorProps & { href: strin
   );
 }
 
-function Nav() {
+function Nav({ navbar }: { navbar: INavbar }) {
   return (
     <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-      <NavLink href="/">Home</NavLink>
-      <NavLink href="/about">Over mezelf</NavLink>
+      {navbar.linksCollection.items.map((navItem) => (
+        <NavLink key={navItem.sys.id} href={navItem.url}>
+          {navItem.label}
+        </NavLink>
+      ))}
+      {/* <NavLink href="/about">Over mezelf</NavLink>
       <NavLink href="/pricing">Tarieven</NavLink>
-      <NavLink href="/contact">Contact</NavLink>
+      <NavLink href="/contact">Contact</NavLink> */}
     </div>
   );
 }
 
-function MobileNav() {
+function MobileNav({ navbar }: { navbar: INavbar }) {
   return (
     <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
       <div className="px-2 pt-2 pb-3 space-y-1" role="none">
-        <MobileNavLink href="/">Home</MobileNavLink>
+        {navbar.linksCollection.items.map((navItem) => (
+          <MobileNavLink key={navItem.sys.id} href={navItem.url}>
+            {navItem.label}
+          </MobileNavLink>
+        ))}
+        {/* <MobileNavLink href="/">Home</MobileNavLink>
         <MobileNavLink href="/about">Over mezelf</MobileNavLink>
         <MobileNavLink href="/pricing">Tarieven</MobileNavLink>
-        <MobileNavLink href="/contact">Contact</MobileNavLink>
+        <MobileNavLink href="/contact">Contact</MobileNavLink> */}
       </div>
     </div>
   );
 }
 
-export function Navbar({ className, preview }: { className?: string; preview?: boolean }) {
+export function Navbar({ className, preview, navbar }: { className?: string; preview?: boolean; navbar: INavbar }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -97,7 +94,9 @@ export function Navbar({ className, preview }: { className?: string; preview?: b
         <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
-              <BusinessIcon />
+              <div className="h-8 w-8 sm:h-10 sm:w-10 relative">
+                <Image src={navbar.icon.url} alt={navbar.icon.title} layout="fill" priority />
+              </div>
               <div className="-mr-2 flex items-center md:hidden">
                 <button
                   onClick={() => setIsMenuOpen(true)}
@@ -106,7 +105,7 @@ export function Navbar({ className, preview }: { className?: string; preview?: b
                   id="main-menu"
                   aria-haspopup="true"
                 >
-                  <span className="sr-only">Open main menu</span>
+                  <span className="sr-only">Open menu</span>
                   {/* <!-- Heroicon name: menu --> */}
                   <svg
                     className="h-6 w-6"
@@ -122,7 +121,7 @@ export function Navbar({ className, preview }: { className?: string; preview?: b
               </div>
             </div>
           </div>
-          <Nav />
+          <Nav navbar={navbar} />
         </nav>
       </div>
       <Transition
@@ -140,12 +139,7 @@ export function Navbar({ className, preview }: { className?: string; preview?: b
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
                   <div className="h-8 w-8 relative">
-                    <Image
-                      priority
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                      alt="strykr-logo"
-                      layout="fill"
-                    />
+                    <Image priority src={navbar.icon.url} alt={navbar.icon.title} layout="fill" />
                   </div>
                 </div>
                 <div className="-mr-2">
@@ -154,7 +148,7 @@ export function Navbar({ className, preview }: { className?: string; preview?: b
                     type="button"
                     className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                   >
-                    <span className="sr-only">Close main menu</span>
+                    <span className="sr-only">Sluit menu</span>
                     {/* <!-- Heroicon name: x --> */}
                     <svg
                       className="h-6 w-6"
@@ -169,7 +163,7 @@ export function Navbar({ className, preview }: { className?: string; preview?: b
                   </button>
                 </div>
               </div>
-              <MobileNav />
+              <MobileNav navbar={navbar} />
             </div>
           </div>
         )}
