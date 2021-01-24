@@ -12,8 +12,11 @@ import { GlobeIcon } from '@/components/icons/GlobeIcon';
 import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
 import { Footer } from '@/components/Footer';
 
-export const getStaticProps = async ({ preview = false }: GetStaticPropsContext) => {
+export const getStaticProps = async (context: GetStaticPropsContext) => {
+  const preview = context.preview ?? false;
   const [homepage, navbar] = await getHomepageData(preview);
+  console.log({ preview });
+
   if (!homepage.data || !navbar.data) throw new Error('Failed to fetch data from contentful');
 
   return {
