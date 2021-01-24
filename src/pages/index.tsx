@@ -10,6 +10,7 @@ import type { IContentListItem, ITestimonial } from '@/lib/fragments';
 import { Navbar } from '@/components/Navbar';
 import { GlobeIcon } from '@/components/icons/GlobeIcon';
 import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
+import { Footer } from '@/components/Footer';
 
 export const getStaticProps = async ({ preview = false }: GetStaticPropsContext) => {
   const [homepage, navbar] = await getHomepageData(preview);
@@ -77,6 +78,7 @@ export default function Site({ t, navbar, preview }: PageProps) {
       </div>
       <FeatureList t={t} />
       <Content t={t} />
+      <Footer />
     </>
   );
 }

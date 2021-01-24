@@ -4,6 +4,7 @@ import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 import { CheckIcon } from '@/components/icons/CheckIcon';
 import { Navbar } from '@/components/Navbar';
 import { getPricingpageData } from '@/lib/contentfulClient';
+import { Footer } from '@/components/Footer';
 
 export const getStaticProps = async ({ preview = false }: GetStaticPropsContext) => {
   const [pricing, navbar] = await getPricingpageData(preview);
@@ -24,65 +25,68 @@ export default function Pricing({ t, navbar, preview }: PageProps) {
   const [first, second, third] = t.priceItemsCollection.items;
 
   return (
-    <div className="relative bg-white overflow-hidden ">
-      <div className="max-w-7xl mx-auto">
-        <Navbar preview={preview} navbar={navbar} className="py-4" />
-      </div>
-      <div className="bg-gray-900">
-        <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-12">
-          <div className="text-center">
-            <h2 className="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">{t.title}</h2>
-            <p className="mt- text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">{t.subtitle}</p>
-            <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">{t.intro}</p>
-          </div>
+    <>
+      <div className="relative bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <Navbar preview={preview} navbar={navbar} className="py-4" />
         </div>
+        <div className="bg-gray-900">
+          <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-12">
+            <div className="text-center">
+              <h2 className="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">{t.title}</h2>
+              <p className="mt- text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">{t.subtitle}</p>
+              <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">{t.intro}</p>
+            </div>
+          </div>
 
-        <div className="mt-16 bg-white pb-12 lg:mt-20 lg:pb-20">
-          <div className="relative z-0">
-            <div className="absolute inset-0 h-5/6 bg-gray-900 lg:h-2/3"></div>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="relative lg:grid lg:grid-cols-7">
-                {first && (
-                  <div className="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
-                    <RegularPriceItem
-                      className="lg:rounded-l-lg"
-                      id={first.title}
-                      title={first.title}
-                      price={first.price}
-                      benefits={first.benefits}
-                      buttonText={first.cta}
-                    />
-                  </div>
-                )}
-                {second && (
-                  <div className="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
-                    <HighlightedPriceItem
-                      id={second.title}
-                      title={second.title}
-                      price={second.price}
-                      benefits={second.benefits}
-                      buttonText={second.cta}
-                    />
-                  </div>
-                )}
-                {third && (
-                  <div className="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
-                    <RegularPriceItem
-                      className="lg:rounded-r-lg"
-                      id={third.title}
-                      title={third.title}
-                      price={third.price}
-                      benefits={third.benefits}
-                      buttonText={third.cta}
-                    />
-                  </div>
-                )}
+          <div className="mt-16 bg-white pb-12 lg:mt-20 lg:pb-20">
+            <div className="relative z-0">
+              <div className="absolute inset-0 h-5/6 bg-gray-900 lg:h-2/3"></div>
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative lg:grid lg:grid-cols-7">
+                  {first && (
+                    <div className="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
+                      <RegularPriceItem
+                        className="lg:rounded-l-lg"
+                        id={first.title}
+                        title={first.title}
+                        price={first.price}
+                        benefits={first.benefits}
+                        buttonText={first.cta}
+                      />
+                    </div>
+                  )}
+                  {second && (
+                    <div className="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
+                      <HighlightedPriceItem
+                        id={second.title}
+                        title={second.title}
+                        price={second.price}
+                        benefits={second.benefits}
+                        buttonText={second.cta}
+                      />
+                    </div>
+                  )}
+                  {third && (
+                    <div className="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
+                      <RegularPriceItem
+                        className="lg:rounded-r-lg"
+                        id={third.title}
+                        title={third.title}
+                        price={third.price}
+                        benefits={third.benefits}
+                        buttonText={third.cta}
+                      />
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 
