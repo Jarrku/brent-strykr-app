@@ -13,7 +13,7 @@ export function DotsPatternSVG({
     <svg
       className={className}
       width={width}
-      height={width}
+      height={height}
       fill="none"
       viewBox={`0 0 ${width} ${height}`}
       aria-hidden="true"

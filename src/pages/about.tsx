@@ -1,7 +1,7 @@
 import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
 import { Navbar } from '@/components/Navbar';
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
-// import Image from 'next/image';
+import Image from 'next/image';
 
 type PageProps = InferGetStaticPropsType<typeof getStaticProps>;
 // type Props = Omit<PageProps, 'preview'>;
@@ -43,13 +43,13 @@ export default function About({ preview }: PageProps) {
 
             <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
               <figure>
-                <div className="aspect-w-12 aspect-h-7 lg:aspect-none ">
-                  <img
+                <div className="aspect-w-12 aspect-h-7 lg:aspect-h-12">
+                  <Image
                     className="rounded-lg shadow-lg object-cover object-top lg:object-center"
                     src="/brent.webp"
                     alt="Brent De Wolf"
-                    width={1184}
-                    height={1376}
+                    layout="fill"
+                    priority
                   />
                 </div>
                 <figcaption className="mt-3 flex text-sm text-gray-500">

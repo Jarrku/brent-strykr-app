@@ -1,16 +1,19 @@
 import { createClient, gql } from 'urql';
 
-const previewClient = createClient({
-  url: process.env.contentfulPreviewGraphQLUrl!,
-});
-
-const client = createClient({
-  url: process.env.contentfulGraphQLUrl!,
-});
+const previewClient = createClient({ url: process.env.contentfulPreviewGraphQLUrl! });
+const client = createClient({ url: process.env.contentfulGraphQLUrl! });
 
 export const getContentfulClient = (preview?: boolean) => (preview ? previewClient : client);
 
-export const homeQuery = gql`
+const homeId = '3ZRIBHbWfwN3UNvLWRaU3b';
+
+export function getHomepageData(preview?: boolean) {
+  return getContentfulClient(preview)
+    .query<HomeResponse>(homeQuery, { id: homeId, preview: !!preview })
+    .toPromise();
+}
+
+const homeQuery = gql`
   query homeQuery($id: String!, $preview: Boolean!) {
     home(id: $id, preview: $preview) {
       heroTitle
@@ -102,21 +105,21 @@ export interface Home {
   featuresCollection: FeaturesCollection;
   explainerTitle: string;
   explainerSubtitle: string;
-  explainerContentCollection: ExplainerContentCollection;
+  explainerContentCollection: ContentList;
   explainerSectionTitle: string;
-  explainerSectionContentCollection: ExplainerContentCollection;
+  explainerSectionContentCollection: ContentList;
   explainerCtaPrimary: string;
   explainerCtaSecondary: string;
   testimonial: Testimonial;
   __typename: string;
 }
 
-export interface ExplainerContentCollection {
-  items: ExplainerContentCollectionItem[];
+export interface ContentList {
+  items: ContentItem[];
   __typename: string;
 }
 
-export interface ExplainerContentCollectionItem {
+export interface ContentItem {
   sys: {
     id: string;
   };

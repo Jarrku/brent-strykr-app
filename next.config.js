@@ -1,10 +1,15 @@
 const withPlugins = require('next-compose-plugins');
+const withPreact = require('next-plugin-preact');
+
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
 
 const nextConfig = {
   reactStrictMode: true,
 
   images: {
-    domains: ['tailwindui.com', 'images.unsplash.com'],
+    domains: ['tailwindui.com', 'images.unsplash.com', 'images.ctfassets.net'],
   },
   async headers() {
     return [
@@ -32,4 +37,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withPlugins([], nextConfig);
+module.exports = withPlugins([[withBundleAnalyzer], [withPreact]], nextConfig);
