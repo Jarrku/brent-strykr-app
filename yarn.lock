@@ -841,6 +841,20 @@
   resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.3.1.tgz#253ce580c8e06b6163d9a288edd24f25e1d0dfee"
   integrity sha512-HyZ+3Eay8SGaPq7kcFoANZLr4EjeXQ19yjjb9fp6B0PHHpvZoe00jdsnpnooMEbx9J5rQ93nxPUG3MQmXVxGMQ==
 
+"@testing-library/dom@^7.16.2":
+  version "7.29.6"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.29.6.tgz#eb37844fb431186db7960a7ff6749ea65a19617c"
+  integrity sha512-vzTsAXa439ptdvav/4lsKRcGpAQX7b6wBIqia7+iNzqGJ5zjswApxA6jDAsexrc6ue9krWcbh8o+LYkBXW+GCQ==
+  dependencies:
+    "@babel/code-frame" "^7.10.4"
+    "@babel/runtime" "^7.12.5"
+    "@types/aria-query" "^4.2.0"
+    aria-query "^4.2.2"
+    chalk "^4.1.0"
+    dom-accessibility-api "^0.5.4"
+    lz-string "^1.4.4"
+    pretty-format "^26.6.2"
+
 "@testing-library/dom@^7.28.1":
   version "7.29.0"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.29.0.tgz#60b18065bab50a5cde21fe80275a47a43024d9cc"
@@ -868,6 +882,13 @@
     css.escape "^1.5.1"
     lodash "^4.17.15"
     redent "^3.0.0"
+
+"@testing-library/preact@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/preact/-/preact-2.0.1.tgz#c69200b16c4eda58986c8d65e1043ad9cbe409d3"
+  integrity sha512-79kwVOY+3caoLgaPbiPzikjgY0Aya7Fc7TvGtR1upCnz2wrtmPDnN2t9vO7I7vDP2zoA+feSwOH5Q0BFErhaaQ==
+  dependencies:
+    "@testing-library/dom" "^7.16.2"
 
 "@testing-library/react@^11.2.3":
   version "11.2.3"
