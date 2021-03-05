@@ -15,7 +15,6 @@ import { Footer } from '@/components/Footer';
 export const getStaticProps = async (context: GetStaticPropsContext) => {
   const preview = context.preview ?? false;
   const [homepage, navbar] = await getHomepageData(preview);
-  console.log({ preview });
 
   if (!homepage.data || !navbar.data) throw new Error('Failed to fetch data from contentful');
 
@@ -34,11 +33,11 @@ type Props = Pick<PageProps, 't'>;
 export default function Site({ t, navbar, preview }: PageProps) {
   return (
     <>
-      <div className="relative bg-gray-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto">
+      <div className="relative overflow-hidden bg-gray-50">
+        <div className="mx-auto max-w-7xl">
           <div className="relative z-10 pb-8 bg-gray-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 ">
             <svg
-              className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-gray-50 transform translate-x-1/2"
+              className="absolute inset-y-0 right-0 hidden w-48 h-full transform translate-x-1/2 lg:block text-gray-50"
               fill="currentColor"
               viewBox="0 0 100 100"
               preserveAspectRatio="none"
@@ -48,9 +47,9 @@ export default function Site({ t, navbar, preview }: PageProps) {
             </svg>
             <Navbar preview={preview} navbar={navbar} />
 
-            <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 ">
+            <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 ">
               <div className="sm:text-center lg:text-left">
-                <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
                   <span className="block xl:inline">{t.heroTitle}</span>{' '}
                   <span className="block text-indigo-600 xl:inline">{t.heroSubtitle}</span>
                 </h1>
@@ -74,7 +73,7 @@ export default function Site({ t, navbar, preview }: PageProps) {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <div className="h-56 sm:h-72 md:h-96 lg:h-full w-full relative">
+          <div className="relative w-full h-56 sm:h-72 md:h-96 lg:h-full">
             <Image layout="fill" objectFit="cover" src={t.heroImage.url} alt={t.heroImage.title} priority />
           </div>
         </div>
@@ -88,12 +87,12 @@ export default function Site({ t, navbar, preview }: PageProps) {
 
 function FeatureList({ t }: Props) {
   return (
-    <div className="bg-white overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div className="overflow-hidden bg-white">
+      <div className="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <DotsPatternSVG
           width="404"
           height="784"
-          className="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
+          className="absolute top-0 transform -translate-x-1/2 left-full -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
         />
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
@@ -106,12 +105,12 @@ function FeatureList({ t }: Props) {
                 key={item.sys.id}
                 title={item.title}
                 description={item.content}
-                logo={<GlobeIcon className="h-6 w-6" />}
+                logo={<GlobeIcon className="w-6 h-6" />}
               />
             ))}
-            {/* <ScaleIcon className="h-6 w-6" /> */}
-            {/* <LightningBoltIcon className="h-6 w-6" /> */}
-            {/* <EmailIcon className="h-6 w-6" /> */}
+            {/* <ScaleIcon className="w-6 h-6" /> */}
+            {/* <LightningBoltIcon className="w-6 h-6" /> */}
+            {/* <EmailIcon className="w-6 h-6" /> */}
           </div>
         </div>
       </div>
@@ -122,38 +121,38 @@ function FeatureList({ t }: Props) {
 function Content({ t }: Props) {
   const [firstParagraph, ...paragraphs] = t.explainerContentCollection.items;
   return (
-    <div className="py-16 bg-gray-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
-        <div className="text-base max-w-prose mx-auto lg:max-w-none">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">{t.explainerTitle}</h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <div className="py-16 overflow-hidden bg-gray-50">
+      <div className="px-4 mx-auto space-y-8 max-w-7xl sm:px-6 lg:px-8">
+        <div className="mx-auto text-base max-w-prose lg:max-w-none">
+          <h2 className="text-base font-semibold tracking-wide text-indigo-600 uppercase">{t.explainerTitle}</h2>
+          <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
             {t.explainerSubtitle}
           </p>
         </div>
-        <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
+        <div className="relative z-10 mx-auto text-base max-w-prose lg:max-w-5xl lg:mx-0 lg:pr-72">
           <p className="text-lg text-gray-500">{firstParagraph.content}</p>
         </div>
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="relative z-10">
-            <div className="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
+            <div className="mx-auto prose text-gray-500 prose-indigo lg:max-w-none">
               <Paragraphs items={paragraphs} />
               <h3>{t.explainerSectionTitle}</h3>
               <Paragraphs items={t.explainerSectionContentCollection.items} />
             </div>
-            <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
+            <div className="flex mx-auto mt-10 text-base max-w-prose lg:max-w-none">
               <div className="rounded-md shadow">
                 <ExplainerButton href="#" className="text-white bg-indigo-600 hover:bg-indigo-700">
                   {t.explainerCtaPrimary}
                 </ExplainerButton>
               </div>
-              <div className="rounded-md shadow ml-4">
+              <div className="ml-4 rounded-md shadow">
                 <ExplainerButton href="#" className="text-indigo-600 bg-white hover:bg-gray-50">
                   {t.explainerCtaSecondary}
                 </ExplainerButton>
               </div>
             </div>
           </div>
-          <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
+          <div className="relative mx-auto mt-12 text-base max-w-prose lg:mt-0 lg:max-w-none">
             <DotsPatternSVG
               width="404"
               height="384"
@@ -202,9 +201,9 @@ function ExplainerButton({ children, className, ...props }: AnchorProps) {
 function FeatureItem({ title, description, logo }: { title: string; description: string; logo?: React.ReactChild }) {
   return (
     <div>
-      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">{logo}</div>
+      <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">{logo}</div>
       <dl className="mt-5">
-        <dt className="text-lg leading-6 font-medium text-gray-900">{title}</dt>
+        <dt className="text-lg font-medium leading-6 text-gray-900">{title}</dt>
         <dd className="mt-2 text-base text-gray-500">{description}</dd>
       </dl>
     </div>
@@ -232,7 +231,7 @@ function Paragraphs({ items }: { items: IContentListItem[] }) {
 function TestimonialUI({ testimonial }: { testimonial: ITestimonial }) {
   return (
     <blockquote className="relative bg-white rounded-lg shadow-lg">
-      <div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
+      <div className="px-6 py-8 rounded-t-lg sm:px-10 sm:pt-10 sm:pb-8">
         <div className="prose">
           <h3>{testimonial.title}</h3>
         </div>
@@ -242,9 +241,9 @@ function TestimonialUI({ testimonial }: { testimonial: ITestimonial }) {
       className="h-8"
     /> */}
         {/* <h5>Veel nut aan gehad!</h5> */}
-        <div className="relative text-lg text-gray-700 font-medium mt-8">
+        <div className="relative mt-8 text-lg font-medium text-gray-700">
           <svg
-            className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200"
+            className="absolute top-0 left-0 w-8 h-8 text-gray-200 transform -translate-x-3 -translate-y-2"
             fill="currentColor"
             viewBox="0 0 32 32"
             aria-hidden="true"
@@ -254,19 +253,19 @@ function TestimonialUI({ testimonial }: { testimonial: ITestimonial }) {
           <p className="relative">{testimonial.review}</p>
         </div>
       </div>
-      <cite className="relative flex items-center sm:items-start bg-indigo-600 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
-        <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
-          <div className="w-12 h-12 sm:w-20 sm:h-20 relative">
+      <cite className="relative flex items-center px-6 py-5 not-italic bg-indigo-600 rounded-b-lg sm:items-start sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
+        <div className="relative border-2 border-white rounded-full sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
+          <div className="relative w-12 h-12 sm:w-20 sm:h-20">
             <Image
-              className="rounded-full bg-indigo-300"
+              className="bg-indigo-300 rounded-full"
               src={testimonial.authorImage.url}
               alt={testimonial.authorImage.title}
               layout="fill"
             />
           </div>
         </div>
-        <span className="relative ml-4 text-indigo-200 font-semibold leading-6 sm:ml-24 sm:pl-1">
-          <p className="text-white font-semibold sm:inline">{testimonial.authorName}</p>{' '}
+        <span className="relative ml-4 font-semibold leading-6 text-indigo-200 sm:ml-24 sm:pl-1">
+          <p className="font-semibold text-white sm:inline">{testimonial.authorName}</p>{' '}
           <p className="sm:inline">{testimonial.authorSuffix}</p>
         </span>
       </cite>
