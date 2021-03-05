@@ -27,3 +27,16 @@ Tailwind and Emotion are available for styling using utility classes and css-in-
 Testing is facilitated through React Testing Library and Jest.
 
 `next-seo` and `next-sitemap` are doing their jobs very well. Be sure to update `/next-sitemap.js` and `/next-seo.json` with your information!
+
+## TODOS
+
+algemene voorwaarden:
+https://www.bvrpersonaltraining.com/algemene-voorwaarden-verkoopsbeleid
+
+- Tarieven aanpassen naar contact
+
+Homepage:
+
+- 2 Secties: Dieten en Training
+
+- Data editting beter maken

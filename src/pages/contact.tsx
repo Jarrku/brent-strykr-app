@@ -27,17 +27,17 @@ export default function Contact({ t, navbar, preview }: PageProps) {
 
   return (
     <>
-      <div className="bg-white overflow-hidden min-h-screen">
-        <div className="max-w-7xl mx-auto">
+      <div className="min-h-screen overflow-hidden bg-white">
+        <div className="mx-auto max-w-7xl">
           <Navbar preview={preview} navbar={navbar} className="py-4" />
         </div>
-        <div className="bg-white py-12 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-12">
+        <div className="px-4 py-12 overflow-hidden bg-white sm:px-6 lg:px-8 lg:py-12">
           <div className="relative max-w-xl mx-auto">
-            <DotsPatternSVG width="404" height="404" className="absolute left-full transform translate-x-1/2" />
+            <DotsPatternSVG width="404" height="404" className="absolute transform translate-x-1/2 left-full" />
             <DotsPatternSVG
               width="404"
               height="404"
-              className="absolute right-full transform -translate-x-1/2 bottom-0"
+              className="absolute bottom-0 transform -translate-x-1/2 right-full"
             />
 
             <div className="text-center">
@@ -50,13 +50,13 @@ export default function Contact({ t, navbar, preview }: PageProps) {
                 <Input label="Achternaam" id="last_name" autoComplete="family-name" />
 
                 <Input className="sm:col-span-2" label="Email" id="email" autoComplete="email" />
-                <Input
+                {/* <Input
                   className="sm:col-span-2"
                   label="Telefoonnummer"
                   id="phone_number"
                   autoComplete="tel"
                   placeholder="+32 479 22 78 72"
-                />
+                /> */}
                 <Input className="sm:col-span-2" label="Boodschap" id="message" textarea />
 
                 <div className="sm:col-span-2">
@@ -99,7 +99,7 @@ export default function Contact({ t, navbar, preview }: PageProps) {
                 <div className="sm:col-span-2">
                   <button
                     type="submit"
-                    className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
                     {t.cta}
                   </button>
