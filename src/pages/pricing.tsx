@@ -1,212 +1,108 @@
+import { useState } from 'react';
 import clsx from 'clsx';
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 
-import { CheckIcon } from '@/components/icons/CheckIcon';
-import { Navbar } from '@/components/Navbar';
-import { getPricingpageData } from '@/lib/contentfulClient';
-import { Footer } from '@/components/Footer';
+import { getContactpageData } from '@/lib/contentfulClient';
+import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
+import { DefaultLayout } from '@/layouts';
+import { Input } from '@/components/Input';
 
+// TODO formulier verstuurt PDF
 export const getStaticProps = async ({ preview = false }: GetStaticPropsContext) => {
-  const [pricing, navbar] = await getPricingpageData(preview);
-  if (!pricing.data || !navbar.data) throw new Error('Failed to fetch data from contentful');
+  const [contact, navbar] = await getContactpageData(preview);
+  if (!contact.data || !navbar.data) throw new Error('Failed to fetch data from contentful');
 
   return {
     props: {
       preview,
-      t: pricing.data.pricingPage,
+      t: contact.data.contactPage,
       navbar: navbar.data.navbar,
     },
   };
 };
 
 type PageProps = InferGetStaticPropsType<typeof getStaticProps>;
-// omvormen naar contactformulier, verstuurt automatisch PDF
-// houdt gegevens bij in google sheets
 
-export default function Pricing({ t, navbar, preview }: PageProps) {
-  const [first, second, third] = t.priceItemsCollection.items;
+export default function Contact({ t, navbar, preview }: PageProps) {
+  const [policiesAccepted, setPoliciesAccepted] = useState(false);
 
   return (
-    <>
-      <div className="relative overflow-hidden bg-white">
-        <div className="mx-auto max-w-7xl">
-          <Navbar preview={preview} navbar={navbar} className="py-4" />
-        </div>
-        <div className="bg-gray-900">
-          <div className="px-4 pt-12 sm:px-6 lg:px-8 lg:pt-12">
-            <div className="text-center">
-              <h2 className="text-lg font-semibold leading-6 tracking-wider text-gray-300 uppercase">{t.title}</h2>
-              <p className="text-3xl font-extrabold text-white mt- sm:text-4xl lg:text-5xl">{t.subtitle}</p>
-              <p className="max-w-4xl mx-auto mt-3 text-xl text-gray-300 sm:mt-5 sm:text-2xl">{t.intro}</p>
-            </div>
-          </div>
+    <DefaultLayout
+      navbar={navbar}
+      preview={preview}
+      meta={{
+        title: 'Styrkr | Tarieven',
+        description: 'Vraag hier tarieven aan voor de diensten van Styrkr',
+      }}
+    >
+      <div className="px-4 py-8 overflow-hidden bg-white sm:py-12 sm:px-6 lg:px-8">
+        <div className="relative max-w-xl mx-auto">
+          <DotsPatternSVG width="404" height="404" className="absolute transform translate-x-1/2 left-full" />
+          <DotsPatternSVG
+            width="404"
+            height="404"
+            className="absolute bottom-0 transform -translate-x-1/2 right-full"
+          />
 
-          <div className="pb-12 mt-16 bg-white lg:mt-20 lg:pb-20">
-            <div className="relative z-0">
-              <div className="absolute inset-0 bg-gray-900 h-5/6 lg:h-2/3"></div>
-              <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div className="relative lg:grid lg:grid-cols-7">
-                  {first && (
-                    <div className="max-w-md mx-auto lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
-                      <RegularPriceItem
-                        className="lg:rounded-l-lg"
-                        id={first.title}
-                        title={first.title}
-                        price={first.price}
-                        benefits={first.benefits}
-                        buttonText={first.cta}
-                      />
-                    </div>
-                  )}
-                  {second && (
-                    <div className="max-w-lg mx-auto mt-10 lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
-                      <HighlightedPriceItem
-                        id={second.title}
-                        title={second.title}
-                        price={second.price}
-                        benefits={second.benefits}
-                        buttonText={second.cta}
-                      />
-                    </div>
-                  )}
-                  {third && (
-                    <div className="max-w-md mx-auto mt-10 lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
-                      <RegularPriceItem
-                        className="lg:rounded-r-lg"
-                        id={third.title}
-                        title={third.title}
-                        price={third.price}
-                        benefits={third.benefits}
-                        buttonText={third.cta}
-                      />
-                    </div>
-                  )}
+          <div className="text-center">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">{t.title}</h2>
+            <p className="mt-4 text-lg leading-6 text-gray-500">{t.intro}</p>
+          </div>
+          <div className="mt-12">
+            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+              <Input label="Voornaam" id="first_name" autoComplete="given-name" />
+              <Input label="Achternaam" id="last_name" autoComplete="family-name" />
+              <Input className="sm:col-span-2" label="Email" id="email" autoComplete="email" />
+
+              <div className="sm:col-span-2">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <button
+                      type="button"
+                      aria-pressed="false"
+                      className={clsx(
+                        'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
+                        policiesAccepted ? 'bg-indigo-600' : 'bg-gray-200',
+                      )}
+                      onClick={() => setPoliciesAccepted((p) => !p)}
+                    >
+                      <span className="sr-only">Policies aanvaarden</span>
+                      <span
+                        aria-hidden="true"
+                        className={clsx(
+                          'inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200',
+                          policiesAccepted ? 'translate-x-5' : 'translate-x-0',
+                        )}
+                      ></span>
+                    </button>
+                  </div>
+                  <div className="ml-3">
+                    <p className="text-base text-gray-500">
+                      Door dit aan te vinken, gaat u akkoord met onze{' '}
+                      <a href="#privacy-policy" className="font-medium text-gray-700 underline">
+                        Privacy Policy
+                      </a>{' '}
+                      en{' '}
+                      <a href="#terms-and-conditions" className="font-medium text-gray-700 underline">
+                        Algemene voorwaarden
+                      </a>
+                      .
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div className="sm:col-span-2">
+                <button
+                  type="submit"
+                  className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  {t.cta}
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      <Footer />
-    </>
-  );
-}
-
-// COMPONENTS
-function BenefitList({ benefits }: { benefits: string[] }) {
-  return (
-    <ul className="space-y-4">
-      {benefits.map((benefit) => (
-        <li key={benefit} className="flex items-start">
-          <div className="flex-shrink-0">
-            <CheckIcon className="flex-shrink-0 w-6 h-6 text-green-500" />
-          </div>
-          <p className="ml-3 text-base font-medium text-gray-500">{benefit}</p>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-interface PriceItemHeaderProps {
-  id: string;
-  title: string;
-  price: number;
-  highlighted?: boolean;
-}
-
-function PriceItemHeader({ id, title, price, highlighted }: PriceItemHeaderProps) {
-  return (
-    <div>
-      <h3
-        className={clsx(
-          'text-center text-gray-900',
-          highlighted ? 'text-3xl font-semibold sm:-mx-6' : 'text-2xl font-medium',
-        )}
-        id={id}
-      >
-        {title}
-      </h3>
-      <div className="flex items-center justify-center mt-4">
-        <span
-          className={clsx('px-3 flex items-start text-6xl tracking-tight text-gray-900', highlighted && 'sm:text-6xl')}
-        >
-          <span className="mt-2 mr-2 text-4xl font-medium">€</span>
-          <span className="font-extrabold">{price}</span>
-        </span>
-        <span className={clsx('font-medium text-gray-500', highlighted ? 'text-2xl' : 'text-xl')}>/maand</span>
-      </div>
-    </div>
-  );
-}
-
-interface PriceItemsProps {
-  className?: string;
-  id: string;
-  title: string;
-  price: number;
-  benefits: string[];
-  buttonText: string;
-  onClick?: () => unknown;
-}
-
-function RegularPriceItem({ className, id, title, price, benefits, buttonText, onClick }: PriceItemsProps) {
-  return (
-    <div className={clsx('h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none', className)}>
-      <div className="flex flex-col flex-1">
-        <div className="px-6 py-10 bg-white">
-          <PriceItemHeader id={id} title={title} price={price} />
-        </div>
-        <div className="flex flex-col justify-between flex-1 p-6 border-t-2 border-gray-100 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
-          <BenefitList benefits={benefits} />
-          <div className="mt-8">
-            <div className="rounded-lg shadow-md">
-              <button
-                className="block w-full px-6 py-3 text-base font-medium text-center text-indigo-600 bg-white border border-transparent rounded-lg hover:bg-gray-50"
-                aria-describedby={id}
-                onClick={onClick}
-              >
-                {buttonText}
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function HighlightedPriceItem({ id, title, price, benefits, buttonText, onClick }: PriceItemsProps) {
-  return (
-    <div className="relative z-10 rounded-lg shadow-xl">
-      <div
-        className="absolute inset-0 border-2 border-indigo-600 rounded-lg pointer-events-none"
-        aria-hidden="true"
-      ></div>
-      <div className="absolute inset-x-0 top-0 transform translate-y-px">
-        <div className="flex justify-center transform -translate-y-1/2">
-          <span className="inline-flex px-4 py-1 text-sm font-semibold tracking-wider text-white uppercase bg-indigo-600 rounded-full">
-            Populairst
-          </span>
-        </div>
-      </div>
-      <div className="px-6 pt-12 pb-10 bg-white rounded-t-lg">
-        <PriceItemHeader id={id} title={title} price={price} highlighted />
-      </div>
-      <div className="px-6 pt-10 pb-8 border-t-2 border-gray-100 rounded-b-lg bg-gray-50 sm:px-10 sm:py-10">
-        <BenefitList benefits={benefits} />
-        <div className="mt-10">
-          <div className="rounded-lg shadow-md">
-            <button
-              className="block w-full px-6 py-4 text-xl font-medium leading-6 text-center text-white bg-indigo-600 border border-transparent rounded-lg hover:bg-indigo-700"
-              aria-describedby="tier-growth"
-              onClick={onClick}
-            >
-              {buttonText}
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </DefaultLayout>
   );
 }

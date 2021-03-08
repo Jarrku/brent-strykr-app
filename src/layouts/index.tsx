@@ -1,11 +1,23 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
+import { Navbar } from '@/components/Navbar';
+import { INavbar } from '@/lib/fragments';
+import { OpenGraphImages } from 'next-seo/lib/types';
+import { Footer } from '@/components/Footer';
 
 type LayoutProps = {
-  meta: any;
+  meta?: {
+    title?: string;
+    description?: string;
+    titleAppendSiteName?: boolean;
+    url?: string;
+    ogImage?: OpenGraphImages;
+  };
+  preview: boolean;
+  navbar: INavbar;
 };
 
-const DefaultLayout: React.FC<LayoutProps> = ({ children, meta }) => {
+export const DefaultLayout: React.FC<LayoutProps> = ({ children, meta = {}, navbar, preview }) => {
   const { title, description, titleAppendSiteName = false, url, ogImage } = meta || {};
   return (
     <>
@@ -21,13 +33,11 @@ const DefaultLayout: React.FC<LayoutProps> = ({ children, meta }) => {
         }}
         canonical={url}
       />
-      <div className="prose md:prose-xl mt-0 max-w-screen-md mx-auto leading-6">
-        {/* <div className="prose md:prose-xl max-w-screen-md mt-0 mx-auto leading-6"> */}
-        {title && <h1 className="text-xl leading-tight">{title}</h1>}
-        {children}
+      <div className="flex flex-col justify-between min-h-screen overflow-hidden bg-white">
+        <Navbar preview={preview} navbar={navbar} />
+        <div className="flex-1">{children}</div>
+        <Footer />
       </div>
     </>
   );
 };
-
-export default DefaultLayout;

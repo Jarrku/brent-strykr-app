@@ -7,10 +7,9 @@ import Image from 'next/image';
 import { getHomepageData } from '@/lib/contentfulClient';
 import type { IContentListItem, ITestimonial } from '@/lib/fragments';
 
-import { Navbar } from '@/components/Navbar';
 import { GlobeIcon } from '@/components/icons/GlobeIcon';
 import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
-import { Footer } from '@/components/Footer';
+import { DefaultLayout } from '@/layouts';
 
 export const getStaticProps = async (context: GetStaticPropsContext) => {
   const preview = context.preview ?? false;
@@ -32,56 +31,41 @@ type Props = Pick<PageProps, 't'>;
 
 export default function Site({ t, navbar, preview }: PageProps) {
   return (
-    <>
-      <div className="relative overflow-hidden bg-gray-50">
-        <div className="mx-auto max-w-7xl">
-          <div className="relative z-10 pb-8 bg-gray-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 ">
-            <svg
-              className="absolute inset-y-0 right-0 hidden w-48 h-full transform translate-x-1/2 lg:block text-gray-50"
-              fill="currentColor"
-              viewBox="0 0 100 100"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-            >
-              <polygon points="50,0 100,0 50,100 0,100" />
-            </svg>
-            <Navbar preview={preview} navbar={navbar} />
-
-            <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 ">
-              <div className="sm:text-center lg:text-left">
-                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                  <span className="block xl:inline">{t.heroTitle}</span>{' '}
-                  <span className="block text-indigo-600 xl:inline">{t.heroSubtitle}</span>
-                </h1>
-                <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  {t.heroIntro}
-                </p>
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <div className="rounded-md shadow">
-                    <HeroButton href="#" className="text-white bg-indigo-600 hover:bg-indigo-700">
-                      {t.heroCtaPrimary}
-                    </HeroButton>
-                  </div>
-                  <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <HeroButton href="#" className="text-indigo-700 bg-indigo-100 hover:bg-indigo-200">
-                      {t.heroCtaSecondary}
-                    </HeroButton>
-                  </div>
-                </div>
-              </div>
-            </main>
-          </div>
-        </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <div className="relative w-full h-56 sm:h-72 md:h-96 lg:h-full">
-            <Image layout="fill" objectFit="cover" src={t.heroImage.url} alt={t.heroImage.title} priority />
-          </div>
-        </div>
-      </div>
+    <DefaultLayout navbar={navbar} preview={preview}>
+      <Hero t={t} />
       <FeatureList t={t} />
       <Content t={t} />
-      <Footer />
-    </>
+    </DefaultLayout>
+  );
+}
+
+function Hero({ t }: Props) {
+  return (
+    <div className="bg-gray-50">
+      <main className="px-4 pt-16 pb-12 mx-auto max-w-7xl sm:pt-24 lg:pb-14">
+        <div className="text-center">
+          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+            <span className="block xl:inline">{t.heroTitle} </span>
+            <span className="block text-indigo-600 xl:inline">{t.heroSubtitle}</span>
+          </h1>
+          <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+            {t.heroIntro}
+          </p>
+          <div className="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
+            <div className="rounded-md shadow">
+              <HeroButton href="#" className="text-white bg-indigo-600 hover:bg-indigo-700">
+                {t.heroCtaPrimary}
+              </HeroButton>
+            </div>
+            <div className="mt-3 sm:mt-0 sm:ml-3">
+              <HeroButton href="#" className="text-indigo-700 bg-indigo-100 hover:bg-indigo-200">
+                {t.heroCtaSecondary}
+              </HeroButton>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
   );
 }
 
