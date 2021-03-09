@@ -11,6 +11,11 @@ module.exports = {
       },
       colors: {
         rose: colors.rose,
+        indigo: {
+          500: '#64b4ed',
+          600: '#3da1e9',
+          700: '#3181ba',
+        },
       },
       screens: {
         print: { raw: 'print' },
