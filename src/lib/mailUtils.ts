@@ -7,21 +7,10 @@ import {
   SendSmtpEmailReplyTo,
   SendSmtpEmailAttachment,
 } from 'sib-api-v3-typescript';
+import { EmailProps } from './types';
 
 const smtpApi = new TransactionalEmailsApi();
 smtpApi.setApiKey(TransactionalEmailsApiApiKeys.apiKey, process.env.SENDINBLUE_API_KEY);
-
-interface Props {
-  body: string;
-  replyTo: string;
-  replyToName?: string;
-  to: string;
-  toName?: string;
-  sender: string;
-  senderName?: string;
-  subject: string;
-  attachmentUrl?: string;
-}
 
 export function sendEmail({
   body,
@@ -33,7 +22,7 @@ export function sendEmail({
   senderName,
   subject,
   attachmentUrl,
-}: Props) {
+}: EmailProps) {
   const smtpEmail = new SendSmtpEmail();
 
   smtpEmail.to = [createReceiver(to, toName)];

@@ -2,6 +2,8 @@ import * as React from 'react';
 
 interface InputProps {
   id: string;
+  value: string;
+  onChange: (newValue: string) => void;
   name?: string;
   rows?: number;
   label: string;
@@ -9,12 +11,27 @@ interface InputProps {
   autoComplete?: string;
   placeholder?: string;
   textarea?: boolean;
+  type?: 'text' | 'email';
+  required?: boolean;
 }
 
 const inputClassName =
   'py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md';
 
-export function Input({ label, className, id, autoComplete, placeholder, textarea, rows = 4, name = id }: InputProps) {
+export function Input({
+  label,
+  value,
+  onChange,
+  className,
+  id,
+  autoComplete,
+  placeholder,
+  textarea,
+  rows = 4,
+  name = id,
+  type = 'text',
+  required,
+}: InputProps) {
   return (
     <div className={className}>
       <label htmlFor={id} className="block text-sm font-medium text-gray-700">
@@ -29,15 +46,21 @@ export function Input({ label, className, id, autoComplete, placeholder, textare
             placeholder={placeholder}
             rows={rows}
             className={inputClassName}
+            value={value}
+            required={required}
+            onChange={(e) => onChange(e.currentTarget.value)}
           />
         ) : (
           <input
-            type="text"
+            type={type}
             name={name}
             id={id}
+            required={required}
             autoComplete={autoComplete}
             placeholder={placeholder}
             className={inputClassName}
+            value={value}
+            onChange={(e) => onChange(e.currentTarget.value)}
           />
         )}
       </div>

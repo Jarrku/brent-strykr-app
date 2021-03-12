@@ -1,8 +1,11 @@
-import { useCallback, useReducer } from 'react';
+import { FormEvent, useReducer } from 'react';
+import { createRequest } from './fetchUtils';
+import { EmailProps } from './types';
 
 type Status = 'IDLE' | 'PENDING' | 'SUCCESS' | 'FAILED';
-interface State {
+export interface FormState {
   status: Status;
+  hasErrored: boolean;
   policiesAccepted: boolean;
   firstName: string;
   lastName: string;
@@ -20,12 +23,13 @@ type Action =
       value: Status;
     }
   | {
-      type: 'firstName' | 'lastName' | 'email';
+      type: 'firstName' | 'lastName' | 'email' | 'remark';
       value: string;
     };
 
-const initialState: State = {
+const initialState: FormState = {
   status: 'IDLE',
+  hasErrored: false,
   policiesAccepted: false,
   firstName: '',
   lastName: '',
@@ -33,47 +37,37 @@ const initialState: State = {
   remark: '',
 };
 
-function formReducer(state: State, action: Action) {
-  return { ...state, [action.type]: action.value };
+function formReducer(state: FormState, action: Action) {
+  let newState = { ...state, [action.type]: action.value };
+
+  if (action.type === 'status' && action.value === 'FAILED') {
+    newState = { ...newState, hasErrored: true };
+  } else if (action.type === 'status' && action.value === 'SUCCESS') {
+    newState = { ...newState, hasErrored: false };
+  }
+
+  return newState;
 }
 
-export function useContactForm() {
-  const transform = useCallback((state: State) => ({}), []);
-
-  const isValid = useCallback(
-    (state: State) =>
-      Boolean(state.email && state.firstName && state.lastName && state.policiesAccepted && state.remark),
-    [],
-  );
-
-  return useEmailForm(transform, isValid);
+export function submitEmail(data: EmailProps) {
+  return createRequest('/api/mail', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  });
 }
 
-export function usePricingForm() {
-  const transform = useCallback((state: State) => ({}), []);
-  const isValid = useCallback(
-    (state: State) => Boolean(state.email && state.firstName && state.lastName && state.policiesAccepted),
-    [],
-  );
-
-  return useEmailForm(transform, isValid);
-}
-
-function useEmailForm(transform: (state: State) => unknown, isValid: (state: State) => boolean) {
+export function useEmailForm(handleSubmit: (state: FormState) => Promise<unknown>) {
   const [state, dispatch] = useReducer(formReducer, initialState);
 
-  const valid = isValid(state);
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
-  const onSubmit = async () => {
-    if (!valid || state.status === 'PENDING' || state.status === 'SUCCESS') return;
+    if (state.status === 'PENDING' || state.status === 'SUCCESS') return;
 
     dispatch({ type: 'status', value: 'PENDING' });
 
     try {
-      await fetch('/api/maill', {
-        method: 'POST',
-        body: JSON.stringify(transform(state)),
-      });
+      await handleSubmit(state);
       dispatch({ type: 'status', value: 'SUCCESS' });
     } catch (err) {
       console.error(err);
@@ -81,5 +75,5 @@ function useEmailForm(transform: (state: State) => unknown, isValid: (state: Sta
     }
   };
 
-  return [state, dispatch, onSubmit, valid] as const;
+  return [state, dispatch, onSubmit] as const;
 }

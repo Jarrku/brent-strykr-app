@@ -23,6 +23,24 @@ export interface IAsset extends SysId {
   url: string;
 }
 
+const CtaFragment = gql`
+  fragment CtaFragment on FormCta {
+    cta
+    ctaFailed
+    ctaPending
+    ctaSuccess
+    ctaFailedInfo
+  }
+`;
+
+export interface ICta {
+  cta: string;
+  ctaFailed: string;
+  ctaPending: string;
+  ctaSuccess: string;
+  ctaFailedInfo: string;
+}
+
 const FeatureItemFragment = gql`
   fragment FeatureItemFragment on FeatureItem {
     sys {
@@ -298,23 +316,30 @@ export interface AboutpageResponse {
   about: IAboutpage;
 }
 
-const PricingItemFragment = gql`
-  fragment PricingItemFragment on PricingItem {
-    sys {
-      id
+const PricingEmailFragment = gql`
+  fragment PricingEmailFragment on PricingEmail {
+    subject
+    body
+    replyTo
+    replyToName
+    sender
+    senderName
+    attachment {
+      ...AssetFragment
     }
-    title
-    price
-    benefits
-    cta
   }
+
+  ${AssetFragment}
 `;
 
-export interface IPricingItem extends SysId {
-  title: string;
-  price: number;
-  benefits: string[];
-  cta: string;
+export interface IPricingEmail {
+  subject: string;
+  body: string;
+  replyTo: string;
+  replyToName: string;
+  sender: string;
+  senderName: string;
+  attachment: IAsset;
 }
 
 export interface PricingpageQueryVariables {
@@ -326,30 +351,47 @@ export const pricingQuery = gql`
   query pricingQuery($id: String!, $preview: Boolean!) {
     pricingPage(id: $id, preview: $preview) {
       title
-      subtitle
       intro
-      priceItemsCollection {
-        items {
-          ...PricingItemFragment
-        }
+      cta {
+        ...CtaFragment
+      }
+      emailTemplate {
+        ...PricingEmailFragment
       }
     }
   }
 
-  ${PricingItemFragment}
+  ${CtaFragment}
+  ${PricingEmailFragment}
 `;
 
-interface IPricingpage {
+export interface IPricingpage {
   title: string;
-  subtitle: string;
   intro: string;
-  priceItemsCollection: {
-    items: IPricingItem[];
-  };
+  cta: ICta;
+  emailTemplate: IPricingEmail;
 }
 
 export interface PricingpageResponse {
   pricingPage: IPricingpage;
+}
+
+const ContactEmailFragment = gql`
+  fragment ContactEmailFragment on ContactEmail {
+    subject
+    to
+    toName
+    sender
+    senderName
+  }
+`;
+
+export interface IContactEmail {
+  subject: string;
+  to: string;
+  toName: string;
+  sender: string;
+  senderName: string;
 }
 
 export interface ContactpageQueryVariables {
@@ -362,15 +404,24 @@ export const contactQuery = gql`
     contactPage(id: $id, preview: $preview) {
       title
       intro
-      cta
+      cta {
+        ...CtaFragment
+      }
+      emailTemplate {
+        ...ContactEmailFragment
+      }
     }
   }
+
+  ${CtaFragment}
+  ${ContactEmailFragment}
 `;
 
-interface IContactpage {
+export interface IContactpage {
   title: string;
   intro: string;
-  cta: string;
+  cta: ICta;
+  emailTemplate: IContactEmail;
 }
 
 export interface ContactpageResponse {
