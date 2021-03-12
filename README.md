@@ -33,8 +33,6 @@ Testing is facilitated through React Testing Library and Jest.
 algemene voorwaarden:
 https://www.bvrpersonaltraining.com/algemene-voorwaarden-verkoopsbeleid
 
-- Tarieven aanpassen naar contact
-
 Homepage:
 
 - 2 Secties: Dieten en Training
