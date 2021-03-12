@@ -8,6 +8,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const nextConfig = {
   reactStrictMode: true,
 
+  experimental: { optimizeCss: true },
   images: {
     domains: ['tailwindui.com', 'images.unsplash.com', 'images.ctfassets.net'],
   },
