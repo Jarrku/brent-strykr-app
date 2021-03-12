@@ -100,7 +100,6 @@ export function Navbar({ preview, navbar }: { preview?: boolean; navbar: INavbar
                   layout="fixed"
                   width="192px"
                   height="108px"
-                  quality={100}
                   priority
                 />
                 {/* </div> */}
