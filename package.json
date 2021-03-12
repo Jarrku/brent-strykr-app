@@ -22,7 +22,9 @@
     "preact-render-to-string": "^5.1.14",
     "react": "npm:@preact/compat",
     "react-dom": "npm:@preact/compat",
+    "react-hook-form": "^6.15.4",
     "react-ssr-prepass": "npm:preact-ssr-prepass",
+    "sib-api-v3-typescript": "^2.2.0",
     "urql": "^2.0.1"
   },
   "devDependencies": {
@@ -41,6 +43,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
     "babel-plugin-macros": "^3.0.1",
+    "babel-plugin-module-resolver": "^4.1.0",
     "dotenv-flow": "^3.2.0",
     "eslint": "^7.21.0",
     "eslint-config-react-app": "^6.0.0",
