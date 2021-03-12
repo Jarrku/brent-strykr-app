@@ -1,11 +1,13 @@
-import { useState } from 'react';
-import clsx from 'clsx';
+import { useCallback } from 'react';
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 
 import { getContactpageData } from '@/lib/contentfulClient';
 import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
 import { DefaultLayout } from '@/layouts';
 import { Input } from '@/components/Input';
+import { FormState, submitEmail, useEmailForm } from '@/lib/formUtils';
+import { IContactpage } from '@/lib/fragments';
+import { TermsAndConditions } from '@/components/TermsAndConditions';
 
 export const getStaticProps = async ({ preview = false }: GetStaticPropsContext) => {
   const [contact, navbar] = await getContactpageData(preview);
@@ -23,7 +25,7 @@ export const getStaticProps = async ({ preview = false }: GetStaticPropsContext)
 type PageProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 export default function Contact({ t, navbar, preview }: PageProps) {
-  const [policiesAccepted, setPoliciesAccepted] = useState(false);
+  const [state, dispatch, onSubmit] = useContactForm(t);
 
   return (
     <DefaultLayout
@@ -48,63 +50,96 @@ export default function Contact({ t, navbar, preview }: PageProps) {
             <p className="mt-4 text-lg leading-6 text-gray-500">{t.intro}</p>
           </div>
           <div className="mt-12">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-              <Input label="Voornaam" id="first_name" autoComplete="given-name" />
-              <Input label="Achternaam" id="last_name" autoComplete="family-name" />
+            <form onSubmit={onSubmit} className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+              <Input
+                required
+                label="Voornaam"
+                id="first_name"
+                autoComplete="given-name"
+                value={state.firstName}
+                onChange={(value) => dispatch({ type: 'firstName', value })}
+              />
+              <Input
+                required
+                label="Achternaam"
+                id="last_name"
+                autoComplete="family-name"
+                value={state.lastName}
+                onChange={(value) => dispatch({ type: 'lastName', value })}
+              />
 
-              <Input className="sm:col-span-2" label="Email" id="email" autoComplete="email" />
+              <Input
+                required
+                className="sm:col-span-2"
+                label="Email"
+                id="email"
+                type="email"
+                autoComplete="email"
+                value={state.email}
+                onChange={(value) => dispatch({ type: 'email', value })}
+              />
 
-              <Input className="sm:col-span-2" label="Boodschap" id="message" textarea />
+              <Input
+                required
+                className="sm:col-span-2"
+                label="Boodschap"
+                id="message"
+                textarea
+                value={state.remark}
+                onChange={(value) => dispatch({ type: 'remark', value })}
+              />
 
               <div className="sm:col-span-2">
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <button
-                      type="button"
-                      aria-pressed="false"
-                      className={clsx(
-                        'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
-                        policiesAccepted ? 'bg-indigo-600' : 'bg-gray-200',
-                      )}
-                      onClick={() => setPoliciesAccepted((p) => !p)}
-                    >
-                      <span className="sr-only">Policies aanvaarden</span>
-                      <span
-                        aria-hidden="true"
-                        className={clsx(
-                          'inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200',
-                          policiesAccepted ? 'translate-x-5' : 'translate-x-0',
-                        )}
-                      ></span>
-                    </button>
-                  </div>
-                  <div className="ml-3">
-                    <p className="text-base text-gray-500">
-                      Door dit aan te vinken, gaat u akkoord met onze{' '}
-                      <a href="#privacy-policy" className="font-medium text-gray-700 underline">
-                        Privacy Policy
-                      </a>{' '}
-                      en{' '}
-                      <a href="#terms-and-conditions" className="font-medium text-gray-700 underline">
-                        Algemene voorwaarden
-                      </a>
-                      .
-                    </p>
-                  </div>
-                </div>
+                <TermsAndConditions
+                  policiesAccepted={state.policiesAccepted}
+                  onClick={() => dispatch({ type: 'policiesAccepted', value: !state.policiesAccepted })}
+                />
               </div>
               <div className="sm:col-span-2">
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm disabled:cursor-not-allowed disabled:opacity-50 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  disabled={!state.policiesAccepted}
                 >
-                  {t.cta}
+                  {state.status === 'IDLE' && `${t.cta.cta}`}
+                  {state.status === 'PENDING' && `${t.cta.ctaPending}`}
+                  {state.status === 'SUCCESS' && `${t.cta.ctaSuccess}`}
+                  {state.status === 'FAILED' && `${t.cta.ctaFailed}`}
                 </button>
               </div>
+              {state.hasErrored && (
+                <div className="text-center text-yellow-500 sm:col-span-2">
+                  <span>{t.cta.ctaFailedInfo}</span>
+                  <br />
+                  <span>{t.emailTemplate.to}</span>
+                </div>
+              )}
             </form>
           </div>
         </div>
       </div>
     </DefaultLayout>
   );
+}
+
+function useContactForm(t: IContactpage) {
+  const handleSubmit = useCallback(
+    (state: FormState) => {
+      const name = `${state.firstName} ${state.lastName}`;
+
+      return submitEmail({
+        subject: `${t.emailTemplate.subject} - ${name}`,
+        body: state.remark,
+        replyTo: state.email,
+        replyToName: name,
+        to: t.emailTemplate.to,
+        toName: t.emailTemplate.toName,
+        sender: t.emailTemplate.sender,
+        senderName: t.emailTemplate.senderName,
+      });
+    },
+    [t],
+  );
+
+  return useEmailForm(handleSubmit);
 }

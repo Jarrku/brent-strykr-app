@@ -6,7 +6,7 @@ export interface IconButtonProps
   children: React.ReactNode;
 }
 
-export function IconButton({ className, ...props }: ButtonProps) {
+export function IconButton({ className, ...props }: IconButtonProps) {
   return (
     <button
       type="button"
