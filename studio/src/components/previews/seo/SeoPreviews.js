@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import sanityClient from 'part:@sanity/base/client';
-import Spinner from 'part:@sanity/components/loading/spinner';
+// import Spinner from 'part:@sanity/base/__legacy/@sanity/components/loading/spinner';
 import GoogleSearchResult from './GoogleSearchResult';
 import TwitterCard from './TwitterCard';
 import FacebookShare from './FacebookShare';

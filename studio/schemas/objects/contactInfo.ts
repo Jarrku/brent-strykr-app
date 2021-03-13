@@ -1,7 +1,7 @@
-export default {
+const contactInfoDef = {
   name: 'contactInfo',
   type: 'object',
-  Title: 'Contact information',
+  title: 'Contact information',
   fields: [
     {
       name: 'linkedIn',
@@ -25,3 +25,5 @@ export default {
     },
   ],
 };
+
+export default contactInfoDef;

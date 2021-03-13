@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Moveable from 'react-moveable';
 import { ResizeObserver } from 'resize-observer';
-import RadioButtons from 'part:@sanity/components/selects/radio';
+// import RadioButtons from 'part:@sanity/base/__legacy/@sanity/components/selects/radio';
 import styles from './IrlPreview.css';
 
 const IMG_FILTERS = [
