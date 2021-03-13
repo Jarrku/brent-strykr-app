@@ -5,10 +5,15 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 
+const STUDIO_REWRITE = {
+  source: '/studio/:path*',
+  destination: process.env.NODE_ENV === 'development' ? 'http://localhost:3333/studio/:path*' : '/studio/index.html',
+};
+
 const nextConfig = {
   reactStrictMode: true,
 
-  experimental: { optimizeCss: true },
+  experimental: { optimizeCss: process.env.NODE_ENV === 'production' },
   images: {
     domains: ['tailwindui.com', 'images.unsplash.com', 'images.ctfassets.net'],
   },
@@ -25,6 +30,7 @@ const nextConfig = {
       },
     ];
   },
+  rewrites: () => [STUDIO_REWRITE],
   async redirects() {
     return [];
   },
