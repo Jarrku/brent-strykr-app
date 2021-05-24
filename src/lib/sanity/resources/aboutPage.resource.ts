@@ -7,8 +7,8 @@ export const aboutQuery = groq`
     subtitle,
     "coverImage": {
       "url": coverImage.asset->url,
-      "caption": coverImage.asset.caption,
-      "alt": coverImage.asset.alt,
+      "caption": coverImage.caption,
+      "alt": coverImage.alt,
     },
     intro,
     content,
