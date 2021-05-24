@@ -26,7 +26,6 @@ import figure from './objects/figure';
 // import link from './objects/link';
 // import portableText from './objects/portableText';
 // import simplePortableText from './objects/simplePortableText';
-//TODO contactinfo
 // import contactInfo from './objects/contactInfo';
 
 // Landing page sections

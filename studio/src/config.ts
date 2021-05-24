@@ -10,7 +10,6 @@ export const singletons: string[] = [
   DocumentType.FOOTER,
 ];
 
-// TODO: add navlinks after creation.
 export function isSingleton(type: string) {
   return singletons.includes(type);
 }

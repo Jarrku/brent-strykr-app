@@ -3,23 +3,20 @@ import dynamic from 'next/dynamic';
 
 import { getClient } from '@/lib/sanity/sanity.server';
 import { pricingQuery, IPricingPage } from '@/lib/sanity/resources/pricingPage.resource';
-import { footerQuery, IFooter } from '@/lib/sanity/resources/footer.resource';
-import { INavbar, navbarQuery } from '@/lib/sanity/resources/navbar.resource';
+import { getFooterAndNavbar } from '@/lib/sanity/resources/shared.resource';
 
 import { Pricing } from '@/components/pricing/Pricing';
 const PricingPreview = dynamic(() => import('@/components/pricing/PricingPreview'));
 
 export const getStaticProps = async ({ preview = false }: GetStaticPropsContext) => {
   const initialData = await getClient(preview).fetch<IPricingPage>(pricingQuery);
-  const footer = await getClient(preview).fetch<IFooter>(footerQuery);
-  const navbar = await getClient(preview).fetch<INavbar>(navbarQuery);
+  const data = await getFooterAndNavbar(preview);
 
   return {
     props: {
       preview,
       initialData,
-      footer,
-      navbar,
+      ...data,
     },
   };
 };

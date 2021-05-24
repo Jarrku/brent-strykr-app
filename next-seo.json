@@ -26,7 +26,8 @@
       {
         "url": "https://styrkr-staging.vercel.app/images/styrkr-logo.jpg",
         "width": 1280,
-        "height": 720
+        "height": 720,
+        "alt": "Styrkr Company Logo"
       }
     ]
   }

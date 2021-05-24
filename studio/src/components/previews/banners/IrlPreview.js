@@ -133,7 +133,6 @@ class IrlPreview extends React.PureComponent {
     const adTarget = this.adWrapper.current;
 
     // const hasSize = width > 0 && height > 0
-    // TODO: Show loading-indicator before we have size?
     // console.log(JSON.stringify(nmatrix));
     // Convert to pixel-space.
     const matrix = nmatrix.slice();
