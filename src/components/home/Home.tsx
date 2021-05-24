@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { DetailedHTMLProps, AnchorHTMLAttributes } from 'react';
+import { LogoJsonLd } from 'next-seo';
 
 import Image from 'next/image';
 
@@ -20,9 +21,11 @@ export interface HomeProps {
   initialData: IHomePage;
 }
 
+// TODO change to actual url
 export function Home({ initialData: t, navbar, footer, preview }: HomeProps) {
   return (
     <DefaultLayout navbar={navbar} footer={footer} preview={preview}>
+      <LogoJsonLd logo={navbar.icon.url} url="https://styrkr-staging.vercel.app" />
       <Hero t={t} />
       <FeatureList t={t} />
       <Content t={t} />
