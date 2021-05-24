@@ -7,17 +7,9 @@ import { FormState, submitEmail, useEmailForm } from '@/lib/formUtils';
 import { TermsAndConditions } from '@/components/TermsAndConditions';
 
 import { IContactPage } from '@/lib/sanity/resources/contactPage.resource';
-import { INavbar } from '@/lib/sanity/resources/navbar.resource';
-import { IFooter } from '@/lib/sanity/resources/footer.resource';
+import { PageProps } from '@/lib/types';
 
-export interface ContactProps {
-  preview: boolean;
-  navbar: INavbar;
-  footer: IFooter;
-  initialData: IContactPage;
-}
-
-export function Contact({ navbar, footer, initialData: t, preview }: ContactProps) {
+export function Contact({ navbar, footer, initialData: t, preview }: PageProps<IContactPage>) {
   const [state, dispatch, onSubmit] = useContactForm(t);
 
   return (
@@ -26,8 +18,9 @@ export function Contact({ navbar, footer, initialData: t, preview }: ContactProp
       footer={footer}
       preview={preview}
       meta={{
-        title: 'Styrkr | Contact Pagina',
-        description: 'Contact Form to make appointments with Styrkr',
+        title: 'Contact',
+        description: 'Neem contact op met Styrkr via het contactformulier',
+        url: 'https://styrkr-staging.vercel.app/contact',
       }}
     >
       <div className="px-4 py-8 overflow-hidden bg-white sm:py-12 sm:px-6 lg:px-8">

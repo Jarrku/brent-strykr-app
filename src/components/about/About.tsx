@@ -5,19 +5,26 @@ import { DefaultLayout } from '@/layouts';
 
 import { IAboutPage } from '@/lib/sanity/resources/aboutPage.resource';
 import { BlockContent } from '../SanityBlockContent';
-import { INavbar } from '@/lib/sanity/resources/navbar.resource';
-import { IFooter } from '@/lib/sanity/resources/footer.resource';
+import { PageProps } from '@/lib/types';
 
-export interface AboutProps {
-  initialData: IAboutPage;
-  preview: boolean;
-  navbar: INavbar;
-  footer: IFooter;
-}
-
-export function About({ initialData: t, navbar, footer, preview }: AboutProps) {
+export function About({ initialData: t, navbar, footer, preview }: PageProps<IAboutPage>) {
   return (
-    <DefaultLayout navbar={navbar} footer={footer} preview={preview}>
+    <DefaultLayout
+      navbar={navbar}
+      footer={footer}
+      preview={preview}
+      meta={{
+        title: 'Wie ben ik?',
+        description: 'Ik ben Brent De Wolf, en ik heb al een dikke 8 jaar ervaring op het gebied van fitness.',
+        ogImage: {
+          url: 'https://styrkr-staging.vercel.app/images/brent.webp',
+          height: 1440,
+          width: 1440,
+          alt: 'Brent De Wolf',
+        },
+        url: 'https://styrkr-staging.vercel.app/about',
+      }}
+    >
       <div className="relative px-4 py-8 mx-auto sm:py-12 max-w-7xl sm:px-6 lg:px-8">
         <div className="absolute top-0 bottom-0 hidden w-screen lg:block bg-gray-50 left-3/4"></div>
         <div className="mx-auto text-base max-w-prose lg:max-w-none">

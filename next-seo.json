@@ -1,7 +1,8 @@
 {
-  "title": "Brent DW - Styrkr",
-  "titleTemplate": "%s | Brent DW",
-  "description": "Fitness Coach Brent DW",
+  "title": "Styrkr",
+  "titleTemplate": "%s | Styrkr",
+  "defaultTitle": "Styrkr",
+  "description": "Op zoek naar een fitness of voedingscoach? Dan bent u bij Styrkr aan het goede adres!",
   "favicon": "/favicon.ico",
   "additionalMetaTags": [
     { "property": "author", "content": "Brent De Wolf" },
@@ -11,14 +12,19 @@
     }
   ],
   "openGraph": {
+    "locale": "nl_BE",
     "type": "website",
-    "site_name": "Brent DW - Styrkr",
+    "site_name": "Styrkr",
+    "url": "https://styrkr-staging.vercel.app",
+    "title": "Styrkr",
+    "description": "Op zoek naar een fitness of voedingscoach? Dan bent u bij Styrkr aan het goede adres!",
     "profile": {
-      "firstName": "Brent"
+      "firstName": "Brent",
+      "lastName": "De Wolf"
     },
     "images": [
       {
-        "url": "/images/og.jpg",
+        "url": "/images/styrkr-logo.png",
         "width": 1280,
         "height": 720
       }

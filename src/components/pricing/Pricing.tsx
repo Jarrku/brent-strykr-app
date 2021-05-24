@@ -6,16 +6,9 @@ import { Input } from '@/components/Input';
 import { useEmailForm, FormState, submitEmail } from '@/lib/formUtils';
 import { TermsAndConditions } from '@/components/TermsAndConditions';
 import { IPricingPage } from '@/lib/sanity/resources/pricingPage.resource';
-import { INavbar } from '@/lib/sanity/resources/navbar.resource';
-import { IFooter } from '@/lib/sanity/resources/footer.resource';
-export interface PricingProps {
-  preview: boolean;
-  initialData: IPricingPage;
-  navbar: INavbar;
-  footer: IFooter;
-}
+import { PageProps } from '@/lib/types';
 
-export function Pricing({ initialData: t, footer, navbar, preview }: PricingProps) {
+export function Pricing({ initialData: t, footer, navbar, preview }: PageProps<IPricingPage>) {
   const [state, dispatch, onSubmit] = usePricingForm(t);
 
   return (
@@ -24,8 +17,9 @@ export function Pricing({ initialData: t, footer, navbar, preview }: PricingProp
       footer={footer}
       preview={preview}
       meta={{
-        title: 'Styrkr | Tarieven',
+        title: 'Tarieven',
         description: 'Vraag hier tarieven aan voor de diensten van Styrkr',
+        url: 'https://styrkr-staging.vercel.app/pricing',
       }}
     >
       <div className="px-4 py-8 overflow-hidden bg-white sm:py-12 sm:px-6 lg:px-8">

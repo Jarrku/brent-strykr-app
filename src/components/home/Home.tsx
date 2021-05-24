@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { DetailedHTMLProps, AnchorHTMLAttributes } from 'react';
-import { LogoJsonLd } from 'next-seo';
+import { JsonLD } from '../JsonLD';
 
 import Image from 'next/image';
 
@@ -9,23 +9,32 @@ import { DotsPatternSVG } from '@/components/icons/DotsPatternSVG';
 import { DefaultLayout } from '@/layouts';
 import { IHomePage, ITestimonial } from '@/lib/sanity/resources/homePage.resource';
 import { BlockContent } from '../SanityBlockContent';
-import { INavbar } from '@/lib/sanity/resources/navbar.resource';
-import { IFooter } from '@/lib/sanity/resources/footer.resource';
+import { PageProps } from '@/lib/types';
 
 type Props = { t: IHomePage };
 
-export interface HomeProps {
-  preview: boolean;
-  navbar: INavbar;
-  footer: IFooter;
-  initialData: IHomePage;
-}
-
 // TODO change to actual url
-export function Home({ initialData: t, navbar, footer, preview }: HomeProps) {
+export function Home({ initialData: t, navbar, footer, preview }: PageProps<IHomePage>) {
   return (
-    <DefaultLayout navbar={navbar} footer={footer} preview={preview}>
-      <LogoJsonLd logo={navbar.icon.url} url="https://styrkr-staging.vercel.app" />
+    <DefaultLayout
+      navbar={navbar}
+      footer={footer}
+      preview={preview}
+      meta={{
+        title: 'Home',
+        description: 'Op zoek naar een voeding en fitnessexpert? Dan kan ik u verderhelpen!',
+        url: 'https://styrkr-staging.vercel.app',
+      }}
+    >
+      <JsonLD
+        type="Organization"
+        name="Styrkr"
+        description="Op zoek naar een voeding en fitnessexpert?"
+        logo={navbar.icon.url}
+        url="https://styrkr-staging.vercel.app"
+        email="info@stykr@gmail.com"
+        founder="Brent De Wolf"
+      />
       <Hero t={t} />
       <FeatureList t={t} />
       <Content t={t} />
@@ -109,9 +118,9 @@ function Content({ t }: Props) {
           </p>
         </div>
         <div className="relative z-10 mx-auto text-base max-w-prose lg:max-w-5xl lg:mx-0 lg:pr-72">
-          <p className="text-lg text-gray-500">
+          <div className="text-lg text-gray-500">
             <BlockContent blocks={[firstParagraph]} />
-          </p>
+          </div>
         </div>
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="relative z-10">
