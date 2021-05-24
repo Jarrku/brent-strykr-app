@@ -2,9 +2,9 @@ const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
+  mode: 'jit',
   purge: ['./src/**/*.tsx'],
   theme: {
-    // typography: (theme) => ({}),
     extend: {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
@@ -17,18 +17,6 @@ module.exports = {
           700: '#3181ba',
         },
       },
-      screens: {
-        print: { raw: 'print' },
-      },
-      gridTemplateColumns: {
-        'ingredient-row': 'repeat(9, minmax(0, 1fr)) auto',
-      },
-    },
-  },
-  variants: {
-    extend: {
-      opacity: ['disabled'],
-      cursor: ['disabled'],
     },
   },
   plugins: [require('@tailwindcss/typography'), require('@tailwindcss/aspect-ratio'), require('@tailwindcss/forms')],

@@ -1,11 +1,11 @@
 {
   "root": true,
   "api": {
-    "projectId": "placeholder",
-    "dataset": "placeholder"
+    "projectId": "35tavocn",
+    "dataset": "acceptance"
   },
   "project": {
-    "name": "Next.JS E-commerce example",
+    "name": "Styrkr",
     "basePath": "/studio"
   },
   "plugins": [
@@ -28,6 +28,14 @@
     {
       "implements": "part:@sanity/desk-tool/structure",
       "path": "./src/deskStructure"
+    },
+    {
+      "name": "part:@sanity/base/new-document-structure",
+      "path": "./src/deskStructure/newDocumentStructure"
+    },
+    {
+      "implements": "part:@sanity/base/document-actions/resolver",
+      "path": "./src/deskStructure/resolveDocumentActions"
     }
   ]
 }

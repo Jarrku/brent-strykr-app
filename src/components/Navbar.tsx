@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { INavbar } from '@/lib/fragments';
+import { INavbar } from '@/lib/sanity/resources/navbar.resource';
 
 interface AnchorProps extends DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> {}
 
@@ -47,8 +47,8 @@ function Nav({ navbar }: { navbar: INavbar }) {
   return (
     // <div className="hidden md:flex md:ml-10 md:pr-4 md:space-x-8">
     <div className="hidden space-x-10 md:flex md:ml-10">
-      {navbar.linksCollection.items.map((navItem) => (
-        <NavLink key={navItem.sys.id} href={navItem.url}>
+      {navbar.links.map((navItem) => (
+        <NavLink key={navItem.label} href={navItem.url}>
           {navItem.label}
         </NavLink>
       ))}
@@ -60,8 +60,8 @@ function MobileNav({ navbar }: { navbar: INavbar }) {
   return (
     <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
       <div className="px-2 pt-2 pb-3 space-y-1" role="none">
-        {navbar.linksCollection.items.map((navItem) => (
-          <MobileNavLink key={navItem.sys.id} href={navItem.url}>
+        {navbar.links.map((navItem) => (
+          <MobileNavLink key={navItem.label} href={navItem.url}>
             {navItem.label}
           </MobileNavLink>
         ))}
@@ -96,13 +96,12 @@ export function Navbar({ preview, navbar }: { preview?: boolean; navbar: INavbar
                 {/* <div className="relative w-8 h-8 sm:h-10 sm:w-10"> */}
                 <Image
                   src={navbar.icon.url}
-                  alt={navbar.icon.title}
+                  alt={navbar.icon.alt}
                   layout="fixed"
                   width="192px"
                   height="108px"
                   priority
                 />
-                {/* </div> */}
                 <div className="flex items-center -mr-2 md:hidden">
                   <button
                     onClick={() => setIsMenuOpen(true)}

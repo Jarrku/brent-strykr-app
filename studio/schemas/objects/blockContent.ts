@@ -1,3 +1,5 @@
+import { ObjectType } from "../schema.types";
+
 /**
  * This is the schema definition for the rich text fields used for
  * for this blog studio. When you import it in schemas.js it can be
@@ -10,7 +12,7 @@
  */
 const blockContentDef = {
   title: 'Block Content',
-  name: 'blockContent',
+  name: ObjectType.BLOCK_CONTENT,
   type: 'array',
   of: [
     {

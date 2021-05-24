@@ -1,9 +1,10 @@
 import React from 'react';
 import { NextSeo } from 'next-seo';
 import { Navbar } from '@/components/Navbar';
-import { INavbar } from '@/lib/fragments';
+import { INavbar } from '@/lib/sanity/resources/navbar.resource';
 import { OpenGraphImages } from 'next-seo/lib/types';
 import { Footer } from '@/components/Footer';
+import { IFooter } from '@/lib/sanity/resources/footer.resource';
 
 type LayoutProps = {
   meta?: {
@@ -15,10 +16,12 @@ type LayoutProps = {
   };
   preview: boolean;
   navbar: INavbar;
+  footer: IFooter;
 };
 
-export const DefaultLayout: React.FC<LayoutProps> = ({ children, meta = {}, navbar, preview }) => {
+export const DefaultLayout: React.FC<LayoutProps> = ({ children, meta = {}, navbar, preview, footer }) => {
   const { title, description, titleAppendSiteName = false, url, ogImage } = meta || {};
+
   return (
     <>
       <NextSeo
@@ -36,7 +39,7 @@ export const DefaultLayout: React.FC<LayoutProps> = ({ children, meta = {}, navb
       <div className="flex flex-col justify-between min-h-screen overflow-hidden bg-white">
         <Navbar preview={preview} navbar={navbar} />
         <div className="flex-1">{children}</div>
-        <Footer />
+        <Footer footer={footer} />
       </div>
     </>
   );
