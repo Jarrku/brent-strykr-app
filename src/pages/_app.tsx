@@ -5,7 +5,6 @@ import SEO from '../../next-seo.json';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  console.log({ pageProps });
   return (
     <>
       <DefaultSeo {...SEO} />
