@@ -20,7 +20,7 @@ export function Home({ initialData: t, navbar, footer, preview }: PageProps<IHom
       navbar={navbar}
       footer={footer}
       preview={preview}
-      meta={{ url: 'https://styrkr-staging.vercel.app' }}
+      meta={{ url: 'https://styrkr-staging.vercel.app', title: 'Styrkr - Personal Coaching' }}
     >
       <JsonLD
         type="Organization"

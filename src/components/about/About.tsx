@@ -14,7 +14,7 @@ export function About({ initialData: t, navbar, footer, preview }: PageProps<IAb
       footer={footer}
       preview={preview}
       meta={{
-        title: 'Over Mij, Brent De Wolf',
+        title: 'Over mij, Brent De Wolf',
         titleAppendSiteName: true,
         description:
           'Ik ben Brent De Wolf, en ik heb al een dikke 8 jaar ervaring op het gebied van fitness. Ontdek hier meer over mijn ervaring.',

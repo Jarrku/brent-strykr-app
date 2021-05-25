@@ -1,16 +1,54 @@
 {
-  "title": "Styrkr - Personal Coach",
+  "title": "Styrkr - Personal Coaching",
   "titleTemplate": "%s | Styrkr",
-  "defaultTitle": "Styrkr - Personal Coach",
+  "defaultTitle": "Styrkr - Personal Coaching",
   "description": "Gepersonaliseerde voedings- en trainingsplannen, begeleiding, training programs en online coaching. Ontworpen speciaal voor jou door Styrkr.",
   "favicon": "/favicon.ico",
-  "additionalMetaTags": [{ "property": "author", "content": "Brent De Wolf" }],
+  "additionalMetaTags": [
+    { "property": "author", "content": "Brent De Wolf" },
+    {
+      "name": "msapplication-TileColor",
+      "content": "#2b5797"
+    },
+    {
+      "name": "theme-color",
+      "content": "#333333"
+    }
+  ],
+  "additionalLinkTags": [
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "href": "/favicon-16x16.png",
+      "sizes": "16x16"
+    },
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "href": "/favicon-32x32.png",
+      "sizes": "32x32"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "/apple-touch-icon.png",
+      "sizes": "180x180"
+    },
+    {
+      "rel": "mask-icon",
+      "href": "/safari-pinned-tab.svg",
+      "color": "#333333"
+    },
+    {
+      "rel": "manifest",
+      "href": "/site.webmanifest"
+    }
+  ],
   "openGraph": {
     "locale": "nl_BE",
     "type": "website",
-    "site_name": "Styrkr - Personal Coach",
+    "site_name": "Styrkr - Personal Coaching",
     "url": "https://styrkr-staging.vercel.app",
-    "title": "Styrkr - Personal Coach",
+    "title": "Styrkr - Personal Coaching",
     "description": "Gepersonaliseerde voedings- en trainingsplannen, begeleiding, training programs en online coaching. Ontworpen speciaal voor jou door Styrkr.",
     "profile": {
       "firstName": "Brent",

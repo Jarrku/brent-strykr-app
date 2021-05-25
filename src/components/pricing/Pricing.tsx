@@ -18,6 +18,7 @@ export function Pricing({ initialData: t, footer, navbar, preview }: PageProps<I
       preview={preview}
       meta={{
         title: 'Tarieven',
+        titleAppendSiteName: true,
         description: 'Vraag hier tarieven aan voor de diensten van Styrkr',
         url: 'https://styrkr-staging.vercel.app/tarieven',
       }}
