@@ -25,7 +25,6 @@ const navLinkDef = {
       title: 'Base URL - Read Only',
       type: SchemaType.STRING,
       readOnly: true,
-      // hidden: true,
       validation: (Rule: any) => Rule.required(),
     },
     {

@@ -19,7 +19,7 @@ export function Pricing({ initialData: t, footer, navbar, preview }: PageProps<I
       meta={{
         title: 'Tarieven',
         description: 'Vraag hier tarieven aan voor de diensten van Styrkr',
-        url: 'https://styrkr-staging.vercel.app/pricing',
+        url: 'https://styrkr-staging.vercel.app/tarieven',
       }}
     >
       <div className="px-4 py-8 overflow-hidden bg-white sm:py-12 sm:px-6 lg:px-8">

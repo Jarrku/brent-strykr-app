@@ -19,7 +19,8 @@ export function Contact({ navbar, footer, initialData: t, preview }: PageProps<I
       preview={preview}
       meta={{
         title: 'Contact',
-        description: 'Neem contact op met Styrkr via het contactformulier',
+        titleAppendSiteName: true,
+        description: 'Neem contact op met Styrkr via het contactformulier op deze pagina',
         url: 'https://styrkr-staging.vercel.app/contact',
       }}
     >

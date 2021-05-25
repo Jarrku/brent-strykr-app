@@ -14,15 +14,17 @@ export function About({ initialData: t, navbar, footer, preview }: PageProps<IAb
       footer={footer}
       preview={preview}
       meta={{
-        title: 'Wie ben ik?',
-        description: 'Ik ben Brent De Wolf, en ik heb al een dikke 8 jaar ervaring op het gebied van fitness.',
+        title: 'Over Mij, Brent De Wolf',
+        titleAppendSiteName: true,
+        description:
+          'Ik ben Brent De Wolf, en ik heb al een dikke 8 jaar ervaring op het gebied van fitness. Ontdek hier meer over mijn ervaring.',
         ogImage: {
           url: 'https://styrkr-staging.vercel.app/images/brent.webp',
           height: 1440,
           width: 1440,
           alt: 'Brent De Wolf',
         },
-        url: 'https://styrkr-staging.vercel.app/about',
+        url: 'https://styrkr-staging.vercel.app/over-mij',
       }}
     >
       <div className="relative px-4 py-8 mx-auto sm:py-12 max-w-7xl sm:px-6 lg:px-8">

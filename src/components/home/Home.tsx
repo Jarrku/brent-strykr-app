@@ -20,16 +20,12 @@ export function Home({ initialData: t, navbar, footer, preview }: PageProps<IHom
       navbar={navbar}
       footer={footer}
       preview={preview}
-      meta={{
-        title: 'Home',
-        description: 'Op zoek naar een voeding en fitnessexpert? Dan kan ik u verderhelpen!',
-        url: 'https://styrkr-staging.vercel.app',
-      }}
+      meta={{ url: 'https://styrkr-staging.vercel.app' }}
     >
       <JsonLD
         type="Organization"
         name="Styrkr"
-        description="Op zoek naar een voeding en fitnessexpert?"
+        description="Gepersonaliseerde voedings- en trainingsplannen, begeleiding, training programs en online coaching. Ontworpen speciaal voor jou door Styrkr."
         logo={navbar.icon.url}
         url="https://styrkr-staging.vercel.app"
         email="info@stykr@gmail.com"

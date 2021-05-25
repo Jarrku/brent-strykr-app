@@ -20,11 +20,11 @@ export function HomePagePreview() {
 }
 
 export function AboutPagePreview() {
-  return <PagePreview page="/about" />;
+  return <PagePreview page="/over-mij" />;
 }
 
 export function PricingPagePreview() {
-  return <PagePreview page="/pricing" />;
+  return <PagePreview page="/tarieven" />;
 }
 
 export function ContactPagePreview() {

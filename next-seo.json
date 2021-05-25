@@ -1,23 +1,17 @@
 {
-  "title": "Styrkr",
+  "title": "Styrkr - Personal Coach",
   "titleTemplate": "%s | Styrkr",
-  "defaultTitle": "Styrkr",
-  "description": "Op zoek naar een fitness of voedingscoach? Dan bent u bij Styrkr aan het goede adres!",
+  "defaultTitle": "Styrkr - Personal Coach",
+  "description": "Gepersonaliseerde voedings- en trainingsplannen, begeleiding, training programs en online coaching. Ontworpen speciaal voor jou door Styrkr.",
   "favicon": "/favicon.ico",
-  "additionalMetaTags": [
-    { "property": "author", "content": "Brent De Wolf" },
-    {
-      "property": "keywords",
-      "content": ""
-    }
-  ],
+  "additionalMetaTags": [{ "property": "author", "content": "Brent De Wolf" }],
   "openGraph": {
     "locale": "nl_BE",
     "type": "website",
-    "site_name": "Styrkr",
+    "site_name": "Styrkr - Personal Coach",
     "url": "https://styrkr-staging.vercel.app",
-    "title": "Styrkr",
-    "description": "Op zoek naar een fitness of voedingscoach? Dan bent u bij Styrkr aan het goede adres!",
+    "title": "Styrkr - Personal Coach",
+    "description": "Gepersonaliseerde voedings- en trainingsplannen, begeleiding, training programs en online coaching. Ontworpen speciaal voor jou door Styrkr.",
     "profile": {
       "firstName": "Brent",
       "lastName": "De Wolf"
@@ -27,8 +21,11 @@
         "url": "https://styrkr-staging.vercel.app/images/styrkr-logo.jpg",
         "width": 1280,
         "height": 720,
-        "alt": "Styrkr Company Logo"
+        "alt": "Bedrijfslogo Styrkr"
       }
     ]
+  },
+  "twitter": {
+    "cardType": "summary_large_image"
   }
 }
