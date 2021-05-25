@@ -1,5 +1,5 @@
 const withPlugins = require('next-compose-plugins');
-// const withPreact = require('next-plugin-preact');
+const withPreact = require('next-plugin-preact');
 // const path = require('path');
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -78,10 +78,4 @@ const nextConfig = {
   // },
 };
 
-module.exports = withPlugins(
-  [
-    [withBundleAnalyzer],
-    // [withPreact]
-  ],
-  nextConfig,
-);
+module.exports = withPlugins([[withBundleAnalyzer], [withPreact]], nextConfig);
