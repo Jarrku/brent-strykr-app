@@ -8,3 +8,7 @@ declare namespace NodeJS {
     readonly NEXT_PUBLIC_SANITY_PROJECT_ID: string;
   }
 }
+
+interface Window {
+  gtag: any;
+}
