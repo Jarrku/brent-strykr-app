@@ -1,11 +1,20 @@
 import { gtagPageview } from '@/lib/gtag';
 import { DefaultSeo } from 'next-seo';
-import { AppProps } from 'next/app';
+import { AppProps, NextWebVitalsMetric } from 'next/app';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
 import SEO from '../../next-seo.json';
 import '../styles/globals.css';
+
+export function reportWebVitals({ name, value, label, id }: NextWebVitalsMetric) {
+  window.gtag('event', name, {
+    event_category: label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
+    value: Math.round(name === 'CLS' ? value * 1000 : value), // values must be integers
+    event_label: id, // id unique to current page load
+    non_interaction: true, // avoids affecting bounce rate.
+  });
+}
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
