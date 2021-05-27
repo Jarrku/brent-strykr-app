@@ -13,15 +13,20 @@ export const gtagEvent = ({
   category,
   label,
   value,
+  options,
 }: {
   action: string;
   category: string;
   label: string;
-  value: string;
+  value: number;
+  options?: {
+    non_interaction?: boolean;
+  };
 }) => {
   window.gtag('event', action, {
     event_category: category,
     event_label: label,
     value: value,
+    ...options,
   });
 };
