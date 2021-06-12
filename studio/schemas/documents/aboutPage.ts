@@ -39,18 +39,6 @@ const aboutPageDef = {
       type: ObjectType.BLOCK_CONTENT,
       validation: (Rule: any) => Rule.required(),
     },
-    {
-      name: 'sectionTitle',
-      title: 'Section Title',
-      type: SchemaType.STRING,
-      validation: (Rule: any) => Rule.required(),
-    },
-    {
-      name: 'sectionContent',
-      title: 'Section Content',
-      type: ObjectType.BLOCK_CONTENT,
-      validation: (Rule: any) => Rule.required(),
-    },
   ],
   validation: (Rule: any) => Rule.required(),
   preview: {

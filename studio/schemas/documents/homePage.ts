@@ -40,12 +40,6 @@ const homepageDef = {
       validation: (Rule: any) => Rule.required(),
     },
     {
-      name: 'heroImage',
-      title: 'Hero Image',
-      type: ObjectType.FIGURE,
-      validation: (Rule: any) => Rule.required(),
-    },
-    {
       name: 'featuresTitle',
       title: 'Features Title',
       type: SchemaType.STRING,
@@ -73,18 +67,6 @@ const homepageDef = {
     {
       name: 'explainerContent',
       title: 'Explainer Content',
-      type: ObjectType.BLOCK_CONTENT,
-      validation: (Rule: any) => Rule.required(),
-    },
-    {
-      name: 'explainerSectionTitle',
-      title: 'Explainer Section Title',
-      type: SchemaType.STRING,
-      validation: (Rule: any) => Rule.required(),
-    },
-    {
-      name: 'explainerSectionContent',
-      title: 'Explainer Section Content',
       type: ObjectType.BLOCK_CONTENT,
       validation: (Rule: any) => Rule.required(),
     },

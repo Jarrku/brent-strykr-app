@@ -122,8 +122,6 @@ function Content({ t }: Props) {
           <div className="relative z-10">
             <div className="mx-auto prose text-gray-500 prose-indigo lg:max-w-none">
               <BlockContent blocks={paragraphs} />
-              <h3>{t.explainerSectionTitle}</h3>
-              <BlockContent blocks={t.explainerSectionContent} />
             </div>
             <div className="flex mx-auto mt-10 text-base max-w-prose lg:max-w-none">
               <div className="rounded-md shadow">

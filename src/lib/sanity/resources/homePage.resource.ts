@@ -8,11 +8,6 @@ export const homeQuery = groq`
     heroIntro,
     heroCtaPrimary,
     heroCtaSecondary,
-    "heroImage": {
-      "url": heroImage.asset->url,
-      "caption": heroImage.caption,
-      "alt": heroImage.alt,
-    },
     featuresTitle,
     features[] {
       title,
@@ -22,8 +17,6 @@ export const homeQuery = groq`
     explainerTitle,
     explainerSubtitle,
     explainerContent,
-    explainerSectionTitle,
-    explainerSectionContent,
     explainerCtaPrimary,
     explainerCtaSecondary,
     testimonial->{
@@ -48,18 +41,11 @@ export interface IHomePage {
   heroIntro: string;
   heroCtaPrimary: string;
   heroCtaSecondary: string;
-  heroImage: {
-    url: string;
-    caption: string;
-    alt: string;
-  };
   featuresTitle: string;
   features: FeatureItem[];
   explainerTitle: string;
   explainerSubtitle: string;
   explainerContent: SanityBlockContent;
-  explainerSectionTitle: string;
-  explainerSectionContent: SanityBlockContent;
   explainerCtaPrimary: string;
   explainerCtaSecondary: string;
   testimonial: ITestimonial;

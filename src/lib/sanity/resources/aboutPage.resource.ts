@@ -11,9 +11,7 @@ export const aboutQuery = groq`
       "alt": coverImage.alt,
     },
     intro,
-    content,
-    sectionTitle,
-    sectionContent
+    content
   }
 `;
 
@@ -27,6 +25,4 @@ export interface IAboutPage {
   };
   intro: string;
   content: SanityBlockContent;
-  sectionTitle: string;
-  sectionContent: SanityBlockContent;
 }

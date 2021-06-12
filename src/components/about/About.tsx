@@ -58,8 +58,6 @@ export function About({ initialData: t, navbar, footer, preview }: PageProps<IAb
             </div>
             <div className="mx-auto mt-5 prose text-gray-500 prose-indigo lg:max-w-none lg:row-start-1 lg:col-start-1">
               <BlockContent blocks={t.content} />
-              <h3>{t.sectionTitle}</h3>
-              <BlockContent blocks={t.sectionContent} />
             </div>
           </div>
         </div>
