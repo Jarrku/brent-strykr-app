@@ -1,7 +1,7 @@
 import { ObjectType, SchemaType } from '../schema.types';
 import * as React from 'react';
 
-import { RiFacebookFill, RiInstagramLine, RiTwitterLine, RiLinkedinFill } from 'react-icons/ri';
+import { RiFacebookFill, RiInstagramLine, RiTwitterLine } from 'react-icons/ri';
 
 const list = ['instagram', 'facebook', 'twitter', 'linkedin'] as const;
 
@@ -50,7 +50,7 @@ function Icon({ type }: { type: SocialOptions }) {
   if(type === 'facebook') return <RiFacebookFill />
   if(type === 'instagram') return <RiInstagramLine />
   if(type === 'twitter') return <RiTwitterLine />
-  if(type === 'linkedin') return <RiLinkedinFill />
+  // if(type === 'linkedin') return <RiLinkedinFill />
 
   return null;
 }
