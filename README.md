@@ -36,5 +36,7 @@ https://www.bvrpersonaltraining.com/algemene-voorwaarden-verkoopsbeleid
 Homepage:
 
 - 2 Secties: Dieten en Training
-
-- Data editting beter maken
+- Vriendelijke 404 page?
+- SEO Editing support
+- Navlinks rerouting?
+- Terms & Conditions page + link from tarieven

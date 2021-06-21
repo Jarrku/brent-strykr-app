@@ -5,12 +5,21 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 
+// TODO: fetch navLinks from sanity, setup rewrites for baseUrl -> url.
+
+const STUDIO_REWRITE = {
+  source: '/studio/:path*',
+  destination: process.env.NODE_ENV === 'development' ? 'http://localhost:3333/studio/:path*' : '/studio/index.html',
+};
+
 const nextConfig = {
   reactStrictMode: true,
-
-  experimental: { optimizeCss: true },
+  future: {
+    webpack5: true,
+  },
+  experimental: { optimizeCss: process.env.NODE_ENV === 'production', modern: true, polyfillsOptimization: true },
   images: {
-    domains: ['tailwindui.com', 'images.unsplash.com', 'images.ctfassets.net'],
+    domains: ['tailwindui.com', 'images.unsplash.com', 'images.ctfassets.net', 'cdn.sanity.io'],
   },
   async headers() {
     return [
@@ -25,16 +34,9 @@ const nextConfig = {
       },
     ];
   },
+  rewrites: () => [STUDIO_REWRITE],
   async redirects() {
     return [];
-  },
-  webpack: (config, { isServer }) => {
-    // Fixes npm packages that depend on `fs` module
-    if (!isServer) {
-      config.node = { fs: 'empty' };
-    }
-
-    return config;
   },
 };
 

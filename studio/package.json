@@ -1,0 +1,33 @@
+{
+  "name": "sanity-nextjs-ecommerce-studio",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Knut Melvær <knut@sanity.io>",
+  "license": "MIT",
+  "scripts": {
+    "start": "sanity start",
+    "test": "sanity check"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.11.0",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/color-input": "^2.11.0",
+    "@sanity/core": "^2.11.0",
+    "@sanity/default-layout": "^2.11.0",
+    "@sanity/default-login": "^2.11.0",
+    "@sanity/desk-tool": "^2.11.0",
+    "@sanity/vision": "^2.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-moveable": "^0.28.0",
+    "resize-observer": "^1.0.2"
+  },
+  "devDependencies": {}
+}

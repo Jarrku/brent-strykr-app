@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "35tavocn",
+    "dataset": "acceptance"
+  },
+  "project": {
+    "name": "Styrkr",
+    "basePath": "/studio"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/color-input"
+  ],
+  "env": {
+    "development": {
+      "plugins": ["@sanity/vision"]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/desk-tool/structure",
+      "path": "./src/deskStructure"
+    },
+    {
+      "name": "part:@sanity/base/new-document-structure",
+      "path": "./src/deskStructure/newDocumentStructure"
+    },
+    {
+      "implements": "part:@sanity/base/document-actions/resolver",
+      "path": "./src/deskStructure/resolveDocumentActions"
+    }
+  ]
+}

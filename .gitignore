@@ -26,6 +26,7 @@ yarn-error.log*
 
 # local env files
 .env.local
+.env
 .env.development.local
 .env.test.local
 .env.production.local
@@ -35,3 +36,4 @@ yarn-error.log*
 
 public/sitemap.xml
 public/robots.txt
+public/studio
