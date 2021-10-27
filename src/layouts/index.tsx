@@ -2,7 +2,7 @@ import React from 'react';
 import { NextSeo } from 'next-seo';
 import { Navbar } from '@/components/Navbar';
 import { INavbar } from '@/lib/sanity/resources/navbar.resource';
-import { OpenGraphImages } from 'next-seo/lib/types';
+import { OpenGraphMedia } from 'next-seo/lib/types';
 import { Footer } from '@/components/Footer';
 import { IFooter } from '@/lib/sanity/resources/footer.resource';
 
@@ -12,7 +12,7 @@ type LayoutProps = {
     description?: string;
     titleAppendSiteName?: boolean;
     url?: string;
-    ogImage?: OpenGraphImages;
+    ogImage?: OpenGraphMedia;
   };
   preview: boolean;
   navbar: INavbar;
