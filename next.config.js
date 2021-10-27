@@ -1,5 +1,5 @@
 const withPlugins = require('next-compose-plugins');
-const withPreact = require('next-plugin-preact');
+// const withPreact = require('next-plugin-preact');
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
@@ -13,12 +13,17 @@ const STUDIO_REWRITE = {
 };
 
 const nextConfig = {
+  swcMinify: true,
   reactStrictMode: true,
-  future: {
-    webpack5: true,
+  experimental: {
+    concurrentFeatures: true,
+    serverComponents: true,
+    optimizeCss: process.env.NODE_ENV === 'production',
+    modern: true,
+    polyfillsOptimization: true,
   },
-  experimental: { optimizeCss: process.env.NODE_ENV === 'production', modern: true, polyfillsOptimization: true },
   images: {
+    formats: ['image/avif', 'image/webp'],
     domains: ['tailwindui.com', 'images.unsplash.com', 'images.ctfassets.net', 'cdn.sanity.io'],
   },
   async headers() {
@@ -40,4 +45,5 @@ const nextConfig = {
   },
 };
 
-module.exports = withPlugins([[withBundleAnalyzer], [withPreact]], nextConfig);
+// module.exports = withPlugins([[withBundleAnalyzer], [withPreact]], nextConfig);
+module.exports = withPlugins([[withBundleAnalyzer]], nextConfig);

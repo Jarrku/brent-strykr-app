@@ -14,20 +14,20 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "^2.11.0",
+    "@sanity/base": "^2.21.7",
     "@sanity/block-content-to-react": "^3.0.0",
-    "@sanity/color-input": "^2.11.0",
-    "@sanity/core": "^2.11.0",
-    "@sanity/default-layout": "^2.11.0",
-    "@sanity/default-login": "^2.11.0",
-    "@sanity/desk-tool": "^2.11.0",
-    "@sanity/vision": "^2.11.0",
+    "@sanity/color-input": "^2.21.7",
+    "@sanity/core": "^2.21.7",
+    "@sanity/default-layout": "^2.21.7",
+    "@sanity/default-login": "^2.21.7",
+    "@sanity/desk-tool": "^2.21.7",
+    "@sanity/vision": "^2.21.7",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.2.0",
-    "react-moveable": "^0.28.0",
-    "resize-observer": "^1.0.2"
-  },
-  "devDependencies": {}
+    "react-icons": "^4.3.1",
+    "react-moveable": "^0.29.0",
+    "resize-observer": "^1.0.2",
+    "styled-components": "^5.3.3"
+  }
 }
